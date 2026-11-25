@@ -1,0 +1,102 @@
+    double tBlend = -1;
+    const uint32_t* Mp = nullptr;
+    if (miss && havePrev) Mp = modelOf(gPrev);
+    if (miss && Mp) {
+        // 전환(옛 화면 → 새 합성, 화면 전체 같은 t) 인가: 지금·앞 모형이 크게 다른 화소에서 t 를 잰다
+        int64_t num = 0, den = 0; int cnt = 0;
+        for (int y = 0; y < m; ++y) {
+            const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+            const uint32_t* mc = Mc + (size_t)(y0 + y) * W1 + x0;
+            const uint32_t* mp = Mp + (size_t)(y0 + y) * W1 + x0;
+            uint8_t* cd = gCode.data() + (size_t)y * n;
+            for (int x = 0; x < n; ++x) {
+                if (cd[x]) continue;
+                uint32_t fp = f[x] & 0xffffff;
+                if (dmax(fp, mp[x]) <= gTol) { cd[x] = 2; continue; }
+                uint32_t c = mc[x], p = mp[x];
+                if (dmax(c, p) < 24) continue;
+                ++cnt;
+                for (int k = 0; k < 24; k += 8) {
+                    int dv = (int)((c >> k) & 255) - (int)((p >> k) & 255);
+                    num += (int64_t)((int)((fp >> k) & 255) - (int)((p >> k) & 255)) * dv; den += (int64_t)dv * dv;
+                }
+            }
+        }
+        if (cnt >= 1000 && den > 0) {
+            double t = (double)num / den;
+            if (t > 0.02 && t < 0.98) {
+                int t256 = (int)std::lround(t * 256), good = 0, tried = 0;
+                int tolb = gTol + 2;
+                for (int pass = 0; pass < 2; ++pass) {   // 0: 셈만, 1: 표시(90% 이상 맞을 때)
+                    if (pass == 1 && good < tried * 9 / 10) break;
+                    for (int y = 0; y < m; ++y) {
+                        const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+                        const uint32_t* mc = Mc + (size_t)(y0 + y) * W1 + x0;
+                        const uint32_t* mp = Mp + (size_t)(y0 + y) * W1 + x0;
+                        uint8_t* cd = gCode.data() + (size_t)y * n;
+                        for (int x = 0; x < n; ++x) {
+                            if (cd[x]) continue;
+                            uint32_t c = mc[x], p = mp[x], fp = f[x] & 0xffffff; int bad = 0;
+                            for (int k = 0; k < 24 && !bad; k += 8) {
+                                int pv = (p >> k) & 255, e = pv + ((((int)((c >> k) & 255) - pv) * t256) >> 8);
+                                if (abs(e - (int)((fp >> k) & 255)) > tolb) bad = 1;
+                            }
+                            if (pass == 0) { if (dmax(c, p) >= 24) { ++tried; good += !bad; } }
+                            else if (!bad) cd[x] = 3;
+                        }
+                    }
+                }
+                if (good >= tried * 9 / 10) tBlend = t;
+            }
+        }
+    }
+    // 4배 합성: 물리 화소마다 가장 가까운 1배 화소의 판정을 따른다. 합성 줄은 상태마다 한 번 만들어 둔다.
+    // 1배 열마다 물리 구간 [sx[x], sx[x+1]) — 같은 판정이 이어지면 통째로 복사.
+    int PW = P.right - P.left;
+    gRowC.resize(PW); gRowP.resize(PW); gOkC.resize(PW); gOkP.resize(PW);
+    int it256 = tBlend < 0 ? 0 : (int)std::lround(tBlend * 256);
+    std::vector<int> sx(n + 1, PW);
+    {
+        int X = P.left;
+        for (int x = 0; x < n; ++x) {
+            sx[x] = X - P.left;
+            while (X < P.right && (int)std::floor((X - L.ox + 0.5) * W1 / (double)L.cw) - x0 <= x) ++X;
+        }
+        sx[0] = 0; sx[n] = PW;
+    }
+    C4* cc = compOf(gCur, L);
+    C4* cp = havePrev ? compOf(gPrev, L) : nullptr;
+    if (cc && cp == cc) cp = nullptr;
+    int drawn = 0;
+    for (int Y = P.top; Y < P.bottom; ++Y) {
+        int v = (int)std::floor((Y - L.oy + 0.5) * H1 / (double)L.ch);
+        int ry = std::min(m - 1, std::max(0, v - y0));
+        const uint8_t* code = gCode.data() + (size_t)ry * n;
+        bool needC = false, needP = false;
+        for (int x = 0; x < n; ++x) { uint8_t c = code[x]; if (sx[x] == sx[x + 1]) continue; if (c == 1 || c == 3) needC = true; if (c == 2 || c == 3) needP = true; }
+        if (!needC && !needP) continue;
+        const uint32_t* rc = needC ? rowOf(gCur, cc, L, Y, P.left, P.right, gRowC.data(), gOkC.data()) : nullptr;
+        const uint32_t* rp = needP ? rowOf(gPrev, cp, L, Y, P.left, P.right, gRowP.data(), gOkP.data()) : nullptr;
+        uint32_t* d = bk + (size_t)Y * BW + P.left;
+        for (int x = 0; x < n;) {
+            uint8_t c = code[x];
+            int xe = x + 1;
+            while (xe < n && code[xe] == c) ++xe;
+            int a = sx[x], b = sx[xe];
+            x = xe;
+            if (!c || a >= b) continue;
+            if (c == 1 || c == 2) {
+                const uint32_t* r = c == 1 ? rc : rp; const uint8_t* ok = c == 1 ? gOkC.data() : gOkP.data();
+                if ((c == 1 && cc) || (c == 2 && cp)) { memcpy(d + a, r + a, (size_t)(b - a) * 4); drawn += b - a; }
+                else for (int k = a; k < b; ++k) if (ok[k]) { d[k] = r[k]; ++drawn; }
+            } else {
+                for (int k = a; k < b; ++k) {
+                    if (!gOkC[k] || !gOkP[k]) continue;
+                    uint32_t A = rc[k], B = rp[k];
+                    uint32_t rb = ((((A & 0xff00ff) * it256) + ((B & 0xff00ff) * (256 - it256))) >> 8) & 0xff00ff;
+                    uint32_t g = ((((A & 0xff00) * it256) + ((B & 0xff00) * (256 - it256))) >> 8) & 0xff00;
+                    d[k] = rb | g; ++drawn;
+                }
+            }
+        }
+    }

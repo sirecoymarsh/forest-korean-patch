@@ -1,0 +1,86 @@
+[
+ {
+  "uid": "original_scr/2400.gsc::command/0x0012E8::MESSAGE.text",
+  "before": "^g999（재우는 노래？）^n（채가는 노래）^n（쉿！）",
+  "after": "^g999（재우는 노래?）^n（채가는 노래）^n（쉿!）",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/2400.gsc::command/0x001324::MESSAGE.text",
+  "before": "^g999（언제까지？）^n（언제까지나）^n（쉿！）",
+  "after": "^g999（언제까지?）^n（언제까지나）^n（쉿!）",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x000E4E::MESSAGE.text",
+  "before": "^g001우으에에.",
+  "after": "^g001우으에에~.",
+  "reason": "원문 うぅえぇぇ～의 물결표가 한쪽에서만 빠졌다"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x004884::MESSAGE.text",
+  "before": "^g001아마모리-!",
+  "after": "^g001아마모리!",
+  "reason": "アマモリっ의 っ는 촉음이지 장음이 아니다"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x00AE7E::MESSAGE.text",
+  "before": "^g026케케이! 케케이!",
+  "after": "^g026케케─! 케케─!",
+  "reason": "ケケー의 ー는 장음이다. 케케이는 ー를 イ로 잘못 읽었다"
+ },
+ {
+  "uid": "original_scr/3031.gsc::command/0x0011E4::MESSAGE.text",
+  "before": "^g009프린세스……？^n과연. 그래서 노려지고 있구나.^n구혼자가 몰려들고 있는 셈이지.",
+  "after": "^g009프린세스……?^n과연. 그래서 노려지고 있구나.^n구혼자가 몰려들고 있는 셈이지.",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3031.gsc::command/0x001A06::MESSAGE.text",
+  "before": "^g005앗……？^n마법이……！",
+  "after": "^g005앗……?^n마법이……!",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3031.gsc::command/0x001B0C::MESSAGE.text",
+  "before": "^g005기프트가, 이동했어……？",
+  "after": "^g005기프트가, 이동했어……?",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3031.gsc::command/0x001DA6::MESSAGE.text",
+  "before": "^g005에……？",
+  "after": "^g005에……?",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3033.gsc::command/0x0004A0::MESSAGE.text",
+  "before": "^g007히에에에엑!?",
+  "after": "^g007효에에에엑!?",
+  "reason": "ひょ는 효다"
+ },
+ {
+  "uid": "original_scr/3034.gsc::command/0x0001BC::MESSAGE.text",
+  "before": "^g999나……？^n나는…….",
+  "after": "^g999나……?^n나는…….",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3041.gsc::command/0x0003DA::MESSAGE.text",
+  "before": "^g042……아아……！",
+  "after": "^g042……아아……!",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3041.gsc::command/0x0004AA::MESSAGE.text",
+  "before": "^g043어떻게 지내는지……^n문라이트는……？",
+  "after": "^g043어떻게 지내는지……^n문라이트는……?",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ },
+ {
+  "uid": "original_scr/3042.gsc::command/0x00007C::MESSAGE.text",
+  "before": "^g999\"혹시, 여기는……？^n 여긴, 끝의 마을이 아닌가?^n 나의 여행은, 이제 끝인 건가?\"",
+  "after": "^g999\"혹시, 여기는……?^n 여긴, 끝의 마을이 아닌가?^n 나의 여행은, 이제 끝인 건가?\"",
+  "reason": "코퍼스 기준은 반각인데 이 줄만 전각이라 폭이 어긋난다"
+ }
+]

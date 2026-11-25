@@ -1,0 +1,1 @@
+{"errors": 140, "korean": 59, "listen": 5, "hold": 139, "quote": 89, "latin": 5, "by_cat": {"pronoun": 15, "register": 29, "term": 54, "meaning": 29, "addition": 9, "omission": 3, "direction": 1}, "errors_ch1_3": 17, "decision": {"borrowers": 16, "atashi": 9, "oppa": 5, "chan": 6}}

@@ -1,0 +1,241 @@
+// qol_hitext.cpp — 4K 글자 모듈(세션 「4K 글자」 몫). 1단계: 탐침(엔진이 글자를 어떻게 찍는지 기록).
+#include "qol.h"
+#include <intrin.h>
+#include <cstdio>
+
+namespace forest { namespace qol {
+namespace {
+CRITICAL_SECTION gLogCs; bool gLogInit = false;
+void HLog(const char* fmt, ...) {
+    if (!gLogInit) return;
+    char buf[2048];
+    va_list ap; va_start(ap, fmt); int n = _vsnprintf_s(buf, sizeof(buf) - 3, _TRUNCATE, fmt, ap); va_end(ap);
+    if (n < 0) n = (int)strlen(buf);
+    char line[2200]; int m = sprintf_s(line, "%llu %s\r\n", GetTickCount64(), buf);
+    EnterCriticalSection(&gLogCs);
+    HANDLE f = CreateFileW((Root() + L"\\hitext.log").c_str(), FILE_APPEND_DATA, FILE_SHARE_READ, nullptr, OPEN_ALWAYS, 0, nullptr);
+    if (f != INVALID_HANDLE_VALUE) { DWORD w; WriteFile(f, line, m, &w, nullptr); CloseHandle(f); }
+    LeaveCriticalSection(&gLogCs);
+}
+std::string utf8(const char* s, int n = -1) {
+    int wn = MultiByteToWideChar(949, 0, s, n, nullptr, 0); if (wn <= 0) return "";
+    std::wstring w(wn, 0); MultiByteToWideChar(949, 0, s, n, &w[0], wn);
+    int un = WideCharToMultiByte(CP_UTF8, 0, w.c_str(), wn, nullptr, 0, nullptr, nullptr);
+    std::string u(un, 0); WideCharToMultiByte(CP_UTF8, 0, w.c_str(), wn, &u[0], un, nullptr, nullptr);
+    while (!u.empty() && u.back() == 0) u.pop_back();
+    return u;
+}
+std::string chs(unsigned ch) { char b[3] = {0}; if (ch > 0xff) { b[0] = (char)(ch >> 8); b[1] = (char)ch; } else b[0] = (char)ch; return utf8(b); }
+// 스택을 훑어 호출 자리처럼 보이는 돌아갈 주소들
+std::string stackScan(void* from, int want = 10) {
+    std::string out; uint32_t* p = (uint32_t*)from; int got = 0;
+    for (int i = 0; i < 400 && got < want; ++i) {
+        uint32_t v = p[i];
+        if (v < 0x401005 || v >= 0x459000) continue;
+        const uint8_t* c = (const uint8_t*)v;
+        bool call = c[-5] == 0xE8 || (c[-6] == 0xFF && c[-5] == 0x15) || (c[-2] == 0xFF && (c[-1] & 0xF8) == 0xD0) || (c[-3] == 0xFF && (c[-2] & 0x38) == 0x10);
+        if (!call) continue;
+        char b[24]; sprintf_s(b, "%x@%d ", v, i * 4); out += b; ++got;
+    }
+    return out;
+}
+std::string fontOf(HDC dc) {
+    HGDIOBJ f = GetCurrentObject(dc, OBJ_FONT); LOGFONTA lf = {};
+    if (!f || !GetObjectA(f, sizeof(lf), &lf)) return "?";
+    char b[160]; sprintf_s(b, "%s h%d w%d wt%d it%d cs%d q%d", utf8(lf.lfFaceName).c_str(), lf.lfHeight, lf.lfWidth, lf.lfWeight, lf.lfItalic, lf.lfCharSet, lf.lfQuality);
+    return b;
+}
+std::map<std::string, int> gSeen;
+bool firstTimes(const std::string& key, int limit) { EnterCriticalSection(&gLogCs); int n = ++gSeen[key]; LeaveCriticalSection(&gLogCs); return n <= limit; }
+
+using GGOFn = DWORD(WINAPI*)(HDC, UINT, UINT, LPGLYPHMETRICS, DWORD, LPVOID, const MAT2*);
+using TOFn = BOOL(WINAPI*)(HDC, int, int, LPCSTR, int);
+using DTFn = int(WINAPI*)(HDC, LPCSTR, int, LPRECT, UINT);
+using CFFn = HFONT(WINAPI*)(int, int, int, int, int, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, LPCSTR);
+GGOFn oGGO; TOFn oTO; DTFn oDT; CFFn oCF;
+
+DWORD WINAPI hGGO(HDC dc, UINT ch, UINT fmt, LPGLYPHMETRICS gm, DWORD cb, LPVOID buf, const MAT2* mat) {
+    DWORD r = oGGO(dc, ch, fmt, gm, cb, buf, mat);
+    uintptr_t ra = (uintptr_t)_ReturnAddress();
+    char key[64]; sprintf_s(key, "ggo %x %u", (unsigned)ra, fmt);
+    if (firstTimes(key, 3))
+        HLog("GGO ra=%x fmt=%u ch=%04x '%s' font[%s] bb=%ux%u org=%d,%d inc=%d,%d r=%u mat=%d,%d,%d,%d stack: %s", (unsigned)ra, fmt, ch, chs(ch).c_str(), fontOf(dc).c_str(),
+             gm ? gm->gmBlackBoxX : 0, gm ? gm->gmBlackBoxY : 0, gm ? gm->gmptGlyphOrigin.x : 0, gm ? gm->gmptGlyphOrigin.y : 0, gm ? gm->gmCellIncX : 0, gm ? gm->gmCellIncY : 0, r,
+             mat ? mat->eM11.value : 0, mat ? mat->eM12.value : 0, mat ? mat->eM21.value : 0, mat ? mat->eM22.value : 0, stackScan(_AddressOfReturnAddress()).c_str());
+    return r;
+}
+BOOL WINAPI hTO(HDC dc, int x, int y, LPCSTR s, int n) {
+    uintptr_t ra = (uintptr_t)_ReturnAddress();
+    char key[64]; sprintf_s(key, "to %x", (unsigned)ra);
+    if (firstTimes(key, 6))
+        HLog("TextOutA ra=%x xy=%d,%d '%s' font[%s] col=%06x bk=%d wnd=%p stack: %s", (unsigned)ra, x, y, utf8(s, n).c_str(), fontOf(dc).c_str(), GetTextColor(dc), GetBkMode(dc), WindowFromDC(dc), stackScan(_AddressOfReturnAddress()).c_str());
+    return oTO(dc, x, y, s, n);
+}
+int WINAPI hDT(HDC dc, LPCSTR s, int n, LPRECT r, UINT f) {
+    uintptr_t ra = (uintptr_t)_ReturnAddress();
+    char key[64]; sprintf_s(key, "dt %x", (unsigned)ra);
+    if (firstTimes(key, 6))
+        HLog("DrawTextA ra=%x rc=%ld,%ld,%ld,%ld f=%x '%s' font[%s] wnd=%p stack: %s", (unsigned)ra, r ? r->left : 0, r ? r->top : 0, r ? r->right : 0, r ? r->bottom : 0, f, utf8(s, n).c_str(), fontOf(dc).c_str(), WindowFromDC(dc), stackScan(_AddressOfReturnAddress()).c_str());
+    return oDT(dc, s, n, r, f);
+}
+HFONT WINAPI hCF(int h, int w, int e, int o, int wt, DWORD it, DWORD ul, DWORD so, DWORD cs, DWORD op, DWORD cp, DWORD q, DWORD pf, LPCSTR face) {
+    uintptr_t ra = (uintptr_t)_ReturnAddress();
+    char key[96]; sprintf_s(key, "cf %x %d %s", (unsigned)ra, h, face ? face : "");
+    if (firstTimes(key, 2))
+        HLog("CreateFontA ra=%x h=%d w=%d esc=%d wt=%d it=%u cs=%u q=%u face='%s' stack: %s", (unsigned)ra, h, w, e, wt, it, cs, q, face ? utf8(face).c_str() : "", stackScan(_AddressOfReturnAddress()).c_str());
+    return oCF(h, w, e, o, wt, it, ul, so, cs, op, cp, q, pf, face);
+}
+
+struct GInfo { unsigned ch; int h; int mode; unsigned color; void* textObj; };
+std::map<uintptr_t, GInfo> gGlyphs;        // 글리프 객체 → 정보
+std::map<uintptr_t, uintptr_t> gSurfToGlyph;  // 표면 하위 객체 → 글리프 객체
+volatile uintptr_t gEdi = 0;
+uintptr_t surfOf(void* obj) { uint8_t* o = (uint8_t*)obj; return (uintptr_t)(o + 4 + *(int32_t*)(*(uint8_t**)(o + 4) + 4)); }
+void __cdecl onPixel(uintptr_t surf, uint32_t* stack) {
+    EnterCriticalSection(&gLogCs);
+    auto it = gSurfToGlyph.find(surf);
+    bool hit = it != gSurfToGlyph.end();
+    uintptr_t g = hit ? it->second : 0;
+    LeaveCriticalSection(&gLogCs);
+    if (!hit) return;
+    char key[64]; sprintf_s(key, "px %x", stack[0]);
+    if (firstTimes(key, 4)) HLog("PIXEL surf=%p glyph=%p ra=%x stack: %s", (void*)surf, (void*)g, stack[0], stackScan(stack, 12).c_str());
+}
+// 글리프 화소에 PAGE_GUARD 를 걸어 처음 읽는 코드를 잡는다(탐침 전용)
+volatile LONG gArmed = 0;
+LONG CALLBACK guardVeh(EXCEPTION_POINTERS* e) {
+    if (e->ExceptionRecord->ExceptionCode != STATUS_GUARD_PAGE_VIOLATION) return EXCEPTION_CONTINUE_SEARCH;
+    uintptr_t addr = e->ExceptionRecord->ExceptionInformation[1];
+    uint32_t eip = e->ContextRecord->Eip;
+    char key[64]; sprintf_s(key, "guard %x", eip);
+    if (firstTimes(key, 3)) HLog("GUARD eip=%x addr=%p rw=%u esi=%x edi=%x ebx=%x ecx=%x stack: %s", eip, (void*)addr, (unsigned)e->ExceptionRecord->ExceptionInformation[0],
+        e->ContextRecord->Esi, e->ContextRecord->Edi, e->ContextRecord->Ebx, e->ContextRecord->Ecx, stackScan((void*)(uintptr_t)e->ContextRecord->Esp, 12).c_str());
+    return EXCEPTION_CONTINUE_EXECUTION;
+}
+void armGuard(void* obj) {
+    if (InterlockedIncrement(&gArmed) > 40) return;
+    uint8_t* surf = (uint8_t*)surfOf(obj);
+    void* bits = *(void**)(surf + 8);
+    MEMORY_BASIC_INFORMATION mbi = {};
+    if (!bits || !VirtualQuery(bits, &mbi, sizeof(mbi))) return;
+    DWORD old;
+    if (VirtualProtect(bits, 16, mbi.Protect | PAGE_GUARD, &old)) HLog("armed obj=%p bits=%p region=%p+%zx prot=%x type=%x", obj, bits, mbi.BaseAddress, mbi.RegionSize, mbi.Protect, mbi.Type);
+}
+__declspec(naked) void thunkPixel() {
+    __asm {
+        pushad
+        lea eax, [esp + 32]
+        push eax
+        push ecx
+        call onPixel
+        add esp, 8
+        popad
+        mov eax, [ecx + 4]
+        test eax, eax
+        push 0x42cc75
+        ret
+    }
+}
+
+// 0x444d0d 의 call 0x4452b0(글리프 그리기 분기) 를 가로챈다. thiscall(this=글리프 객체), 8 인자, ret 0x20
+using GlyphFn = void(__fastcall*)(void* self, void* edx, unsigned ch, int height, const char* face, int vertical, int mode, int bold, int italic, unsigned color);
+const GlyphFn kGlyph = (GlyphFn)0x4452b0;
+void __fastcall hGlyph(void* self, void* edx, unsigned ch, int height, const char* face, int vertical, int mode, int bold, int italic, unsigned color) {
+    void* textObj = (void*)gEdi;
+    kGlyph(self, edx, ch, height, face, vertical, mode, bold, italic, color);
+    EnterCriticalSection(&gLogCs);
+    gGlyphs[(uintptr_t)self] = GInfo{ch & 0xffff, height, mode, color, textObj};
+    gSurfToGlyph[surfOf(self)] = (uintptr_t)self;
+    LeaveCriticalSection(&gLogCs);
+
+    uint32_t* ret = (uint32_t*)_AddressOfReturnAddress();
+    uint32_t outer = ret[1 + 8 + 1];   // 0x444ce0 를 부른 곳
+    char key[96]; sprintf_s(key, "gl %x %d %d %s %06x", outer, height, mode, face ? face : "", color & 0xffffff);
+    if (firstTimes(key, 3)) {
+        uint8_t* o = (uint8_t*)self;
+        HLog("GLYPH textobj=%p surf=%p obj=%p from=%x ch=%04x '%s' h=%d face='%s' vert=%d mode=%d bold=%d it=%d col=%08x  gm bb=%ux%u org=%d,%d inc=%d,%d  f14=%d f24..2c=%04x %04x %08x %08x stack: %s",
+             textObj, (void*)surfOf(self), self, outer, ch & 0xffff, chs(ch & 0xffff).c_str(), height, face ? utf8(face).c_str() : "", vertical, mode, bold, italic, color,
+             *(uint32_t*)(o + 8), *(uint32_t*)(o + 0xc), *(int32_t*)(o + 0x10), *(int32_t*)(o + 0x14), *(int16_t*)(o + 0x18), *(int16_t*)(o + 0x1a),
+             *(int32_t*)(o + 0x14), *(uint16_t*)(o + 0x24), *(uint16_t*)(o + 0x26), *(uint32_t*)(o + 0x28), *(uint32_t*)(o + 0x2c), stackScan(ret + 10).c_str());
+    }
+}
+
+// 시험 사본 전용(hitext_test_multi=1): 다른 시험 Forest 가 떠 있어도 띄우게 「RSCRIPT」 뮤텍스 이름을 바꾼다
+using OMFn = HANDLE(WINAPI*)(DWORD, BOOL, LPCSTR);
+using CMFn = HANDLE(WINAPI*)(LPSECURITY_ATTRIBUTES, BOOL, LPCSTR);
+OMFn oOM; CMFn oCM;
+const char* testMutex(LPCSTR n) { return (n && !strcmp(n, "RSCRIPT")) ? "RSCRIPT_hitext_test" : n; }
+HANDLE WINAPI hOM(DWORD a, BOOL i, LPCSTR n) { return oOM(a, i, testMutex(n)); }
+HANDLE WINAPI hCM(LPSECURITY_ATTRIBUTES s, BOOL o, LPCSTR n) { return oCM(s, o, testMutex(n)); }
+
+__declspec(naked) void thunkGlyph() {
+    __asm {
+        mov gEdi, edi
+        jmp hGlyph
+    }
+}
+
+// 스프라이트 그리기 0x42ee40(thiscall: this=스프라이트 하위 객체, dest, clip RECT*, offset POINT*; ret 0xc)
+using DrawFn = int(__fastcall*)(void* spr, void* edx, void* dest, RECT* clip, POINT* off);
+DrawFn oDraw = nullptr;
+uintptr_t frontSub() { uint8_t* eng = *(uint8_t**)0x466398; if (!eng) return 0; uint8_t* f = *(uint8_t**)(eng + 0x9c); if (!f) return 0; return (uintptr_t)(f + *(int32_t*)(*(uint8_t**)f + 4)); }
+int __fastcall hDraw(void* spr, void* edx, void* dest, RECT* clip, POINT* off) {
+    EnterCriticalSection(&gLogCs);
+    auto it = gSurfToGlyph.find((uintptr_t)spr);
+    uintptr_t g = it != gSurfToGlyph.end() ? it->second : 0;
+    LeaveCriticalSection(&gLogCs);
+    if (g) {
+        uint8_t* s8 = (uint8_t*)spr;
+        char key[64]; sprintf_s(key, "draw %x", (unsigned)(uintptr_t)_ReturnAddress());
+        static volatile LONG n = 0;
+        if (InterlockedIncrement(&n) <= 60)
+            HLog("DRAW glyph=%p ch=%04x dest=%p front=%p rect=%d,%d,%d,%d off=%ld,%ld clip=%ld,%ld,%ld,%ld m28=%d m2c=%d m30=%d f10=%d f80=%d f88=%d parent=%p wh=%dx%d ra=%x",
+                 (void*)g, gGlyphs[g].ch, dest, (void*)frontSub(), *(int*)(s8 + 0x3c), *(int*)(s8 + 0x40), *(int*)(s8 + 0x44), *(int*)(s8 + 0x48), off ? off->x : -999, off ? off->y : -999,
+                 clip ? clip->left : -999, clip ? clip->top : -999, clip ? clip->right : -999, clip ? clip->bottom : -999,
+                 *(int*)(s8 + 0x28), *(int*)(s8 + 0x2c), *(int*)(s8 + 0x30), *(int*)(s8 + 0x10), *(int*)(s8 + 0x80), *(uint16_t*)(s8 + 0x88), *(void**)(s8 + 0xc), *(int*)(s8 + 0x14), *(int*)(s8 + 0x18), (unsigned)(uintptr_t)_ReturnAddress());
+    }
+    return oDraw(spr, edx, dest, clip, off);
+}
+void* makeTrampoline(uintptr_t at, size_t n) {
+    uint8_t* t = (uint8_t*)VirtualAlloc(nullptr, n + 5, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+    memcpy(t, (void*)at, n); t[n] = 0xE9; *(int32_t*)(t + n + 1) = (int32_t)(at + n - ((uintptr_t)t + n + 5));
+    return t;
+}
+bool inlineHook(uintptr_t at, const uint8_t* expect, size_t n, void* repl, void** orig) {
+    if (memcmp((void*)at, expect, n)) return false;
+    *orig = makeTrampoline(at, n);
+    uint8_t b[16]; memset(b, 0x90, n); b[0] = 0xE9; *(int32_t*)(b + 1) = (int32_t)((uintptr_t)repl - (at + 5));
+    return PatchBytes(at, expect, b, n);
+}
+
+bool iat(uintptr_t slot, void* repl, void** orig) {
+    void* cur = *(void**)slot; *orig = cur;
+    return PatchBytes(slot, &cur, &repl, sizeof(void*));
+}
+}  // namespace
+
+bool HiText_Install() {
+    InitializeCriticalSection(&gLogCs); gLogInit = true;
+    bool ok = true;
+    if (Cfg("hitext_test_multi", 0)) { ok &= iat(0x459080, (void*)hOM, (void**)&oOM); ok &= iat(0x459084, (void*)hCM, (void**)&oCM); HLog("test: mutex renamed %d", ok); }
+    if (!Cfg("hitext_probe", 0)) return false;
+    ok &= iat(0x459038, (void*)hGGO, (void**)&oGGO);
+    ok &= iat(0x459024, (void*)hTO, (void**)&oTO);
+    ok &= iat(0x459208, (void*)hDT, (void**)&oDT);
+    ok &= iat(0x459034, (void*)hCF, (void**)&oCF);
+    static const uint8_t expect[5] = {0xE8, 0x9E, 0x05, 0x00, 0x00};
+    uint8_t call[5]; call[0] = 0xE8; *(int32_t*)(call + 1) = (int32_t)((uintptr_t)thunkGlyph - (0x444d0d + 5));
+    ok &= PatchBytes(0x444d0d, expect, call, 5);
+    static const uint8_t expectPx[5] = {0x8B, 0x41, 0x04, 0x85, 0xC0};
+    uint8_t jmp[5]; jmp[0] = 0xE9; *(int32_t*)(jmp + 1) = (int32_t)((uintptr_t)thunkPixel - (0x42cc70 + 5));
+    ok &= PatchBytes(0x42cc70, expectPx, jmp, 5);
+    static const uint8_t pDraw[7] = {0x6A, 0xFF, 0x68, 0xB8, 0x75, 0x45, 0x00};
+    ok &= inlineHook(0x42ee40, pDraw, 7, (void*)hDraw, (void**)&oDraw);
+    HLog("probe installed %d", ok);
+    return ok;
+}
+void HiText_WindowReady(HWND) {}
+void HiText_Paint(HDC, const Layout&, const RECT&) {}
+bool HiText_Rects(std::vector<RECT>& out) { out.clear(); return false; }
+
+}}  // namespace forest::qol

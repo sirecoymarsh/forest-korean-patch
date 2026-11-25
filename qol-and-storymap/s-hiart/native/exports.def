@@ -1,0 +1,3 @@
+LIBRARY ForestChart
+EXPORTS
+ForestChartInitialize=_ForestChartInitialize@0

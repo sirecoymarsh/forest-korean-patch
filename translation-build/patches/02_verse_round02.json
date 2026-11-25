@@ -1,0 +1,44 @@
+[
+ {
+  "uid": "original_scr/2400.gsc::command/0x0012E8::MESSAGE.text",
+  "before": "^g999（자장가？）^n（아이 취하는 노래）^n（읏！）",
+  "after": "^g999（재우는 노래？）^n（채가는 노래）^n（쉿！）",
+  "reason": "子守歌/子取り歌 한 글자 차 말놀이 → 재우는/채가는. 현행 \"아이 취하는 노래\"는 뜻 불통, シーッ=쉿(현행 읏 오역)"
+ },
+ {
+  "uid": "original_scr/2400.gsc::command/0x0016C8::MESSAGE.text",
+  "before": "^g999「엉터리 말하지 마라 요호!^n정말이겠지 요호!」",
+  "after": "^g999「허튼소리 말어라　요호!^n　정말이렷다　요호!」",
+  "reason": "7음절+후렴 정형 회복"
+ },
+ {
+  "uid": "original_scr/2400.gsc::command/0x00186C::MESSAGE.text",
+  "before": "^g999「말도 안 돼 요호!^n믿을 것 같냐 요호!」",
+  "after": "^g999「말도 안 된다　요호!^n　못 믿겠구나　요호!」",
+  "reason": "위 대구와 같은 박자"
+ },
+ {
+  "uid": "original_scr/2400.gsc::command/0x00193E::MESSAGE.text",
+  "before": "^g999「역시 캡틴! 요호!^n만세 캡틴! 요호!^n천하무적 후크 일당이다 요호!」",
+  "after": "^g999「과연 우리 선장　요호!^n　만세 우리 선장　요호!^n　천하무적 후크 일당　요호!」",
+  "reason": "3연 구호. 현행 4음절(역시 캡틴)은 구호가 안 됨"
+ },
+ {
+  "uid": "original_scr/2100.gsc::command/0x003F6C::MESSAGE.text",
+  "before": "^g999「아이아이, 캡틴!^n　토끼 요리다! 요호!^n　알겠습니다요! 요호!」",
+  "after": "^g999「아이아이, 선장님!^n　토끼 요리다!　요호!^n　분부대로 합죠!　요호!」",
+  "reason": "がってん承知だ(에도 장인 말투)=분부대로 합죠"
+ },
+ {
+  "uid": "original_scr/2100.gsc::command/0x000526::MESSAGE.text",
+  "before": "^g999정신을 차려보니──",
+  "after": "^g999정신 차려 보니──",
+  "reason": "JA 5음절 착지. 현행 8음절이라 연쇄가 늘어짐"
+ },
+ {
+  "uid": "original_scr/2100.gsc::command/0x0004EA::MESSAGE.text",
+  "before": "^g999웃을 때마다──",
+  "after": "^g999웃을 적마다──",
+  "reason": "JA 立ち止まるたび(7)/笑うたび(4) 장단 대비 회복"
+ }
+]

@@ -1,0 +1,2 @@
+ForestChartSerif-SemiBold.ttf chars 146 missing ก่ก้
+ForestChartSerif-Black.ttf chars 146 missing ก่ก้

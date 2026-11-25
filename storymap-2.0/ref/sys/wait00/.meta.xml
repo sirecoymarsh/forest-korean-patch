@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Canvas xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Width>24</Width>
+  <Height>23</Height>
+  <Items>
+    <Item x="4" y="5" flag="41">body</Item>
+    <Item x="0" y="0" flag="40">grow</Item>
+  </Items>
+</Canvas>

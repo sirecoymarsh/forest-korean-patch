@@ -1,0 +1,110 @@
+{"id": "2100:2", "verdict": "STYLE", "cat": "style", "why": "聞かせて 를 「들려줘」로 옮겼을 뿐, 둘 다 자연스러움"}
+{"id": "2100:6", "verdict": "KEEP", "cat": "meaning", "why": "私が聞かせてあげる 의 「내가」와 そう 를 살림; old 는 둘 다 빠짐"}
+{"id": "2100:8", "verdict": "STYLE", "cat": "style", "why": "知ってるかも 둘 다 맞음, 말맛 차이"}
+{"id": "2100:23", "verdict": "STYLE", "cat": "style", "why": "なのね 를 「구나」로, 뜻 차이 없음"}
+{"id": "2100:27", "verdict": "STYLE", "cat": "style", "why": "空のせい？ 시제만 바뀜, 둘 다 괜찮음"}
+{"id": "2100:31", "verdict": "STYLE", "cat": "style", "why": "원음 어순대로 도치했을 뿐, 뜻 같음"}
+{"id": "2100:34", "verdict": "KEEP", "cat": "omission", "why": "old 가 빠뜨린 ねえ、彼は？ 를 살림"}
+{"id": "2100:60", "verdict": "KEEP", "cat": "meaning", "why": "私も呼んだ·友達の(輪) 를 바로 옮김; old 「그들을 불렀어」「파티를 열려고」는 EN 오청"}
+{"id": "2100:63", "verdict": "STYLE", "cat": "style", "why": "彼は 주어를 넣었을 뿐, 뜻 같음"}
+{"id": "2100:66", "verdict": "STYLE", "cat": "style", "why": "聞こえないの？呼んでるのに？ 를 두 문장으로 풀었을 뿐"}
+{"id": "2100:69", "verdict": "KEEP", "cat": "meaning", "why": "わかるわ 는 앞 지문 きみにもわかる 를 받는 말 → 「알고 있어」; old 「난 들려」는 EN 경유"}
+{"id": "2100:80", "verdict": "FIX", "cat": "pronoun", "why": "彼女もアリス？ 의문은 바로잡았으나 대사에 「그녀」 두 번", "fix": "^cy알아. 내가 불렀어.^n나는 앨리스. 저 사람도 앨리스야?"}
+{"id": "2100:128", "verdict": "KEEP", "cat": "addition", "why": "まだ呼び出してる 는 평서(지문 呼び出し音 와 맞춤); old 「사람들을」·물음은 EN 보탬"}
+{"id": "2100:167", "verdict": "STYLE", "cat": "style", "why": "楽しい 를 「즐거운」으로, 뜻 같음"}
+{"id": "2100:170", "verdict": "STYLE", "cat": "style", "why": "好きだわ、たぶん 어순 차이뿐"}
+{"id": "2100:175", "verdict": "STYLE", "cat": "style", "why": "楽しそう 를 그대로 옮김; old 「그렇네」도 앞 지문을 받는 말로 맞음"}
+{"id": "2100:178", "verdict": "KEEP", "cat": "term", "why": "점심때 장면이라 残業 은 「야근」보다 「잔업」이 맞음"}
+{"id": "2100:181", "verdict": "STYLE", "cat": "style", "why": "大変なこと？ 둘 다 맞음"}
+{"id": "2100:184", "verdict": "STYLE", "cat": "style", "why": "他の社員 을 살렸을 뿐, old 도 뜻은 같음"}
+{"id": "2100:190", "verdict": "STYLE", "cat": "style", "why": "わかんない、ごめんなさい 말맛 차이; 들리는 읽기(あめのもり) 아메노모리 유지"}
+{"id": "2100:199", "verdict": "KEEP", "cat": "meaning", "why": "かわいそう 「가엾어라」; old 「누군가 도와줘야 해」는 EN 오역"}
+{"id": "2100:227", "verdict": "STYLE", "cat": "style", "why": "なにこれ 「이게 뭐야」, old 도 뜻 통함"}
+{"id": "2100:233", "verdict": "KEEP", "cat": "korean", "why": "old 「그 사람 전화로 걸었어」가 어색, 私、電話した 그대로"}
+{"id": "2100:235", "verdict": "STYLE", "cat": "style", "why": "来られる？ 「올 수 있나요」, 둘 다 맞음; 들리는 읽기 아메노모리 유지"}
+{"id": "2100:238", "verdict": "KEEP", "cat": "term", "why": "받아쓰기 갈림: Whisper いっとも 는 いいとも 오청(지문의 いいとも 패러디로 분명); 사용자 결정 이이토모"}
+{"id": "2100:241", "verdict": "STYLE", "cat": "style", "why": "비명 표기 차이"}
+{"id": "2100:244", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: おじ/落ち — 다음 지문 落っこちた 로 落ち 가 맞음"}
+{"id": "2100:247", "verdict": "STYLE", "cat": "style", "why": "비명 표기 차이"}
+{"id": "2100:253", "verdict": "STYLE", "cat": "style", "why": "覚えてるわ 되풀이를 살림, old 도 뜻은 같음"}
+{"id": "2100:256", "verdict": "STYLE", "cat": "style", "why": "앞 지문 わかるね(알겠지)를 받는 「알겠어」, old 도 맞음"}
+{"id": "2100:262", "verdict": "STYLE", "cat": "style", "why": "비명 표기 차이"}
+{"id": "2100:265", "verdict": "STYLE", "cat": "style", "why": "それじゃあ 를 살렸을 뿐; 들리는 읽기 아메노모리 유지"}
+{"id": "2100:268", "verdict": "STYLE", "cat": "style", "why": "私が 를 「내가」로, 뜻 같음(Whisper の 는 조사 오청)"}
+{"id": "2100:271", "verdict": "STYLE", "cat": "style", "why": "それとも違うの 를 「아니면 아닌 거야」로, old 도 통함"}
+{"id": "2100:273", "verdict": "KEEP", "cat": "addition", "why": "같은 말 대사(^g004) 「나를 부른 거야?/정말로 나를?」과 맞춤; old 「여기로」는 EN 보탬"}
+{"id": "2100:276", "verdict": "STYLE", "cat": "style", "why": "ほんとにほんと 직역, 같은 말 대사(^g002)와 맞춤"}
+{"id": "2100:279", "verdict": "KEEP", "cat": "meaning", "why": "같은 말 대사(^g002)와 맞춤; old 「많이 올 거야」는 いる 와 다름"}
+{"id": "2100:282", "verdict": "KEEP", "cat": "meaning", "why": "聞こえたかしら 는 「들렸을까」; old 「들었어?」는 뜻이 바뀜"}
+{"id": "2100:285", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper クガーイ 는 号外 뭉개짐(지문 号外 로 분명); old 「읽어 보세요」는 EN 보탬"}
+{"id": "2100:288", "verdict": "REVERT", "cat": "pronoun", "why": "대사에 「그녀」; old 「알아. 내가 불렀어.」로 뜻이 충분"}
+{"id": "2100:292", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper ボゾボゾホイトツ 는 わざわざ配達 와 모라·자음이 맞는 뭉개짐, 신문 배달 지문과도 맞음"}
+{"id": "2100:294", "verdict": "KEEP", "cat": "term", "why": "代わりに 「대신」; 지문의 「실크햇」 표기와 맞춤"}
+{"id": "2100:297", "verdict": "KEEP", "cat": "register", "why": "원음 ですか 존댓말을 살림; old 는 반말"}
+{"id": "2100:300", "verdict": "KEEP", "cat": "meaning", "why": "다음 지문 妙な呪文 의 주문 소리를 살림; old 「다다다다」는 EN"}
+{"id": "2100:302", "verdict": "LISTEN", "cat": "meaning", "why": "Whisper 는 무음 환각(ご視聴ありがとうございました)이라 대조 불가: 제미나이 うわあっ…… vs EN Mmah(old 음마)"}
+{"id": "2100:304", "verdict": "STYLE", "cat": "style", "why": "あれぇ？ 말맛 차이"}
+{"id": "2100:307", "verdict": "STYLE", "cat": "style", "why": "野ウサギセット 를 살림, old 도 뜻은 통함"}
+{"id": "2100:310", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: 大詐欺/野ウサギ — 앞 줄 野ウサギセット 를 되받는 말이라 野ウサギ"}
+{"id": "2100:314", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 갈림: 大泉カエル 는 黛薫 이름 오청(다음 지문 黛　薫); 早く 살림, 「당신에게는」은 조금 딱딱"}
+{"id": "2100:317", "verdict": "KEEP", "cat": "omission", "why": "非常識 을 살리고 徹底的に 반영; old 는 EN 경유로 빠짐"}
+{"id": "2100:320", "verdict": "KEEP", "cat": "register", "why": "카오루는 존댓말 화자, 「살려 주세요」"}
+{"id": "2100:323", "verdict": "REVERT", "cat": "pronoun", "why": "대사에 「그녀」; old 가 뜻을 지킴"}
+{"id": "2100:326", "verdict": "KEEP", "cat": "addition", "why": "まだ呼び出してる 평서; old 「사람들을」·물음은 EN 보탬"}
+{"id": "2100:328", "verdict": "KEEP", "cat": "addition", "why": "まだ呼び出してる 평서; old 「사람들을」·물음은 EN 보탬"}
+{"id": "2100:332", "verdict": "STYLE", "cat": "style", "why": "まだ誰か…… 말맛 차이"}
+{"id": "2100:338", "verdict": "STYLE", "cat": "style", "why": "思い出した 「생각났어」, 둘 다 맞음"}
+{"id": "2100:344", "verdict": "KEEP", "cat": "omission", "why": "old 가 빠뜨린 私を 를 살리고 「그리고」 보탬을 지움"}
+{"id": "2100:371", "verdict": "STYLE", "cat": "style", "why": "今日は·どうぞ 를 살렸을 뿐"}
+{"id": "2100:374", "verdict": "KEEP", "cat": "omission", "why": "の話ね 를 살림; old 는 EN 따라 잘림"}
+{"id": "2100:397", "verdict": "STYLE", "cat": "style", "why": "やめなさいよ 말맛 차이"}
+{"id": "2100:409", "verdict": "FIX", "cat": "korean", "why": "そんなのってあり 는 바로잡았으나(old 「어떻게 한 거야」는 EN) 「핫」은 일본어 감탄사 음차", "fix": "^cy헉, 히야앗! 그런 법이 어딨어!?"}
+{"id": "2100:412", "verdict": "STYLE", "cat": "style", "why": "비명 표기 차이"}
+{"id": "2100:415", "verdict": "KEEP", "cat": "omission", "why": "の話ね 를 살림; old 는 EN 따라 잘림"}
+{"id": "2100:426", "verdict": "STYLE", "cat": "style", "why": "해적? 말맛 차이"}
+{"id": "2100:438", "verdict": "REVERT", "cat": "korean", "why": "보탠 「핫」은 일본어 감탄사 음차(Whisper 는 あ); old 로 충분"}
+{"id": "2100:442", "verdict": "KEEP", "cat": "omission", "why": "の話ね 를 살림; old 는 EN 따라 잘림"}
+{"id": "2100:462", "verdict": "STYLE", "cat": "style", "why": "ハロー！ラブラブー！ 영업 말투 외래어를 살림, old 도 무난"}
+{"id": "2100:465", "verdict": "STYLE", "cat": "style", "why": "끊긴 소리 표기 차이"}
+{"id": "2100:468", "verdict": "FIX", "cat": "korean", "why": "old 「새 배터리 사야겠다」는 EN 오역, 고친 방향은 맞으나 「배터리냐」가 어색", "fix": "^cy쳇! 배터리 나갔냐, 못 써먹겠네!"}
+{"id": "2100:482", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; 「잘 떠올리지 못했어」는 조금 딱딱"}
+{"id": "2100:484", "verdict": "KEEP", "cat": "meaning", "why": "もっと上手に 는 들려주는 솜씨; old 「더 나은 이야기로」는 대상이 바뀜"}
+{"id": "2100:486", "verdict": "STYLE", "cat": "style", "why": "2100:6 과 같은 そう、いいよ 처리, 둘 다 통함"}
+{"id": "2100:488", "verdict": "STYLE", "cat": "style", "why": "끝의 私…… 를 살림, old 도 뜻 같음"}
+{"id": "2100:490", "verdict": "STYLE", "cat": "style", "why": "끝의 私…… 를 살림, old 도 뜻 같음"}
+{"id": "2100:492", "verdict": "STYLE", "cat": "style", "why": "끝의 私…… 를 살림, old 도 뜻 같음"}
+{"id": "2100:494", "verdict": "KEEP", "cat": "meaning", "why": "うまく思い出せないし、別の話にしよう 그대로; old 「기억조차」「고르자」는 EN 경유"}
+{"id": "2100:496", "verdict": "KEEP", "cat": "meaning", "why": "嬉しいわ 「기뻐라」; old 「응, 부탁해」는 EN 오역"}
+{"id": "2100:498", "verdict": "STYLE", "cat": "style", "why": "문장 부호만 바뀜"}
+{"id": "2100:524", "verdict": "REVERT", "cat": "overcorrect", "why": "彼はどうなの 는 「그 사람은?」이 자연스러움; 「그 사람은 어때?」는 뜻이 흐려짐"}
+{"id": "2100:536", "verdict": "STYLE", "cat": "style", "why": "원음 현재형으로; old 과거형도 회상이라 통함"}
+{"id": "2100:539", "verdict": "STYLE", "cat": "style", "why": "それはどこ 를 살린 직역, 둘 다 괜찮음"}
+{"id": "2100:543", "verdict": "KEEP", "cat": "meaning", "why": "いいこと言うわね 「말 한 번 잘하네」; old 「운을 맞추고 있어」는 EN 오역"}
+{"id": "2100:546", "verdict": "STYLE", "cat": "style", "why": "さあ 「자,」를 더했을 뿐"}
+{"id": "2100:551", "verdict": "KEEP", "cat": "meaning", "why": "気が利く·お願いするかも 바로; old 「좋은 생각」「가 볼까 해」는 EN 오역"}
+{"id": "2100:554", "verdict": "STYLE", "cat": "style", "why": "さあ 「자,」를 더했을 뿐"}
+{"id": "2100:559", "verdict": "KEEP", "cat": "term", "why": "都知事 를 지문대로 「도지사」"}
+{"id": "2100:562", "verdict": "STYLE", "cat": "style", "why": "さあ 「자,」를 더했을 뿐"}
+{"id": "2100:567", "verdict": "KEEP", "cat": "meaning", "why": "帰れ·目障り 바로; old 「파티를 망치고 있잖아」는 EN"}
+{"id": "2100:576", "verdict": "KEEP", "cat": "meaning", "why": "つまんないシャレ 「말장난」·はぁ 를 살림; old 「운율」은 EN"}
+{"id": "2100:579", "verdict": "STYLE", "cat": "style", "why": "さあ 「자,」를 더했을 뿐"}
+{"id": "2100:593", "verdict": "STYLE", "cat": "style", "why": "いらないってば 「필요 없다니까」, old 도 통함"}
+{"id": "2100:621", "verdict": "STYLE", "cat": "style", "why": "うるさい 를 같은 장면 대사 「시끄러워」와 맞춤, old 「닥쳐」도 통함"}
+{"id": "2100:628", "verdict": "KEEP", "cat": "register", "why": "원음 존댓말(ですか·ました)을 살림; old 는 반말"}
+{"id": "2100:631", "verdict": "FIX", "cat": "register", "why": "old 는 っす 말투·ほっぽり出す 를 잃음; new 「슴다」는 나가츠키 옛 판 っす 처리(「~라구」)와 어긋남", "fix": "^cy내 건 배터리가 다 됐다구~.^n내던지고 와 버렸다구~."}
+{"id": "2100:634", "verdict": "KEEP", "cat": "meaning", "why": "携帯を持ってるでしょ？ 는 「가지고 있지?」; old 「휴대폰 없어요?」는 EN 오역"}
+{"id": "2100:637", "verdict": "KEEP", "cat": "direction", "why": "見てみてくれない 는 상대에게 봐 달라는 말; old 「보여 주실래요」는 방향 뒤바뀜"}
+{"id": "2100:640", "verdict": "STYLE", "cat": "style", "why": "今の時間？ 말맛·말씨 차이"}
+{"id": "2100:643", "verdict": "STYLE", "cat": "style", "why": "「시간은」→「시간」뿐"}
+{"id": "2100:646", "verdict": "KEEP", "cat": "meaning", "why": "１２時何分？; old 「정말 열두 시가 맞아?」는 EN 오역"}
+{"id": "2100:649", "verdict": "STYLE", "cat": "style", "why": "ちょうど 「정각」, old 도 맞음"}
+{"id": "2100:652", "verdict": "KEEP", "cat": "meaning", "why": "壊れてんじゃないの？ 는 물음; old 「분명해」는 단정"}
+{"id": "2100:655", "verdict": "STYLE", "cat": "style", "why": "時計は壊れてない 를 살림, old 도 뜻 같음"}
+{"id": "2100:658", "verdict": "KEEP", "cat": "meaning", "why": "タイムスリップ·ぐるぐる 바로; old 「시간의 고리」는 EN"}
+{"id": "2100:668", "verdict": "STYLE", "cat": "style", "why": "だってさ 를 「그야」로, 둘 다 뜻 통함"}
+{"id": "2100:671", "verdict": "KEEP", "cat": "meaning", "why": "うそっこ 는 「가짜」(지문 うそっこのアリス); old 「거짓말쟁이」는 EN 오역"}
+{"id": "2100:674", "verdict": "KEEP", "cat": "meaning", "why": "そう言ったじゃない 는 말 없는 상대에게 따지는 말; old 「그 사람이 말하지 않았어?」는 EN 오역"}
+{"id": "2100:681", "verdict": "STYLE", "cat": "style", "why": "うるさい 를 같은 장면 대사 「시끄러워」와 맞춤, old 「닥쳐」도 통함"}
+{"id": "2100:684", "verdict": "STYLE", "cat": "style", "why": "うるさい 를 같은 장면 대사 「시끄러워」와 맞춤, old 도 통함"}
+{"id": "2100:686", "verdict": "STYLE", "cat": "style", "why": "やめっ 끊긴 소리 표기 차이"}
+{"id": "2100:688", "verdict": "STYLE", "cat": "style", "why": "うるさい 를 같은 장면 대사 「시끄러워」와 맞춤, old 「닥쳐」도 통함"}

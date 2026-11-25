@@ -1,0 +1,44 @@
+[
+ {
+  "uid": "original_scr/2100.gsc::command/0x001ED6::MESSAGE.text",
+  "before": "^g004네, XXX 자재부, 아메노모리입니다…….",
+  "after": "^g004네, ××× 자재부, 아메노모리입니다…….",
+  "reason": "JA ×××資材部. 반각 XXX는 겹쳐 찍히고 원문 기호는 전각 × / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/2100.gsc::command/0x006AC4::MESSAGE.text",
+  "before": "^g007어려운 말 하기에요.^n순수하게 부탁하자고요.^n댓츠 올라이트? CCIIC.",
+  "after": "^g007어려운 말 하기에요.^n순수하게 부탁하자고요.^n댓츠 올라이트? 시시아이시.",
+  "reason": "JA シーシーアイシー — 원문도 가타카나 음차이지 로마자가 아님. 댓츠 올라이트와 같은 처리 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/3073.gsc::command/0x001046::MESSAGE.text",
+  "before": "^g002계란 요리집 \"라켈\".^nMeaningful하네.^n응, 여기로 하자.",
+  "after": "^g002계란 요리집 \"라켈\".^n의미심장하네.^n응, 여기로 하자.",
+  "reason": "JA 意味シンね=意味深ね 속어. 원문에 영어 없음. 라켈/아케루 이름 장난을 받는 대사 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/3073.gsc::command/0x000DE2::MESSAGE.text",
+  "before": "^g999\"See! She is Alice!\"",
+  "after": "^g999「Ｓｅｅ！　Ｓｈｅ　ｉｓ　Ａｌｉｃｅ！」",
+  "reason": "의도된 영어(관광객 아이, L 발음 지문). 반각 로마자 겹침 회피 위해 전각화, 낫표는 JA 원문대로 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/3073.gsc::command/0x000E78::MESSAGE.text",
+  "before": "^g999\"Excuse me,^n May I take a photograph?\"",
+  "after": "^g999「Ｅｘｃｕｓｅ　ｍｅ，^n　Ｍａｙ　Ｉ　ｔａｋｅ　ａ　ｐｈｏｔｏｇｒａｐｈ？」",
+  "reason": "의도된 영어(영국인 부부, 퀸즈 잉글리시 지문). 전각화+낫표, 2행 머리는 JA처럼 전각 공백 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/3073.gsc::command/0x001378::MESSAGE.text",
+  "before": "^g999그래, 검은 앨리스.^n\"Black Alice\".",
+  "after": "^g999그래, 검은 앨리스.^n「Ｂｌａｃｋ　Ａｌｉｃｅ」.",
+  "reason": "앨리스 영문 별칭. 전각화+낫표 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ },
+ {
+  "uid": "original_scr/3073.gsc::command/0x0013B4::MESSAGE.text",
+  "before": "^g999검은 앨리스.^n\"Alice in Black\"",
+  "after": "^g999검은 앨리스.^n「Ａｌｉｃｅ　ｉｎ　Ｂｌａｃｋ」",
+  "reason": "앨리스 영문 별칭. 전각화+낫표 / 사용자 확정: 라켈 표기는 유지(서양 인명 Rachel 관례), 2026-08-08"
+ }
+]

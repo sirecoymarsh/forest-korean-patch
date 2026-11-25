@@ -1,0 +1,110 @@
+{"id": "2300:461", "verdict": "FIX", "cat": "pronoun", "why": "들린 대로 당신·있다는 거 살린 건 맞으나 대사에 「그녀」; 저 사람으로", "fix": "^cy아케루, 저 사람이 여기 있다는 거,^n당신 알고 있었지?"}
+{"id": "2300:464", "verdict": "FIX", "cat": "pronoun", "why": "言い切れる=단언, 본문 같은 대사와 통일은 좋으나 대사에 「그녀」; 저 사람으로", "fix": "^cy그럼 저 사람이 앨리스야?^n어째서 단언할 수 있는 거지?"}
+{"id": "2300:468", "verdict": "STYLE", "cat": "style", "why": "勝手にさせましょ 「내버려 두자」/「하게 둬」 둘 다 맞음"}
+{"id": "2300:471", "verdict": "REVERT", "cat": "overcorrect", "why": "ねえ까지 맞추느라 「기다려 봐, 저기!」로 어색; old 「자, 잠깐만!」이 뜻 지키고 자연스러움"}
+{"id": "2300:476", "verdict": "KEEP", "cat": "meaning", "why": "ここ를 old는 「이거」로 옮김; new 「여기」로 바로잡고 본문 같은 대사와 통일"}
+{"id": "2300:480", "verdict": "STYLE", "cat": "style", "why": "어미 「있었어/있었던 거야」 차이뿐, 아메노모리 씨 그대로"}
+{"id": "2300:486", "verdict": "KEEP", "cat": "term", "why": "들린 アマモリちゃん 호칭을 old가 뺌; new가 본문 같은 대사 「아마모리 쨩」과 통일"}
+{"id": "2300:492", "verdict": "KEEP", "cat": "term", "why": "地下道=지하도, 바로 뒤 지문 「길고 긴 지하도였다」와 통일; old 「통로」는 영문"}
+{"id": "2300:495", "verdict": "KEEP", "cat": "meaning", "why": "old에 빠진 から(기척이 느껴졌으니까) 이유를 살림, 기척도 원음대로"}
+{"id": "2300:498", "verdict": "KEEP", "cat": "meaning", "why": "영문 거친 old 대신 원음의 현재형·리듬·의성어(コツン·かすこん)대로 옮김"}
+{"id": "2300:501", "verdict": "STYLE", "cat": "style", "why": "地下鉄ね 「지하철이네/이야」 말맛 차이"}
+{"id": "2300:504", "verdict": "STYLE", "cat": "style", "why": "どこへ続いてるの 「이어져 있어/가는 거지」 둘 다 됨"}
+{"id": "2300:507", "verdict": "STYLE", "cat": "style", "why": "そうね 「그렇네/맞아」 둘 다 자연스러움"}
+{"id": "2300:511", "verdict": "KEEP", "cat": "meaning", "why": "間に合った=늦지 않았다; old 「도착했어」는 뜻이 다름"}
+{"id": "2300:514", "verdict": "STYLE", "cat": "style", "why": "감탄 말맛 차이, old 「정말」 보탬은 작음"}
+{"id": "2300:517", "verdict": "STYLE", "cat": "style", "why": "まさか 살린 정도의 차이, 둘 다 자연스러움"}
+{"id": "2300:522", "verdict": "KEEP", "cat": "register", "why": "나가츠키의 ですよ를 요체로 살림, 본문 말투(~거든요)와 맞음"}
+{"id": "2300:525", "verdict": "STYLE", "cat": "style", "why": "見て見て見て 「봐 봐, 봐 봐」/「봐, 봐, 봐」 말맛 차이"}
+{"id": "2300:528", "verdict": "KEEP", "cat": "register", "why": "新宿ですよ 나가츠키 です체를 요로 살림; old는 반말"}
+{"id": "2300:531", "verdict": "KEEP", "cat": "addition", "why": "old 「도시 전체가」는 영문 보탬; new가 琥珀の底に封じられて 원음대로"}
+{"id": "2300:534", "verdict": "KEEP", "cat": "meaning", "why": "원음 アルタ(두 받아쓰기 일치)를 old는 영문 따라 「대형 전광판」으로 바꿈; new가 원음대로, 요체도 맞음"}
+{"id": "2300:539", "verdict": "KEEP", "cat": "korean", "why": "old 「자기 자신 위로 접히고」 영문 번역투; new 「겹겹이 포개져」가 折り重なる 뜻·한국어 모두 나음"}
+{"id": "2300:546", "verdict": "KEEP", "cat": "register", "why": "降りるです=내릴래요(나가츠키 요체); old 「내리자」는 권유로 뜻도 어긋남"}
+{"id": "2300:549", "verdict": "KEEP", "cat": "ok", "why": "본문 같은 대사 「떨어지지 않는 게 좋아」와 통일, 뜻 맞음"}
+{"id": "2300:552", "verdict": "KEEP", "cat": "register", "why": "行きましょうよ 높임을 살려 본문 같은 대사와 통일"}
+{"id": "2300:555", "verdict": "KEEP", "cat": "meaning", "why": "止めてちょうだい=말려 줘(본문과 통일); old 「말리는 것 좀 도와줘」는 영문; 받아쓰기 갈림 外へ出ちゃ/外入れちゃ는 Whisper 오청(문맥상 밖으로 나가면)"}
+{"id": "2300:558", "verdict": "KEEP", "cat": "meaning", "why": "old 둘째 줄 「분명 재미있는 게 있을 거야」는 영문 보탬; new가 본문 같은 대사와 통일"}
+{"id": "2300:561", "verdict": "KEEP", "cat": "direction", "why": "降りるのね는 듣는 이에게 하는 현재형; old 「아케루는 내렸지?」는 3인칭·과거로 틀림"}
+{"id": "2300:613", "verdict": "FIX", "cat": "korean", "why": "영문 「다다다다」 대신 원음 입팡파르를 살린 방향은 맞으나 「쯘짜카」는 일본 입소리 음차; 한국어 팡파르로", "fix": "^cy짠짜라 짠짜라 짜~잔!"}
+{"id": "2300:616", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 ぎゃっ/ギュッ은 짧은 비명 오청(영문도 Gya), 「꺄/꺄악」 차이"}
+{"id": "2300:619", "verdict": "KEEP", "cat": "meaning", "why": "ごっつい=엄청난(본문 「엄청난 녀석」과 통일); old 「이거 무거워」는 영문 오역"}
+{"id": "2300:626", "verdict": "KEEP", "cat": "direction", "why": "降りないの？ 듣는 이에게 묻는 현재형; old 「아케루는 안 내렸지?」 3인칭·과거로 틀림"}
+{"id": "2300:632", "verdict": "KEEP", "cat": "meaning", "why": "old 「이 부분은 기억나」는 영문; 원음은 그 뒤 어떻게 됐는지 똑똑히 기억한다"}
+{"id": "2300:636", "verdict": "KEEP", "cat": "register", "why": "ぶー·つまんないですねー를 나가츠키 요체로 살림; old 「으음…… 지루해」는 영문"}
+{"id": "2300:639", "verdict": "STYLE", "cat": "style", "why": "old 「다시」 보탬은 작음, 둘 다 됨(Whisper 発射는 같은 소리)"}
+{"id": "2300:646", "verdict": "STYLE", "cat": "style", "why": "물음표·「출발한 거지」 말맛 차이"}
+{"id": "2300:650", "verdict": "KEEP", "cat": "meaning", "why": "しかたがない=어쩔 수 없어(본문 같은 대사와 통일); old 「원래 그런 거야」는 영문"}
+{"id": "2300:653", "verdict": "KEEP", "cat": "ok", "why": "본문 같은 대사 「담배 피우고 싶다아」와 통일, old 「정말」 보탬 뺌"}
+{"id": "2300:656", "verdict": "STYLE", "cat": "style", "why": "「같네/같아」 어미 차이, 본문과 맞춤"}
+{"id": "2300:660", "verdict": "KEEP", "cat": "register", "why": "醒めるですか 나가츠키 요체 살려 본문 같은 대사와 통일; old 「깨어날 수 있을까」 영문"}
+{"id": "2300:663", "verdict": "KEEP", "cat": "meaning", "why": "夢という夢=꿈이란 꿈, ～まで=때까지; old 「꿈이라 불리는 꿈」「자고 나서」 영문 오역, new는 본문과 통일"}
+{"id": "2300:666", "verdict": "KEEP", "cat": "register", "why": "楽しいお話がいいです 요체, 본문 같은 대사와 통일"}
+{"id": "2300:675", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper 「子供」 반복은 환청, 다음 칸 Whisper·지문 「ことん」으로 확인; 지문과 같은 덜컹, old 「톤돈」은 영문 음차"}
+{"id": "2300:678", "verdict": "KEEP", "cat": "meaning", "why": "ことん=덜컹(지문과 통일); old 「톤돈」은 영문 음차"}
+{"id": "2300:680", "verdict": "KEEP", "cat": "meaning", "why": "ことん=덜컹(지문과 통일); old 「톤돈」은 영문 음차"}
+{"id": "2300:683", "verdict": "KEEP", "cat": "meaning", "why": "常識的な対応을 살려야 바로 뒤 「충분히 비상식적」과 이어짐; old 「말이 되네」는 끊김"}
+{"id": "2300:693", "verdict": "KEEP", "cat": "ok", "why": "大賛成=대찬성 원음대로, 자연스러움"}
+{"id": "2300:697", "verdict": "STYLE", "cat": "style", "why": "「꺄/꺄악」 비명 길이 차이"}
+{"id": "2300:700", "verdict": "KEEP", "cat": "korean", "why": "すごい=굉장해가 「놀라워」보다 자연스러움; 가타카나 ドラゴン은 지문 竜과 갈라 쓴 말맛"}
+{"id": "2300:703", "verdict": "KEEP", "cat": "meaning", "why": "원음 「変身してほしい」(두 받아쓰기 일치)=변신했으면; old 「변하고 있어」는 영문 오역"}
+{"id": "2300:714", "verdict": "STYLE", "cat": "style", "why": "old 「저건」 주어 보탬을 뺀 차이, 둘 다 됨"}
+{"id": "2300:723", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 はっ/あ? 짧은 놀람 소리, 「헉/뭐」 뜻 차이 작음"}
+{"id": "2300:733", "verdict": "STYLE", "cat": "style", "why": "Whisper 「ご視聴ありがとう」는 짧은 신음 환청; 신음 해석은 old·new 같음"}
+{"id": "2300:765", "verdict": "STYLE", "cat": "style", "why": "危ない 경고 「위험해/조심해」 둘 다 됨"}
+{"id": "2300:768", "verdict": "KEEP", "cat": "register", "why": "逃がさない=놓치지 않아; old 「도망칠 수 없다!」는 영문 직역에 말투가 튐"}
+{"id": "2300:812", "verdict": "KEEP", "cat": "direction", "why": "止めないのね 듣는 이에게 하는 현재형; old 「아케루는 안 말렸어?」 3인칭·과거"}
+{"id": "2300:815", "verdict": "KEEP", "cat": "meaning", "why": "old는 앞 칸 영문을 그대로 베낌; new가 원음 あっけない短いお話를 옮김"}
+{"id": "2400:4", "verdict": "STYLE", "cat": "style", "why": "「나 왠지 이상해/기분이 이상해」 등 말맛 차이, 둘 다 뜻 맞음"}
+{"id": "2400:6", "verdict": "KEEP", "cat": "ok", "why": "私を呼ぶのは森 구문을 살려 바로 뒤 지문 「너를 부르는 건 숲이 아니야」와 짝이 맞음"}
+{"id": "2400:9", "verdict": "KEEP", "cat": "ok", "why": "私を呼ぶのは誰 구문을 살려 뒤 지문 「너를 부르는 건…」과 짝이 맞음"}
+{"id": "2400:12", "verdict": "KEEP", "cat": "meaning", "why": "あれ=저건(멀리 보이는 것); old 「그게」는 지시어 어긋남"}
+{"id": "2400:15", "verdict": "KEEP", "cat": "meaning", "why": "誰のため=누굴 위해서, 뒤 「물론, 너다!」와 이어짐; old 「누구한테?」 흐림"}
+{"id": "2400:18", "verdict": "KEEP", "cat": "meaning", "why": "溢れるままに=넘쳐흐르는 대로; old 「흘러나오게 하겠어」는 영문, new는 뒤 「노래하겠어요」와 짝"}
+{"id": "2400:21", "verdict": "STYLE", "cat": "style", "why": "駆け引き 「흥정/수싸움」 둘 다 됨, 낭송 꼴 차이"}
+{"id": "2400:23", "verdict": "KEEP", "cat": "meaning", "why": "old에 辻·ぐるり輪をなす가 빠지고 「나타났어」 보탬; new 원음대로"}
+{"id": "2400:25", "verdict": "KEEP", "cat": "meaning", "why": "ギフトの中のギフト=기프트 중의 기프트; old 「모든 기프트를 끝낼」은 영문 오역"}
+{"id": "2400:28", "verdict": "KEEP", "cat": "meaning", "why": "封じて回す(가두어 돌리는) 살림; 「시간의 흐름의」는 본문 지문 표기와 같음"}
+{"id": "2400:30", "verdict": "KEEP", "cat": "meaning", "why": "つんのめって/突き上がって를 old는 영문 따라 「빠지면/밀어 올리면」으로 오역; new 바로잡음"}
+{"id": "2400:32", "verdict": "KEEP", "cat": "meaning", "why": "狂った時計=미쳐 버린 시계; old 「부서진 시계」는 영문"}
+{"id": "2400:34", "verdict": "KEEP", "cat": "meaning", "why": "とん飛び回る不思議の輪 원음대로, 앞 「신비한 오브제」와 통일; old 「그것들이」 보탬"}
+{"id": "2400:37", "verdict": "KEEP", "cat": "meaning", "why": "タッチ・ザ・ギフト=기프트에 손을 대라; old 「그게 바로 기프트!」 영문 오역; 받아쓰기 タイムステップ 갈림은 영문·문맥상 타임 슬립"}
+{"id": "2400:40", "verdict": "STYLE", "cat": "style", "why": "「굳게/철저히」·어미 차이, 둘 다 됨"}
+{"id": "2400:42", "verdict": "KEEP", "cat": "ok", "why": "狂った를 앞 칸과 같은 「미쳐 버린」으로, ～から 이유 살림; old 「누군가」 보탬"}
+{"id": "2400:51", "verdict": "KEEP", "cat": "meaning", "why": "けれど悩みはいずこも同じ; old 「달라진 건 없었어」는 영문 오역"}
+{"id": "2400:54", "verdict": "KEEP", "cat": "meaning", "why": "王座と王位(두 받아쓰기 일치); old 「덮개」는 영문 오청"}
+{"id": "2400:57", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper 「下士の番」/제미나이 「夏至の晩」, 한여름 밤의 꿈 문맥으로 하지; old 「기사들의 밤」은 영문 오청"}
+{"id": "2400:59", "verdict": "KEEP", "cat": "meaning", "why": "魔法にかかるも造作はない; old 「왕에게 마법을 걸어도」는 영문 오청"}
+{"id": "2400:62", "verdict": "KEEP", "cat": "meaning", "why": "悲しいかな=슬프게도; old 「슬프지 않아?」는 영문 오역"}
+{"id": "2400:64", "verdict": "FIX", "cat": "korean", "why": "面倒を押し付けられて 뜻은 바로잡았으나 「일까지 떠밀렸으니」가 어색; 떠안았으니로", "fix": "^cy술주정 소란은 천박하기 짝이 없는 데다^n성가신 일까지 떠안았으니,"}
+{"id": "2400:66", "verdict": "STYLE", "cat": "style", "why": "キレて 「뚜껑이 열리는/화가 나는」 말맛 차이, old 「같은 사람」 보탬은 작음"}
+{"id": "2400:69", "verdict": "KEEP", "cat": "meaning", "why": "得たりと笑い=걸려들었다는 듯 웃으며; old 「자신만만하게」는 흐림"}
+{"id": "2400:71", "verdict": "STYLE", "cat": "style", "why": "吸いついた 「찰싹 달라붙었지/들러붙었어」 말맛 차이"}
+{"id": "2400:74", "verdict": "FIX", "cat": "korean", "why": "握られる 현재형 낭송은 맞으나 「움켜쥐어지고」 겹피동이 어색; 쥐어지고로", "fix": "^cy아케루의 그림자는 뜯겨 나가^n여왕의 손에 쥐어지고,"}
+{"id": "2400:76", "verdict": "KEEP", "cat": "meaning", "why": "主人を慕って=주인을 그리며; old 「주인을 찾아」는 영문"}
+{"id": "2400:82", "verdict": "LISTEN", "cat": "meaning", "why": "받아쓰기 갈림: 제미나이 「シーーーッ」(쉿) / Whisper 「シーン」(정적); 쉿이면 old·new 모두 맞음"}
+{"id": "2400:85", "verdict": "REVERT", "cat": "overcorrect", "why": "あなたは를 「당신은」으로 살려 낯선 이에게 딱딱해짐; old 「누구……세요?」가 뜻 지키고 자연스러움"}
+{"id": "2400:88", "verdict": "KEEP", "cat": "meaning", "why": "そうなの？=그런 거니?; old 「네가……?」는 영문 보탬"}
+{"id": "2400:97", "verdict": "STYLE", "cat": "style", "why": "行くわ、ネヴァーランドへ 어순 차이"}
+{"id": "2400:100", "verdict": "KEEP", "cat": "meaning", "why": "원음은 「はじまりから二つ目」(두 받아쓰기 일치); old 「오른쪽에서」는 영문이 원작 문구로 바꾼 것"}
+{"id": "2400:106", "verdict": "STYLE", "cat": "style", "why": "「엄청」 작은 보탬, 둘 다 됨"}
+{"id": "2400:109", "verdict": "STYLE", "cat": "style", "why": "その先は 「저 너머론/이제」 말맛 차이"}
+{"id": "2400:112", "verdict": "KEEP", "cat": "korean", "why": "やなもん見ちゃった=못 볼 걸 봐 버렸네; old 「보고 싶지 않았어」는 영문 번역투"}
+{"id": "2400:115", "verdict": "KEEP", "cat": "register", "why": "카리야 다른 자막의 반말과 맞춤; さらわれちゃう=납치당하겠어(old 진행형 「납치되고 있어요」 틀림)"}
+{"id": "2400:118", "verdict": "KEEP", "cat": "meaning", "why": "old 「왜 나한테 부탁해?」는 영문 오역; 冗談じゃない·ヤなこった 원음대로"}
+{"id": "2400:120", "verdict": "KEEP", "cat": "meaning", "why": "暇じゃない·なんか(따위) 살림; old 「더 중요한 일이 있어」는 영문"}
+{"id": "2400:123", "verdict": "STYLE", "cat": "style", "why": "「어쩔 수 없지/없어」 어미 차이"}
+{"id": "2400:125", "verdict": "STYLE", "cat": "style", "why": "ゴー 말투 외래어 「고!」 살림, old 「가자!」도 됨"}
+{"id": "2400:134", "verdict": "KEEP", "cat": "korean", "why": "old 「넘으니까!」 이음이 어색; new 「백 살은 넘었잖아!」 원음대로 자연스러움"}
+{"id": "2400:137", "verdict": "FIX", "cat": "term", "why": "old의 「바벨·횡설수설」(バブル·ブイブイ 오청)을 바로잡았으나 「돈의 망자」는 죽은 이로 읽힘; 돈에 눈먼 자들로", "fix": "^cy잠깐만, 기억날 것 같아! 저 얼굴도 이 얼굴도 낯이 익어!^n버블 시대에 떵떵거리며 잘나가던^n돈에 눈먼 자들의 말로잖아!"}
+{"id": "2400:140", "verdict": "KEEP", "cat": "addition", "why": "old 「착하고」는 영문 보탬; new가 あの子らみんなの優しいママ 원음대로"}
+{"id": "2400:142", "verdict": "KEEP", "cat": "korean", "why": "癒してあげる=달래 줄게; old 「다 낫게 해 줄게」는 영문"}
+{"id": "2400:148", "verdict": "KEEP", "cat": "addition", "why": "old 「상냥하고」 보탬 뺌, 같은 후렴을 앞 칸과 통일; そんなの変だわ 원음대로"}
+{"id": "2400:150", "verdict": "STYLE", "cat": "style", "why": "「무릎 꿇으렴/꿇어」 말맛 차이, 둘 다 됨"}
+{"id": "2400:156", "verdict": "KEEP", "cat": "korean", "why": "호칭 「쨩」 본문 표기와 통일, くんない？를 살려 old 「나도 끼워 줘?」보다 자연스러움"}
+{"id": "2400:158", "verdict": "KEEP", "cat": "meaning", "why": "お役に立ちます·お世話もします를 요체로 원음대로; old 「뭐든 해 줄 수 있고」는 영문"}
+{"id": "2400:161", "verdict": "KEEP", "cat": "meaning", "why": "下手に出る(Whisper 仕立て는 같은 소리)=숙이고 들어오다; old 「감히 그런 식으로 말해도」는 영문 오역"}
+{"id": "2400:163", "verdict": "KEEP", "cat": "meaning", "why": "人魚=인어; old 「인형」은 영문 오청, 바로 앞 지문 「人魚かな？」로 확인"}
+{"id": "2400:169", "verdict": "KEEP", "cat": "meaning", "why": "원음 何言ってんの·100年前の限界かしら대로; old 「진심이야!?」 등은 영문 의역"}
+{"id": "2400:171", "verdict": "KEEP", "cat": "term", "why": "偉い=잘났어, 본문 「아빠보다 잘난 엄마」와 통일; old 「강한 사람」은 영문"}
+{"id": "2400:174", "verdict": "KEEP", "cat": "register", "why": "카리야 반말로 통일(다른 자막·다음 자막도 반말); old만 해요체"}

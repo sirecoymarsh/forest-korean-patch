@@ -1,0 +1,4 @@
+00442800  8e18                     mov ds, word ptr [eax]
+00442802  0100                     add dword ptr [eax], eax
+00442804  00e8                     add al, ch
+00442806  e636                     out 0x36, al

@@ -1,0 +1,25 @@
+voices 584 extracted 584
+cuda 25 / 584 81 s
+cuda 50 / 584 110 s
+cuda 75 / 584 137 s
+cuda 100 / 584 171 s
+cuda 125 / 584 198 s
+cuda 150 / 584 226 s
+cuda 175 / 584 252 s
+cuda 200 / 584 280 s
+cuda 225 / 584 320 s
+cuda 250 / 584 354 s
+cuda 275 / 584 397 s
+cuda 300 / 584 426 s
+cuda 325 / 584 475 s
+cuda 350 / 584 528 s
+cuda 375 / 584 599 s
+cuda 400 / 584 694 s
+cuda 425 / 584 776 s
+cuda 450 / 584 810 s
+cuda 475 / 584 837 s
+cuda 500 / 584 865 s
+cuda 525 / 584 904 s
+cuda 550 / 584 942 s
+cuda 575 / 584 966 s
+done cuda 976 s

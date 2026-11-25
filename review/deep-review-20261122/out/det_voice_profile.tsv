@@ -1,0 +1,62 @@
+화자	자질	원문값	원문칸수	번역값분포
+001	jfp	ore	230	{"na": 146, "jeo": 5}
+001	jpol	plain	988	{"plain": 959, "mixed": 27, "polite": 2}
+001	jsp	anta	15	{"dangsin": 15}
+001	jsp	omae	105	{"neo": 65}
+002	jfp	watashi	60	{"na": 50, "jeo": 4}
+002	jpol	mixed	86	{"mixed": 70, "polite": 11, "plain": 5}
+002	jpol	plain	233	{"plain": 217, "mixed": 10, "polite": 6}
+002	jpol	polite	39	{"plain": 2, "polite": 37}
+002	jsp	anata	46	{"dangsin": 16, "neo": 9}
+003	jfp	watashi	118	{"na": 103, "jeo": 6}
+003	jpol	plain	264	{"plain": 241, "polite": 7, "mixed": 16}
+003	jsp	anata	17	{"neo": 4, "dangsin": 11}
+004	jfp	atashi	145	{"na": 109, "jeo": 8}
+004	jpol	plain	577	{"plain": 526, "mixed": 27, "polite": 24}
+004	jsp	anata	43	{"dangsin": 18, "neo": 19}
+005	jfp	boku	213	{"na": 179, "jeo": 8}
+005	jpol	plain	623	{"plain": 591, "mixed": 18, "polite": 14}
+005	jsp	anata	9	{"dangsin": 9}
+005	jsp	anta	6	{"neo": 4, "dangsin": 1}
+005	jsp	kimi	41	{"neo": 32, "geujjok": 1}
+006	jfp	watashi	361	{"na": 257, "jeo": 6}
+006	jpol	plain	1200	{"plain": 1153, "mixed": 34, "polite": 13}
+006	jsp	anata	59	{"dangsin": 48, "neo": 10}
+006	jsp	kimi	10	{"jane": 8, "neo": 2}
+007	jfp	atashi	348	{"na": 262, "jeo": 10}
+007	jpol	plain	1155	{"polite": 31, "plain": 1033, "mixed": 91}
+007	jsp	anta	80	{"neo": 42, "dangsin": 23, "geujjok": 1}
+007	っす→끝말	っす	10	{"에서": 2, "었다": 1, "가요": 1, "시다": 1, "쳇": 1, "셨죠": 1, "세여": 1, "든여": 1}
+009	jpol	plain	32	{"plain": 28, "polite": 1, "mixed": 3}
+010	jfp	watashi	31	{"na": 19, "jeo": 12}
+010	jpol	mixed	13	{"mixed": 8, "polite": 5}
+010	jpol	plain	39	{"plain": 27, "mixed": 5, "polite": 7}
+010	jpol	polite	6	{"polite": 6}
+011	jfp	watashi	6	{"na": 5}
+011	jpol	plain	30	{"plain": 29, "mixed": 1}
+012	jfp	boku	8	{"na": 5, "jeo": 1}
+012	jpol	mixed	10	{"mixed": 6, "polite": 4}
+012	jpol	plain	22	{"plain": 19, "mixed": 1, "polite": 2}
+013	jfp	watashi	21	{"na": 14}
+013	jpol	plain	115	{"plain": 111, "mixed": 4}
+013	jsp	kimi	39	{"neo": 18, "dangsin": 1, "jane": 17}
+015	jfp	boku	12	{"na": 12}
+015	jpol	plain	51	{"plain": 48, "mixed": 3}
+016	jfp	atai	50	{"na": 40, "jeo": 1}
+016	jpol	plain	224	{"plain": 216, "mixed": 7, "polite": 1}
+016	jsp	anta	43	{"neo": 32}
+018	jpol	mixed	6	{"mixed": 5, "plain": 1}
+018	jpol	plain	29	{"mixed": 10, "plain": 14, "polite": 5}
+019	jfp	boku	36	{"na": 33}
+019	jpol	plain	100	{"plain": 98, "mixed": 2}
+021	jpol	plain	37	{"plain": 35, "mixed": 2}
+021	jsp	anta	7	{"neo": 5}
+023	jpol	plain	38	{"mixed": 15, "polite": 13, "plain": 10}
+033	jfp	watashi	30	{"jeo": 10, "na": 9}
+033	jpol	mixed	36	{"mixed": 24, "polite": 12}
+033	jpol	plain	71	{"mixed": 25, "plain": 36, "polite": 10}
+034	jfp	boku	22	{"na": 16}
+034	jpol	plain	83	{"plain": 82, "mixed": 1}
+051	jfp	atashi	7	{"na": 4}
+051	jpol	plain	104	{"plain": 102, "mixed": 1, "polite": 1}
+051	jsp	anta	18	{"neo": 13, "dangsin": 1}

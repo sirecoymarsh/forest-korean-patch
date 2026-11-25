@@ -1,0 +1,110 @@
+{"id": "2400:176", "verdict": "KEEP", "cat": "omission", "why": "두 받아쓰기 일치; old 가 まさか(설마)를 빠뜨림, あなた·わ 말씨라 반말도 앞 줄과 맞음"}
+{"id": "2400:179", "verdict": "STYLE", "cat": "style", "why": "でしゃばんじゃない·ムカつく女 둘 다 뜻 맞음, 말맛 차이"}
+{"id": "2400:181", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; new 가 犬よ/犬のナナ 되풀이를 살림, old 「유모견」은 보탬이나 무해"}
+{"id": "2400:185", "verdict": "KEEP", "cat": "meaning", "why": "old 「네 일을 할 수 없어」는 영문 오청(役目を果たせず는 다음 칸으로 이어지는 수식), new 가 들은 대로"}
+{"id": "2400:187", "verdict": "KEEP", "cat": "omission", "why": "old 가 役目を果たせず·泣いてる 를 빠뜨리고 「멍청하고」를 보탰던 것 바로잡음"}
+{"id": "2400:190", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, そんなの·鎖になって 를 조금 더 살린 정도"}
+{"id": "2400:192", "verdict": "STYLE", "cat": "style", "why": "늘인 소리 모양만 다름"}
+{"id": "2400:195", "verdict": "STYLE", "cat": "style", "why": "うるさい 「시끄러워」가 원음에 더 가깝고 old 「조용!」도 뜻 통함"}
+{"id": "2400:198", "verdict": "KEEP", "cat": "meaning", "why": "Whisper 無知는 같은 소리 むち 의 한자 오기 — 채찍(ムチ)이 문맥에 맞음; old 「상이 없어」는 영문 오청"}
+{"id": "2400:200", "verdict": "STYLE", "cat": "style", "why": "踊り明かす 「밤새」를 살린 말맛 차이, 둘 다 자연스러움"}
+{"id": "2400:203", "verdict": "KEEP", "cat": "meaning", "why": "あたしも踊るの?(나도 추는 거야?)를 old 가 「춤춰도 돼?」로 바꿨던 것 바로잡음"}
+{"id": "2400:206", "verdict": "KEEP", "cat": "addition", "why": "두 받아쓰기 모두 되풀이·「사랑하는 아이들아」가 없음 — old 의 영문 보탬 걷어냄"}
+{"id": "2400:209", "verdict": "KEEP", "cat": "meaning", "why": "休まず踊れ 를 old 가 「잠만 자면 안 돼」로 틀렸고 「사랑하는 아이들아」 보탬도 있었음"}
+{"id": "2400:226", "verdict": "STYLE", "cat": "style", "why": "いってて(아야야)·放せよ 뜻 같음, 말맛 차이"}
+{"id": "2400:230", "verdict": "REVERT", "cat": "korean", "why": "「에엣!?」은 일본어 감탄사 그대로, 「믿을 수가 없네」는 信じらんない! 기세가 죽음 — old 가 뜻 같고 자연스러움"}
+{"id": "2400:233", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 갈림: Whisper 「聞いたよな」는 늘인 「聞いてよー」의 오청(들어 달라는 애원 문맥) — new 뜻 맞음, ねえ 살린 정도"}
+{"id": "2400:236", "verdict": "KEEP", "cat": "omission", "why": "ボクも·急に 를 살림, old 도 뜻은 통했으나 new 가 들은 대로 자연스러움"}
+{"id": "2400:239", "verdict": "KEEP", "cat": "addition", "why": "old 셋째 줄 「기분 나쁜 곳으로」는 영문 보탬, ずるずる 미끄러지는 꼴로 바로잡음"}
+{"id": "2400:241", "verdict": "STYLE", "cat": "style", "why": "そういや·出くわした 뜻 같음; old 「그 아래에서」 보탬 정도 차이"}
+{"id": "2400:243", "verdict": "STYLE", "cat": "style", "why": "따옴표·늘인 소리 차이뿐"}
+{"id": "2400:258", "verdict": "KEEP", "cat": "meaning", "why": "ひょっとして 를 old 가 영문대로 「거의 확실히」로 틀렸던 것 바로잡음, 줄도 5→4"}
+{"id": "2400:267", "verdict": "KEEP", "cat": "meaning", "why": "old 「우릴 무시할 뿐」「불공평해」는 영문 오역 — 居候(더부살이)·不条理(부조리)로 바로잡음"}
+{"id": "2400:270", "verdict": "KEEP", "cat": "ok", "why": "あれ？あれは……ティンク？ 를 들은 대로, old 「저건 뭐지?」 군더더기 없앰"}
+{"id": "2400:275", "verdict": "KEEP", "cat": "meaning", "why": "きみたち(너희)를 old 가 단수 「너」로 옮기고 わざわざ 도 빠뜨렸던 것 바로잡음"}
+{"id": "2400:277", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 뒤 칸과 이어지는 노래 가락을 살림(プレイボーイ 는 old·new 모두 바람둥이)"}
+{"id": "2400:279", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 말맛 차이"}
+{"id": "2400:282", "verdict": "KEEP", "cat": "meaning", "why": "凶悪凶暴ワンマンママ 를 old 가 「사악한 여자」로 줄였던 것 살림"}
+{"id": "2400:284", "verdict": "KEEP", "cat": "meaning", "why": "尻に敷かれて 를 old 가 영문대로 「엉덩이를 맞고」로 틀렸던 것 바로잡음(クスリ 풀이는 old 와 같음)"}
+{"id": "2400:287", "verdict": "KEEP", "cat": "direction", "why": "きみ(후크 한 사람)를 old 가 「너희」로 옮기고 「차라리」를 보탰던 것 바로잡음"}
+{"id": "2400:293", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, でもさあ·本気 를 살린 말맛 차이"}
+{"id": "2400:296", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; old 「누군가와」는 영문 보탬이나 무해"}
+{"id": "2400:302", "verdict": "KEEP", "cat": "meaning", "why": "あーんなこと言ってるし 를 old 가 영문대로 「진심으로 하는 거야?」로 틀렸던 것 바로잡음"}
+{"id": "2400:313", "verdict": "KEEP", "cat": "meaning", "why": "おっぱい品切れ中(젖 품절)을 old 가 「가슴이 드러나 있거든」으로 틀렸던 것 바로잡음"}
+{"id": "2400:315", "verdict": "KEEP", "cat": "meaning", "why": "夜露をすすって 를 old 가 「요정이라도 찾아가서」로 틀렸던 것 바로잡음"}
+{"id": "2400:318", "verdict": "KEEP", "cat": "addition", "why": "泣き言·立派な子供に育てて 를 들은 대로, old 「기어이」 보탬 걷어냄"}
+{"id": "2400:320", "verdict": "STYLE", "cat": "style", "why": "みんなのため 를 「모두를 위해」로 되풀이 살림, old 「너희를 위해」도 뜻 통함"}
+{"id": "2400:323", "verdict": "STYLE", "cat": "style", "why": "泣くわ 되풀이, 말맛 차이"}
+{"id": "2400:325", "verdict": "STYLE", "cat": "style", "why": "Whisper 泣くして 는 亡くして 오청; 뜻 같고 말맛 차이"}
+{"id": "2400:327", "verdict": "STYLE", "cat": "style", "why": "好き 를 「좋아하지」로 맞춘 정도, 뜻 같음"}
+{"id": "2400:330", "verdict": "KEEP", "cat": "meaning", "why": "くやしい 는 「분하다」 — old 「화났어」는 영문 MAD 를 옮긴 것"}
+{"id": "2400:333", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; 聞き分けない 「말귀 못 알아듣는」도 통함"}
+{"id": "2400:335", "verdict": "FIX", "cat": "korean", "why": "しつけ 를 old 가 「자기 절제」로 틀렸고 new 방향은 맞으나 「버릇이 전혀 안 들어 먹었어」가 비문", "fix": "^cy이놈이고 저놈이고, 이놈이고 저놈이고^n버르장머리가 하나도 없어!^n아빠 탓이야!"}
+{"id": "2400:338", "verdict": "KEEP", "cat": "meaning", "why": "みんなみんなパパのせい 를 old 가 「너희도 너희도」로 틀렸던 것 바로잡음"}
+{"id": "2400:344", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; old 「우린」 보탬 정도 차이"}
+{"id": "2400:347", "verdict": "KEEP", "cat": "term", "why": "キャプテン 을 「캡틴」으로 — 같은 장 「캡틴 후크」와 맞춤"}
+{"id": "2400:349", "verdict": "KEEP", "cat": "omission", "why": "ついでに紹介しておこうか 를 old 가 반쯤 빠뜨렸던 것 살림"}
+{"id": "2400:352", "verdict": "KEEP", "cat": "meaning", "why": "old 「억지로 선원이 됐어」는 영문 보탬, 落ちぶれて·ただいま·しましょうね(존댓말)를 들은 대로"}
+{"id": "2400:355", "verdict": "KEEP", "cat": "register", "why": "やるです 의 존댓말 꼴을 「할래요」로 살림, 뜻 같음"}
+{"id": "2400:357", "verdict": "FIX", "cat": "korean", "why": "old 「해도 괜찮겠지」는 보탬이라 new 방향은 맞으나 「데헷」은 てへっ 소리를 옮긴 일본어 감탄사", "fix": "^cy나쁜 짓도 아주 조금쯤은……^n헤헷!"}
+{"id": "2400:360", "verdict": "FIX", "cat": "term", "why": "シャラップ(Shut up)은 말투로 쓴 가타카나 외래어 — 사용자 11-21 규칙대로 소리를 살림(뜻 「닥쳐」 자체는 맞음)", "fix": "^cy셔어어어러어어업!!"}
+{"id": "2400:363", "verdict": "STYLE", "cat": "style", "why": "되풀이 어미만 바꿈, 뜻 같음"}
+{"id": "2400:365", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; old 「하나하나」 영문 보탬 정도 차이"}
+{"id": "2400:367", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 말맛 차이"}
+{"id": "2400:370", "verdict": "KEEP", "cat": "omission", "why": "ボクら(우리가)·わかっているとも 를 살리고 old 「통째로」 보탬 걷어냄, 줄 5→4"}
+{"id": "2400:373", "verdict": "KEEP", "cat": "meaning", "why": "抜け出せない 를 old 가 영문대로 「떼어 낼 수가 없어」로 틀렸고 「내」 그림자도 보탬이었음"}
+{"id": "2400:376", "verdict": "KEEP", "cat": "ok", "why": "old 도 뜻은 통하나 冗談じゃないわ·たかだか·くわえ込んだら離さない 를 들은 대로 살리고 줄 5→4"}
+{"id": "2400:378", "verdict": "STYLE", "cat": "style", "why": "そーら 를 「자아」로, old 「이거나 먹어라」도 통함"}
+{"id": "2400:381", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; なにこれ 되풀이 살림"}
+{"id": "2400:383", "verdict": "KEEP", "cat": "meaning", "why": "old 「남은 수가 없어. 선원들, 공격」은 영문 오청 — さあ行け、フック平水夫 로 바로잡음"}
+{"id": "2400:386", "verdict": "KEEP", "cat": "meaning", "why": "かかってきなさい(덤벼)를 old 가 「누구든 내보내 봐」로 틀렸던 것 바로잡음"}
+{"id": "2400:388", "verdict": "KEEP", "cat": "meaning", "why": "食べちゃえ 를 old 가 「너를 먹을 거야」로 옮기고 うつろ 도 빠뜨렸던 것 바로잡음"}
+{"id": "2400:390", "verdict": "STYLE", "cat": "style", "why": "なんでもかんでも 되풀이 살린 말맛 차이"}
+{"id": "2400:393", "verdict": "FIX", "cat": "korean", "why": "相手になんない 「상대가 안 되네」는 old 보다 맞으나 「낼름…삼켜진 게」가 비표준·번역투", "fix": "^cy앗차, 역시 상대가 안 되네.^n날름 한입에 삼키는 데 한순간이었어.^n어쩌지? 이제 누가 갈래?^n앗! 잠깐만, 팅크!"}
+{"id": "2400:396", "verdict": "KEEP", "cat": "register", "why": "후크(我輩) 말투에 맞춘 해라체 — old 반말 「있어」가 어긋났음"}
+{"id": "2400:398", "verdict": "KEEP", "cat": "addition", "why": "old 「나도 피터 팬을」은 영문 보탬; 후크 말투·意見が一致 를 들은 대로"}
+{"id": "2400:401", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 말맛 차이"}
+{"id": "2400:403", "verdict": "KEEP", "cat": "meaning", "why": "しおらしい(얌전해짐)를 old 가 영문대로 「가시가 더 돋친」으로 뒤집었던 것 바로잡음"}
+{"id": "2400:405", "verdict": "KEEP", "cat": "meaning", "why": "フックにあたって(먹고 탈 남)·まさか 를 old 가 「미치게 만든」「왜!?」로 틀렸던 것 바로잡음"}
+{"id": "2400:414", "verdict": "STYLE", "cat": "style", "why": "毒だって 말맛 차이"}
+{"id": "2400:417", "verdict": "KEEP", "cat": "meaning", "why": "おいしいママ 는 「맛있는」 — old 「멋지고」는 영문 Wonderful"}
+{"id": "2400:423", "verdict": "KEEP", "cat": "meaning", "why": "しくじった 를 old 가 「젠장」으로만 옮겨 뜻이 빠졌던 것 살림(말투는 다소 예스러움)"}
+{"id": "2400:426", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper 에 おいしいママ 마디가 없으나 영문도 네 마디라 제미나이 쪽; おいしい 를 「맛있는」으로 바로잡음"}
+{"id": "2400:428", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper 에 やさしいママ 마디 없음(영문·앞 노래 꼴로 제미나이 쪽); やましい 를 old 「아프고」로 틀렸던 것 바로잡음"}
+{"id": "2400:431", "verdict": "STYLE", "cat": "style", "why": "そいつ 「저 녀석」 말맛 차이"}
+{"id": "2400:434", "verdict": "KEEP", "cat": "meaning", "why": "我輩はママのもの、ママは我輩だけのもの 를 old 가 영문 오청대로 「다름 아닌 엄마」로 틀렸던 것 바로잡음"}
+{"id": "2400:436", "verdict": "KEEP", "cat": "direction", "why": "渡してなるものか(넘겨줄까 보냐)를 old 가 「이걸 너에게 줄게」로 뒤집었던 것 바로잡음"}
+{"id": "2400:439", "verdict": "KEEP", "cat": "meaning", "why": "もったいない(너한테는 아깝다)를 old 가 「헛수고였어」로 틀렸던 것 바로잡음"}
+{"id": "2400:442", "verdict": "FIX", "cat": "korean", "why": "大げさな 를 살린 방향은 맞으나 「호들갑은.」이 토막 비문", "fix": "^cy그만두어라! 호들갑 떨기는.^n요정 한 마리, 고작 한 마리 뒈진다고 달라질 건 없다.^n불만 있느냐! 요호!"}
+{"id": "2400:445", "verdict": "KEEP", "cat": "omission", "why": "スペシャルフェアリー·ベルの音 를 old 가 풀거나 빠뜨렸던 것 살림"}
+{"id": "2400:447", "verdict": "KEEP", "cat": "omission", "why": "大人に×3·ネヴァーランドを×3 되풀이와 知恵がついたら 를 들은 대로 살림"}
+{"id": "2400:450", "verdict": "KEEP", "cat": "addition", "why": "そうよ 를 old 가 영문대로 「저 여자 말이 맞아」로 보탰던 것 바로잡음, ご覧なさい 존댓말"}
+{"id": "2400:452", "verdict": "KEEP", "cat": "omission", "why": "あれがピーター・パン 과 ベリー…オールドマン(말투 외래어)을 살림"}
+{"id": "2400:454", "verdict": "STYLE", "cat": "register", "why": "앞 칸 존댓말에 어미를 맞춘 정도, 뜻 같음"}
+{"id": "2400:457", "verdict": "KEEP", "cat": "register", "why": "후크 말투(과인·해라체)에 맞춤, old 반말이 어긋났음"}
+{"id": "2400:459", "verdict": "FIX", "cat": "addition", "why": "받아쓰기 갈림: Whisper 「八王子に」는 いやおうなしに 오청(문맥상); old 「최후, 결말」 오역은 바로잡았으나 한자 괄호(工期·納期)는 보탬 — 같은 낱말의 대사 2400:613 도 「공기, 납기」", "fix": "^cy그것은 공기이며, 납기이며,^n피할 수 없이 다가오는 종말의 순간이다!"}
+{"id": "2400:461", "verdict": "KEEP", "cat": "meaning", "why": "必ずしも…ない(꼭 극적인 건 아니다)를 old 가 단정으로 바꿨던 것 바로잡음"}
+{"id": "2400:463", "verdict": "FIX", "cat": "korean", "why": "迫り来る·むしろ 를 살린 방향은 맞으나 「톱니바퀴처럼 잘게」가 어색함", "fix": "^cy오히려 톱니바퀴처럼 조금씩,^n쉬지 않고 시시각각 다가오는 것이다."}
+{"id": "2400:465", "verdict": "FIX", "cat": "meaning", "why": "old 반말·「내가 이겼다」는 바로잡았으나 くわえ込んだ(꽉 물었다)를 「삼켰다」로 보탬", "fix": "^cy이제 그것은 피터 팬마저도^n강철 아가리로 단단히 물었다!^n요호! 승리다──!"}
+{"id": "2400:474", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 숨소리·あら 를 살린 정도"}
+{"id": "2400:477", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, 어순 차이"}
+{"id": "2400:479", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; old 「네」 그림자는 보탬"}
+{"id": "2400:481", "verdict": "KEEP", "cat": "meaning", "why": "チャンバラ(칼싸움)·がんばれ(힘내)를 old 가 「싸우고 있잖아」「해치워」로 틀렸던 것 바로잡음"}
+{"id": "2400:483", "verdict": "STYLE", "cat": "style", "why": "っぱなし 를 「내내」로 덧붙인 정도"}
+{"id": "2400:486", "verdict": "KEEP", "cat": "omission", "why": "大ピンチ·ついでに 를 살리고 old 7줄을 4줄로 줄임"}
+{"id": "2400:490", "verdict": "KEEP", "cat": "meaning", "why": "読んだ(읽었다)를 old 가 영문 오청대로 「불렀잖아」로, 生き返る 를 「우리가 되살릴 수 있어」로 틀렸던 것 바로잡음"}
+{"id": "2400:493", "verdict": "STYLE", "cat": "register", "why": "뜻 같음; 好きかい 를 반말로 바꾼 말맛 차이"}
+{"id": "2400:507", "verdict": "KEEP", "cat": "meaning", "why": "ボクはティンクだ·ティンクはボクだ 를 old 가 영문 오청대로 「소중히 여겨」로 틀렸던 것 바로잡음"}
+{"id": "2400:510", "verdict": "KEEP", "cat": "ok", "why": "ティンク 를 old 가 「팅커벨」로 바꿨던 것 맞추고 さあ 살림"}
+{"id": "2400:516", "verdict": "KEEP", "cat": "term", "why": "같은 가사의 본문 대사(^g005) 번역 「춤은 계속된다…」와 맞춤, old 는 영문대로"}
+{"id": "2400:525", "verdict": "KEEP", "cat": "meaning", "why": "復活 을 old 가 영문대로 「다시 젊어졌어」로 틀렸던 것 바로잡음"}
+{"id": "2400:528", "verdict": "STYLE", "cat": "style", "why": "문장부호 차이뿐"}
+{"id": "2400:531", "verdict": "KEEP", "cat": "omission", "why": "知らないよ·…別に 의 얼버무림을 old 가 빠뜨렸던 것 살림"}
+{"id": "2400:540", "verdict": "STYLE", "cat": "style", "why": "어순만 원음 가락대로, 뜻 같음"}
+{"id": "2400:543", "verdict": "STYLE", "cat": "style", "why": "앞 칸과 가락 맞춘 정도, 뜻 같음"}
+{"id": "2400:550", "verdict": "KEEP", "cat": "meaning", "why": "建設中·大惨事 를 old 가 영문대로 「안전 점검 중」으로 틀리고 빠뜨렸던 것 바로잡음"}
+{"id": "2400:552", "verdict": "KEEP", "cat": "meaning", "why": "こういうことだったのよ 를 old 가 영문대로 「정말이라니까」로 틀렸던 것 바로잡음"}
+{"id": "2400:565", "verdict": "KEEP", "cat": "omission", "why": "あたしの力で(내 힘으로)를 old 가 빠뜨렸던 것 살림"}
+{"id": "2400:567", "verdict": "STYLE", "cat": "style", "why": "말맛 차이"}
+{"id": "2400:569", "verdict": "STYLE", "cat": "style", "why": "말맛 차이(늘인 외침)"}
+{"id": "2400:590", "verdict": "FIX", "cat": "addition", "why": "満足だろう·これでよかったのかな 는 맞게 고쳤으나 「피터 팬도」의 「도」는 원음에 없는 보탬", "fix": "^cy내버려 둬! 피터 팬은 만족했을 거야.^n……이걸로 잘된 걸까, 팅커벨."}

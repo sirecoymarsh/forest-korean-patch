@@ -1,0 +1,80 @@
+    double tBlend = -1;
+    const uint32_t* Mp = nullptr;
+    if (miss && havePrev) Mp = modelOf(gPrev);
+    if (miss && Mp) {
+        double num = 0, den = 0; int cnt = 0;
+        for (int y = 0; y < m; ++y) {
+            const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+            const uint32_t* mc = Mc + (size_t)(y0 + y) * W1 + x0;
+            const uint32_t* mp = Mp + (size_t)(y0 + y) * W1 + x0;
+            uint8_t* cd = gCode.data() + (size_t)y * n;
+            for (int x = 0; x < n; ++x) {
+                if (cd[x]) continue;
+                uint32_t fp = f[x] & 0xffffff;
+                if (dmax(fp, mp[x]) <= gTol) { cd[x] = 2; continue; }
+                uint32_t c = mc[x], p = mp[x];
+                for (int k = 0; k < 24; k += 8) {
+                    double dv = (double)((c >> k) & 255) - ((p >> k) & 255);
+                    if (fabs(dv) < 24) continue;
+                    num += (((fp >> k) & 255) - (double)((p >> k) & 255)) * dv; den += dv * dv; ++cnt;
+                }
+            }
+        }
+        if (cnt > 64 && den > 0) {
+            double t = num / den;
+            if (t > 0.02 && t < 0.98) {
+                tBlend = t;
+                for (int y = 0; y < m; ++y) {
+                    const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+                    const uint32_t* mc = Mc + (size_t)(y0 + y) * W1 + x0;
+                    const uint32_t* mp = Mp + (size_t)(y0 + y) * W1 + x0;
+                    uint8_t* cd = gCode.data() + (size_t)y * n;
+                    for (int x = 0; x < n; ++x) {
+                        if (cd[x]) continue;
+                        uint32_t c = mc[x], p = mp[x], fp = f[x] & 0xffffff; int bad = 0;
+                        for (int k = 0; k < 24 && !bad; k += 8) {
+                            double e = ((p >> k) & 255) + t * ((double)((c >> k) & 255) - ((p >> k) & 255));
+                            if (fabs(e - ((fp >> k) & 255)) > gTol + 1.5) bad = 1;
+                        }
+                        if (!bad) cd[x] = 3;
+                    }
+                }
+            }
+        }
+    }
+    // 4배 합성: 물리 화소마다 가장 가까운 1배 화소의 판정을 따른다. 합성 줄은 상태마다 한 번 만들어 둔다.
+    int PW = P.right - P.left;
+    gRowC.resize(PW); gRowP.resize(PW); gOkC.resize(PW); gOkP.resize(PW);
+    int it256 = tBlend < 0 ? 0 : (int)std::lround(tBlend * 256);
+    std::vector<int> colx(PW);
+    for (int X = P.left; X < P.right; ++X) {
+        int u = (int)std::floor((X - L.ox + 0.5) * W1 / (double)L.cw);
+        colx[X - P.left] = std::min(n - 1, std::max(0, u - x0));
+    }
+    C4* cc = compOf(gCur, L);
+    C4* cp = havePrev ? compOf(gPrev, L) : nullptr;
+    if (cc && cp == cc) cp = nullptr;   // 두 칸이 같은 상태를 가리키면 앞은 따로 만든다
+    int drawn = 0;
+    for (int Y = P.top; Y < P.bottom; ++Y) {
+        int v = (int)std::floor((Y - L.oy + 0.5) * H1 / (double)L.ch);
+        int ry = std::min(m - 1, std::max(0, v - y0));
+        const uint8_t* code = gCode.data() + (size_t)ry * n;
+        bool needC = false, needP = false;
+        for (int k = 0; k < PW; ++k) { uint8_t c = code[colx[k]]; if (c == 1 || c == 3) needC = true; if (c == 2 || c == 3) needP = true; }
+        if (!needC && !needP) continue;
+        const uint32_t* rc = needC ? rowOf(gCur, cc, L, Y, P.left, P.right, gRowC.data(), gOkC.data()) : nullptr;
+        const uint32_t* rp = needP ? rowOf(gPrev, cp, L, Y, P.left, P.right, gRowP.data(), gOkP.data()) : nullptr;
+        uint32_t* d = bk + (size_t)Y * BW + P.left;
+        for (int k = 0; k < PW; ++k) {
+            uint8_t c = code[colx[k]];
+            if (c == 1) { if (gOkC[k]) { d[k] = rc[k] | 0xff000000; ++drawn; } }
+            else if (c == 2) { if (gOkP[k]) { d[k] = rp[k] | 0xff000000; ++drawn; } }
+            else if (c == 3) {
+                if (gOkC[k] && gOkP[k]) {
+                    uint32_t a = rc[k], b = rp[k], o = 0;
+                    for (int s = 0; s < 24; s += 8) { int va = (a >> s) & 255, vb = (b >> s) & 255; o |= (uint32_t)(vb + (((va - vb) * it256 + 128) >> 8)) << s; }
+                    d[k] = o | 0xff000000; ++drawn;
+                }
+            }
+        }
+    }

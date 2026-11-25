@@ -1,0 +1,103 @@
+{"id": "2801:81", "verdict": "FIX", "cat": "term", "why": "「작게 고개를」은 こくり를 살려 좋음, 雨森만 아메노모리로", "fix": "^g999아메노모리는 작게 고개를 끄덕였다."}
+{"id": "2801:84", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:85", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:94", "verdict": "FIX", "cat": "term", "why": "こわばり 「긴장」은 「굳어짐」보다 자연스러움, 雨森만 아메노모리로", "fix": "^g999이윽고 아메노모리의 몸에서는^n불필요한 긴장이 사라져 갔다."}
+{"id": "2801:95", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:96", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:103", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:104", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈"}
+{"id": "2801:106", "verdict": "FIX", "cat": "term", "why": "奮るえた 「전율했다」는 좋음, 雨森만 아메노모리로", "fix": "^g999그때마다, 아메노모리가 다시 한층^n아름답게 성장해 가는 것처럼 보여,^n나는 전율했다."}
+{"id": "2801:107", "verdict": "FIX", "cat": "term", "why": "old 의 「빠져들어…빠져들어」 되풀이를 고친 것은 좋음, 雨森만 아메노모리로", "fix": "^g999나는 더욱더 정신없이^n아메노모리의 몸에 탐닉해 간다."}
+{"id": "2801:108", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔이 고르고 すごいな·もっと 를 자연스럽게 옮김"}
+{"id": "2801:109", "verdict": "KEEP", "cat": "korean", "why": "そこも = 「거기도」가 맞음(「거기서도」는 어색)"}
+{"id": "2801:113", "verdict": "REVERT", "cat": "style", "why": "원문 줄표 길이를 줄였을 뿐 — 원작 표기대로 둠"}
+{"id": "2801:121", "verdict": "REVERT", "cat": "term", "why": "雨森=아메노모리(사용자 결정)인데 아마모리로 바꿈, 「하고→하며」는 차이 없음"}
+{"id": "2801:122", "verdict": "REVERT", "cat": "style", "why": "원문 줄표 길이를 줄였을 뿐 — 원작 표기대로 둠"}
+{"id": "2801:123", "verdict": "KEEP", "cat": "korean", "why": "ッッッ를 「읏읏읏」으로 옮긴 어색한 꼴을 「앗!!!」으로 바로잡음"}
+{"id": "2801:126", "verdict": "FIX", "cat": "korean", "why": "old 오타(목솟소리) 고침은 맞으나 「술렁인다」는 소란의 뜻이라 희미한 목소리와 안 맞음 — 「일렁인다」로", "fix": "^g999희미한 목소리가 어둠 속에 일렁인다."}
+{"id": "2801:128", "verdict": "KEEP", "cat": "korean", "why": "「카코는 떨린다」보다 「몸을 떤다」가 자연스러움"}
+{"id": "2801:129", "verdict": "KEEP", "cat": "korean", "why": "「참된 혼자를 느끼며」는 비문 — 「진정한 고독」이 本当の独り 뜻을 살림"}
+{"id": "2801:136", "verdict": "REVERT", "cat": "style", "why": "원문 줄표 길이를 줄였을 뿐 — 원작 표기대로 둠"}
+{"id": "2801:141", "verdict": "REVERT", "cat": "style", "why": "원문 줄표 길이를 줄였을 뿐 — 원작 표기대로 둠"}
+{"id": "2801:143", "verdict": "REVERT", "cat": "style", "why": "원문 줄표 길이를 줄였을 뿐 — 원작 표기대로 둠"}
+{"id": "3131:6", "verdict": "KEEP", "cat": "korean", "why": "アマモリでいい = 「아마모리면 돼」, old 의 「충분해」 되풀이를 풂"}
+{"id": "3131:11", "verdict": "STYLE", "cat": "term", "why": "語り手 이야기꾼/화자 둘 다 됨 — 2700:777 의 「화자」와 맞춤"}
+{"id": "3131:13", "verdict": "STYLE", "cat": "style", "why": "バカにしてんのか 「우릴 바보로 아는 거야」/「장난하냐」 뜻 같고 둘 다 자연스러움"}
+{"id": "3131:15", "verdict": "KEEP", "cat": "korean", "why": "聞かせて？ — 「들려줘?」보다 「들려줄래?」가 자연스러움"}
+{"id": "3131:20", "verdict": "KEEP", "cat": "meaning", "why": "だまされるもんか = 「누가 속을 줄 알고」; old 「속을 것 같아!」는 뜻이 뒤집혀 읽힘"}
+{"id": "3131:22", "verdict": "STYLE", "cat": "style", "why": "「안에…들어오는 거야」/「안으로…들어오고 있어」 뜻 같음"}
+{"id": "3131:26", "verdict": "REVERT", "cat": "register", "why": "노조미는 선생님께 해요체로 말해 옴(3123:15·2600:464 old) — 반말로 바꿔 말투가 깨짐"}
+{"id": "3131:27", "verdict": "KEEP", "cat": "korean", "why": "踊らされてる 「춤추게 되고 있어」는 직역투 — 「놀아나고 있어」가 맞음"}
+{"id": "3131:28", "verdict": "STYLE", "cat": "style", "why": "キザ 의 「느끼하게」 보탬은 뜻 범위 안 — 둘 다 됨"}
+{"id": "3131:33", "verdict": "STYLE", "cat": "style", "why": "「…….」→「……」 마침표만 뺌"}
+{"id": "2900:2", "verdict": "KEEP", "cat": "korean", "why": "「미안요」→「미안해요」, 予定入れちゃった 「선약」이 자연스럽고 ですかぁ～ 늘임도 살림"}
+{"id": "2900:6", "verdict": "STYLE", "cat": "style", "why": "늘임표 「-」를 「~」로 — 앞 줄과 맞춤, 뜻 같음"}
+{"id": "2900:10", "verdict": "KEEP", "cat": "addition", "why": "old 의 「글쎄」는 원문에 없는 보탬; いつまで 물음에 「모레까지」가 맞는 대답, 「빳빳이 서」도 좋음"}
+{"id": "2900:11", "verdict": "FIX", "cat": "meaning", "why": "「걱정되시죠?」는 좋으나 取られちゃったら 는 남에게 「빼앗기면」(놀림) — 「잡혀버리면」은 뜻이 바뀜", "fix": "^g007그렇군요!^n하지만 카리야 씨, 걱정되시죠?^n그 사람, 빼앗겨버리면……."}
+{"id": "2900:13", "verdict": "KEEP", "cat": "ok", "why": "따옴표 모양·그 띄어쓰기만 바뀜 — 판정 밖"}
+{"id": "2900:18", "verdict": "REVERT", "cat": "register", "why": "카오루의 ボク는 해요체에서도 「나」로 옮겨 온 말투(2700:116·2500:430 old) — 「저」로 바꾸면 말투가 깨짐"}
+{"id": "2900:20", "verdict": "STYLE", "cat": "style", "why": "遅れっぱなし 옮김만 다름 — 둘 다 되풀이 가락이 삶"}
+{"id": "2900:29", "verdict": "KEEP", "cat": "korean", "why": "かすかな笑み 는 「희미한 미소」가 자연스러운 짝"}
+{"id": "2900:33", "verdict": "KEEP", "cat": "meaning", "why": "畏れ 는 「경외」 쪽이 원문 한자 뜻에 맞고 「쓸쓸함」도 자연스러움"}
+{"id": "1300:1", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 컨티뉴 질문을 원문(＃N話からコンティニュー) 뜻대로 옮김"}
+{"id": "1300:2", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1300:3", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1400:1", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 컨티뉴 질문을 원문(＃N話からコンティニュー) 뜻대로 옮김"}
+{"id": "1400:2", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1400:3", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1500:1", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 컨티뉴 질문을 원문(＃N話からコンティニュー) 뜻대로 옮김"}
+{"id": "1500:2", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1500:3", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1600:1", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 컨티뉴 질문을 원문(＃N話からコンティニュー) 뜻대로 옮김"}
+{"id": "1600:2", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "1600:3", "verdict": "KEEP", "cat": "omission", "why": "영어로 남아 있던 선택지를 옮김 — 다른 선택지 꼴(~한다)과 맞음"}
+{"id": "4000:1", "verdict": "KEEP", "cat": "ok", "why": "販売 = 판매"}
+{"id": "4000:2", "verdict": "KEEP", "cat": "ok", "why": "株式会社ビジネスパートナー 그대로"}
+{"id": "5000:1", "verdict": "KEEP", "cat": "ok", "why": "원작 企画・原案・シナリオ 그대로"}
+{"id": "5000:2", "verdict": "KEEP", "cat": "ok", "why": "星空めてお = 호시조라 메테오"}
+{"id": "5000:3", "verdict": "KEEP", "cat": "ok", "why": "원작 原画・キャラクターデザイン 그대로"}
+{"id": "5000:4", "verdict": "KEEP", "cat": "ok", "why": "大石竜子 = 오오이시 류코"}
+{"id": "5000:5", "verdict": "KEEP", "cat": "ok", "why": "원작 크레딧이 共同原案・シナリオ — 「공동 원안」이 영문보다 정확"}
+{"id": "5000:6", "verdict": "KEEP", "cat": "ok", "why": "茗荷屋甚六 = 묘가야 진로쿠"}
+{"id": "5000:7", "verdict": "KEEP", "cat": "ok", "why": "シナリオ = 시나리오"}
+{"id": "5000:8", "verdict": "KEEP", "cat": "ok", "why": "高尾登山 = 타카오 토잔(영문과 같음)"}
+{"id": "5000:9", "verdict": "KEEP", "cat": "ok", "why": "원작 ＣＧワーク 그대로"}
+{"id": "5000:10", "verdict": "KEEP", "cat": "ok", "why": "しまさらゆめき = 시마사라 유메키"}
+{"id": "5000:11", "verdict": "FIX", "cat": "term", "why": "大木犬太郎 읽기를 근거 없이 바꿈 — 영문·기존 판 Taiboku Inutarou 읽기를 따름", "fix": "타이보쿠 이누타로"}
+{"id": "5000:13", "verdict": "KEEP", "cat": "ok", "why": "オープニングムービー 그대로"}
+{"id": "5000:14", "verdict": "KEEP", "cat": "ok", "why": "どせい = 도세이"}
+{"id": "5000:15", "verdict": "KEEP", "cat": "ok", "why": "원작 パッケージ背景原画 그대로"}
+{"id": "5000:16", "verdict": "KEEP", "cat": "ok", "why": "米谷要 = 요네타니 카나메"}
+{"id": "5000:17", "verdict": "KEEP", "cat": "ok", "why": "音楽 = 음악"}
+{"id": "5000:18", "verdict": "KEEP", "cat": "ok", "why": "원작 ～ノーブランドサウンズ～ 그대로"}
+{"id": "5000:19", "verdict": "KEEP", "cat": "ok", "why": "長崎繁 = 나가사키 시게루"}
+{"id": "5000:20", "verdict": "KEEP", "cat": "ok", "why": "山西利治 = 야마니시 토시하루"}
+{"id": "5000:21", "verdict": "KEEP", "cat": "ok", "why": "椎名治美 = 시이나 하루미"}
+{"id": "5000:22", "verdict": "KEEP", "cat": "ok", "why": "音楽 = 음악"}
+{"id": "5000:23", "verdict": "KEEP", "cat": "ok", "why": "원작 ～ノーブランドサウンズ～ 그대로"}
+{"id": "5000:24", "verdict": "KEEP", "cat": "ok", "why": "九十九百太郎 = 츠쿠모 햐쿠타로"}
+{"id": "5000:26", "verdict": "KEEP", "cat": "ok", "why": "원작 ～キャスト～ 그대로"}
+{"id": "5000:27", "verdict": "KEEP", "cat": "ok", "why": "雨森 望 / かわしまりの 맞음, 깨져 있던 전각 빈칸도 바로잡힘"}
+{"id": "5000:28", "verdict": "KEEP", "cat": "ok", "why": "원작 ～キャスト～ 그대로"}
+{"id": "5000:29", "verdict": "KEEP", "cat": "ok", "why": "黛 薫 / 一色ヒカル 맞음"}
+{"id": "5000:30", "verdict": "KEEP", "cat": "ok", "why": "원작 ～キャスト～ 그대로"}
+{"id": "5000:31", "verdict": "FIX", "cat": "term", "why": "野月 읽기를 근거 없이 「노즈키」로 — 영문·기존 판 Notsuki 대로 「노츠키」", "fix": "카리야 마키　　　　　　노츠키 마히루"}
+{"id": "5000:32", "verdict": "KEEP", "cat": "ok", "why": "원작 ～キャスト～ 그대로"}
+{"id": "5000:33", "verdict": "KEEP", "cat": "ok", "why": "九月 周 = 나가츠키 아마네(사용자 결정) / みる"}
+{"id": "5000:34", "verdict": "KEEP", "cat": "ok", "why": "원작 ～キャスト～ 그대로"}
+{"id": "5000:35", "verdict": "KEEP", "cat": "ok", "why": "黒いアリス = 검은 앨리스(본문 표기와 같음)"}
+{"id": "5000:36", "verdict": "KEEP", "cat": "ok", "why": "北都南 = 호쿠토 미나미"}
+{"id": "5000:37", "verdict": "KEEP", "cat": "ok", "why": "원작 ＣＶ音声制作 그대로"}
+{"id": "5000:38", "verdict": "KEEP", "cat": "ok", "why": "원작 有限会社ロックンバナナ 그대로"}
+{"id": "5000:41", "verdict": "FIX", "cat": "term", "why": "ブラッキー(Blackie) = 「블래키」 — 「브래키」는 ㄹ 빠짐", "fix": "Editor: 블래키"}
+{"id": "5000:44", "verdict": "KEEP", "cat": "ok", "why": "원작 宣伝広報・パブリシティデザイン 그대로(영문이 줄였던 것)"}
+{"id": "5000:45", "verdict": "KEEP", "cat": "ok", "why": "山原久稲 = 얀바루 쿠이나"}
+{"id": "5000:46", "verdict": "KEEP", "cat": "ok", "why": "원작 プログラム提供 그대로"}
+{"id": "5000:47", "verdict": "KEEP", "cat": "ok", "why": "원작 有限会社 codeX 그대로"}
+{"id": "5000:48", "verdict": "KEEP", "cat": "ok", "why": "원작 スクリプト協力 그대로"}
+{"id": "5000:49", "verdict": "KEEP", "cat": "ok", "why": "원작 ～有限会社 codeX～ 그대로"}
+{"id": "5000:50", "verdict": "FIX", "cat": "term", "why": "禾刀郷 읽기를 근거 없이 「카토 쿄」로 — 영문·기존 판 Nogi Fusanato 대로", "fix": "노기 후사나토"}
+{"id": "5000:51", "verdict": "KEEP", "cat": "ok", "why": "日柳 十夜 = 쿠사나기 토야(영문과 같음)"}
+{"id": "5000:52", "verdict": "KEEP", "cat": "ok", "why": "劉 龍嶺 = 류 류레이"}
+{"id": "5000:53", "verdict": "KEEP", "cat": "ok", "why": "販売 = 판매"}
+{"id": "5000:54", "verdict": "KEEP", "cat": "ok", "why": "株式会社ビジネスパートナー 그대로"}

@@ -1,0 +1,84 @@
+    gMc.resize((size_t)n * m); gCode.assign((size_t)n * m, 0);
+    model1(gCur, x0, y0, x1, y1, gMc.data());
+    bool havePrev = !gPrev.ls.empty();
+    int miss = 0;
+    for (int y = 0; y < m; ++y) {
+        const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+        for (int x = 0; x < n; ++x) {
+            size_t i = (size_t)y * n + x;
+            if (dmax(f[x] & 0xffffff, gMc[i]) <= gTol) gCode[i] = 1; else ++miss;
+        }
+    }
+    double tBlend = -1;
+    if (miss && havePrev) {
+        gMp.resize((size_t)n * m);
+        model1(gPrev, x0, y0, x1, y1, gMp.data());
+        double num = 0, den = 0; int cnt = 0;
+        for (int y = 0; y < m; ++y) {
+            const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+            for (int x = 0; x < n; ++x) {
+                size_t i = (size_t)y * n + x;
+                if (gCode[i]) continue;
+                uint32_t fp = f[x] & 0xffffff;
+                if (dmax(fp, gMp[i]) <= gTol) { gCode[i] = 2; continue; }
+                uint32_t c = gMc[i], p = gMp[i];
+                for (int k = 0; k < 24; k += 8) {
+                    double dv = (double)((c >> k) & 255) - ((p >> k) & 255);
+                    if (fabs(dv) < 24) continue;
+                    num += (((fp >> k) & 255) - (double)((p >> k) & 255)) * dv; den += dv * dv; ++cnt;
+                }
+            }
+        }
+        if (cnt > 64 && den > 0) {
+            double t = num / den;
+            if (t > 0.02 && t < 0.98) {
+                tBlend = t;
+                for (int y = 0; y < m; ++y) {
+                    const uint32_t* f = F + (size_t)(y0 + y) * W1 + x0;
+                    for (int x = 0; x < n; ++x) {
+                        size_t i = (size_t)y * n + x;
+                        if (gCode[i]) continue;
+                        uint32_t c = gMc[i], p = gMp[i], fp = f[x] & 0xffffff; int bad = 0;
+                        for (int k = 0; k < 24 && !bad; k += 8) {
+                            double e = ((p >> k) & 255) + t * ((double)((c >> k) & 255) - ((p >> k) & 255));
+                            if (fabs(e - ((fp >> k) & 255)) > gTol + 1.5) bad = 1;
+                        }
+                        if (!bad) gCode[i] = 3;
+                    }
+                }
+            }
+        }
+    }
+    // 4배 합성: 물리 화소마다 가장 가까운 1배 화소의 판정을 따른다
+    int PW = P.right - P.left;
+    gRowC.resize(PW); gRowP.resize(PW); gOkC.resize(PW); gOkP.resize(PW);
+    int it256 = tBlend < 0 ? 0 : (int)std::lround(tBlend * 256);
+    std::vector<int> colx(PW);
+    for (int X = P.left; X < P.right; ++X) {
+        int u = (int)std::floor((X - L.ox + 0.5) * W1 / (double)L.cw);
+        colx[X - P.left] = std::min(n - 1, std::max(0, u - x0));
+    }
+    int drawn = 0;
+    for (int Y = P.top; Y < P.bottom; ++Y) {
+        int v = (int)std::floor((Y - L.oy + 0.5) * H1 / (double)L.ch);
+        int ry = std::min(m - 1, std::max(0, v - y0));
+        const uint8_t* code = gCode.data() + (size_t)ry * n;
+        bool needC = false, needP = false;
+        for (int k = 0; k < PW; ++k) { uint8_t c = code[colx[k]]; if (c == 1 || c == 3) needC = true; if (c == 2 || c == 3) needP = true; }
+        if (!needC && !needP) continue;
+        if (needC) row4(gCur, L, Y, P.left, P.right, gRowC.data(), gOkC.data());
+        if (needP) row4(gPrev, L, Y, P.left, P.right, gRowP.data(), gOkP.data());
+        uint32_t* d = bk + (size_t)Y * BW + P.left;
+        for (int k = 0; k < PW; ++k) {
+            uint8_t c = code[colx[k]];
+            if (c == 1) { if (gOkC[k]) { d[k] = gRowC[k] | 0xff000000; ++drawn; } }
+            else if (c == 2) { if (gOkP[k]) { d[k] = gRowP[k] | 0xff000000; ++drawn; } }
+            else if (c == 3) {
+                if (gOkC[k] && gOkP[k]) {
+                    uint32_t a = gRowC[k], b = gRowP[k], o = 0;
+                    for (int s = 0; s < 24; s += 8) { int va = (a >> s) & 255, vb = (b >> s) & 255; o |= (uint32_t)(vb + (((va - vb) * it256 + 128) >> 8)) << s; }
+                    d[k] = o | 0xff000000; ++drawn;
+                }
+            }
+        }
+    }

@@ -1,0 +1,58 @@
+{
+ "chosen": [
+  "auto-rate",
+  "auto-continue-after-choice",
+  "skip-protect-unread",
+  "quick-save-keys",
+  "window-memory",
+  "fullscreen-toggle",
+  "game-only",
+  "key-guide",
+  "search-edit"
+ ],
+ "read_at": "2026-11-21T05:03:02",
+ "game": "Forest (Liar-soft 2004) 한국어판",
+ "has": [
+  "voice",
+  "music",
+  "movie",
+  "branch",
+  "recollection",
+  "hd_layer",
+  "commentary",
+  "has_installer"
+ ],
+ "original": [
+  "hold-skip",
+  "music-room",
+  "recollection-thumbs",
+  "cg-viewer-plus",
+  "save-more-slots"
+ ],
+ "already_added": [
+  "story-map",
+  "mistl-report"
+ ],
+ "recommended": [
+  "auto-rate",
+  "auto-continue-after-choice",
+  "skip-protect-unread",
+  "quick-save-keys",
+  "window-memory",
+  "fullscreen-toggle",
+  "game-only",
+  "key-guide",
+  "search-edit"
+ ],
+ "decide": [
+  "hd-text",
+  "backlog-jump",
+  "backlog-scroll",
+  "backlog-voice",
+  "backlog-keep",
+  "blur-stop-skip",
+  "pc-settings",
+  "save-backup"
+ ],
+ "base_exe_sha256_prefix": "f618b6"
+}

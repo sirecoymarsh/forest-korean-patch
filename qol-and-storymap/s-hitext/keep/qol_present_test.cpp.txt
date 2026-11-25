@@ -1,0 +1,173 @@
+// qol_present.cpp — 「4K 글자」 갈래의 시험용 임시 화면 모듈. 넘기지 않는다(진짜 화면 모듈은 forest-present 세션 몫).
+// 그림자 판(800×600) ← 엔진의 창 BitBlt, 물리 뒷판 ← 쌍선형 늘리기, PaintAbove, 창 ← 뒷판.
+// forest-qol.ini: present_test_scale=N(기본 3, 1 이면 원작), hitext_test_multi=1(시험 사본끼리 같이 띄우기: 뮤텍스 이름 바꿈).
+// F11 = 4K 글자 켜고 끄기(같은 장면 나란히 비교용), F12 = 배율 3→2→1→3.
+#include "qol.h"
+#include <mmsystem.h>
+#include <algorithm>
+#include <cstring>
+#include <cmath>
+#include <intrin.h>
+#include <map>
+#include <string>
+
+namespace forest { namespace qol {
+void HiText_SetActive(bool on);
+bool HiText_Active();
+namespace {
+CRITICAL_SECTION gCs; bool gInit = false;
+Layout gL;
+HDC gShadowDc = nullptr, gBackDc = nullptr; HBITMAP gShadowBmp = nullptr, gBackBmp = nullptr;
+uint32_t* gShadow = nullptr; uint32_t* gBack = nullptr; int gBackW = 0, gBackH = 0;
+int gScale = 3;
+const UINT WM_TEST_RESIZE = WM_APP + 0x3F0;
+using OMFn = HANDLE(WINAPI*)(DWORD, BOOL, LPCSTR);
+using CMFn = HANDLE(WINAPI*)(LPSECURITY_ATTRIBUTES, BOOL, LPCSTR);
+OMFn oOM; CMFn oCM;
+const char* testMutex(LPCSTR n) { return (n && !strcmp(n, "RSCRIPT")) ? "RSCRIPT_hitext_test" : n; }
+HANDLE WINAPI hOM(DWORD a, BOOL i, LPCSTR n) { return oOM(a, i, testMutex(n)); }
+HANDLE WINAPI hCM(LPSECURITY_ATTRIBUTES s, BOOL o, LPCSTR n) { return oCM(s, o, testMutex(n)); }
+// 시험 전용(hitext_test_skipmovie=1): 영상 재생을 곧바로 「끝남」으로 알려 오프닝을 건너뛴다
+using MciFn = MCIERROR(WINAPI*)(MCIDEVICEID, UINT, DWORD_PTR, DWORD_PTR);
+MciFn oMci;
+MCIERROR WINAPI hMci(MCIDEVICEID id, UINT m, DWORD_PTR f, DWORD_PTR p) {
+    MCIERROR r = oMci(id, m, f, p);
+    if (m == MCI_PLAY && (f & MCI_NOTIFY) && p) PostMessageW((HWND)((MCI_GENERIC_PARMS*)p)->dwCallback, MM_MCINOTIFY, MCI_NOTIFY_SUCCESSFUL, id);
+    return r;
+}
+// 시험 전용(hitext_test_gdiprobe=1): 글자 GDI 호출을 부른 자리별로 기록
+using GGOFn = DWORD(WINAPI*)(HDC, UINT, UINT, LPGLYPHMETRICS, DWORD, LPVOID, const MAT2*);
+using TOFn = BOOL(WINAPI*)(HDC, int, int, LPCSTR, int);
+using CFFn = HFONT(WINAPI*)(int, int, int, int, int, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, DWORD, LPCSTR);
+GGOFn oGGO; TOFn oTO; CFFn oCF;
+void plogp(const char* s) {
+    std::wstring path = Root(); path += L'/'; path += L"gdiprobe.log";
+    HANDLE f = CreateFileW(path.c_str(), FILE_APPEND_DATA, FILE_SHARE_READ, nullptr, OPEN_ALWAYS, 0, nullptr);
+    const char nl[2] = {13, 10};
+    if (f != INVALID_HANDLE_VALUE) { DWORD w; WriteFile(f, s, (DWORD)strlen(s), &w, nullptr); WriteFile(f, nl, 2, &w, nullptr); CloseHandle(f); }
+}
+std::string stk(void* from) { std::string out; uint32_t* p = (uint32_t*)from; int got = 0; for (int i = 0; i < 300 && got < 10; ++i) { uint32_t v = p[i]; if (v < 0x401005 || v >= 0x492000) continue; const uint8_t* c = (const uint8_t*)v; if (!(c[-5] == 0xE8 || (c[-6] == 0xFF && c[-5] == 0x15) || (c[-2] == 0xFF && (c[-1] & 0xF8) == 0xD0) || (c[-3] == 0xFF && (c[-2] & 0x38) == 0x10))) continue; char b[24]; sprintf_s(b, "%x ", v); out += b; ++got; } return out; }
+std::map<uint32_t, int> gSeenRa; CRITICAL_SECTION gProbeCs; bool gProbeInit = false;
+bool firstRa(uint32_t ra) { EnterCriticalSection(&gProbeCs); int n = ++gSeenRa[ra]; LeaveCriticalSection(&gProbeCs); return n <= 2; }
+DWORD WINAPI hGGO(HDC dc, UINT ch, UINT fmt, LPGLYPHMETRICS gm, DWORD cb, LPVOID buf, const MAT2* m) {
+    uint32_t ra = (uint32_t)(uintptr_t)_ReturnAddress();
+    if (firstRa(ra)) { char b[600]; sprintf_s(b, "%llu GGO ra=%x ch=%04x fmt=%u stack %s", GetTickCount64(), ra, ch, fmt, stk(_AddressOfReturnAddress()).c_str()); plogp(b); }
+    return oGGO(dc, ch, fmt, gm, cb, buf, m);
+}
+BOOL WINAPI hTO(HDC dc, int x, int y, LPCSTR s, int n) {
+    uint32_t ra = (uint32_t)(uintptr_t)_ReturnAddress();
+    if (firstRa(ra)) { char b[600]; sprintf_s(b, "%llu TextOutA ra=%x xy=%d,%d n=%d stack %s", GetTickCount64(), ra, x, y, n, stk(_AddressOfReturnAddress()).c_str()); plogp(b); }
+    return oTO(dc, x, y, s, n);
+}
+HFONT WINAPI hCF(int h, int w, int e, int o, int wt, DWORD it, DWORD ul, DWORD so, DWORD cs, DWORD op, DWORD cp, DWORD q, DWORD pf, LPCSTR face) {
+    uint32_t ra = (uint32_t)(uintptr_t)_ReturnAddress();
+    if (firstRa(ra)) { char b[600]; sprintf_s(b, "%llu CreateFontA ra=%x h=%d wt=%d face=%s stack %s", GetTickCount64(), ra, h, wt, face ? face : "", stk(_AddressOfReturnAddress()).c_str()); plogp(b); }
+    return oCF(h, w, e, o, wt, it, ul, so, cs, op, cp, q, pf, face);
+}
+bool iat(uintptr_t slot, void* repl, void** orig) { void* cur = *(void**)slot; *orig = cur; return PatchBytes(slot, &cur, &repl, sizeof(void*)); }
+
+HBITMAP dib(int w, int h, uint32_t** bits) {
+    BITMAPINFO bi = {}; bi.bmiHeader.biSize = sizeof(bi.bmiHeader); bi.bmiHeader.biWidth = w; bi.bmiHeader.biHeight = -h; bi.bmiHeader.biPlanes = 1; bi.bmiHeader.biBitCount = 32;
+    return CreateDIBSection(nullptr, &bi, DIB_RGB_COLORS, (void**)bits, nullptr, 0);
+}
+void ensureBack(int w, int h) {
+    if (gBackDc && gBackW == w && gBackH == h) return;
+    if (gBackDc) { DeleteDC(gBackDc); DeleteObject(gBackBmp); }
+    gBackBmp = dib(w, h, &gBack); gBackDc = CreateCompatibleDC(nullptr); SelectObject(gBackDc, gBackBmp); gBackW = w; gBackH = h;
+    memset(gBack, 0, (size_t)w * h * 4);
+}
+// 물리 사각형 r 을 그림자 판에서 쌍선형으로(화소 가운데 맞춤)
+void stretch(const RECT& r) {
+    double kx = 800.0 / gL.cw, ky = 600.0 / gL.ch;
+    for (int Y = std::max<int>(r.top, gL.oy); Y < std::min<int>(r.bottom, gL.oy + gL.ch); ++Y) {
+        double v = (Y - gL.oy + 0.5) * ky - 0.5; int y0 = (int)floor(v); int fy = (int)((v - y0) * 256); int y1 = std::min(y0 + 1, 599); y0 = std::max(0, y0); if (v < 0) fy = 0;
+        uint32_t* out = gBack + (size_t)Y * gBackW;
+        for (int X = std::max<int>(r.left, gL.ox); X < std::min<int>(r.right, gL.ox + gL.cw); ++X) {
+            double u = (X - gL.ox + 0.5) * kx - 0.5; int x0 = (int)floor(u); int fx = (int)((u - x0) * 256); int x1 = std::min(x0 + 1, 799); x0 = std::max(0, x0); if (u < 0) fx = 0;
+            uint32_t a = gShadow[y0 * 800 + x0], b = gShadow[y0 * 800 + x1], c = gShadow[y1 * 800 + x0], d = gShadow[y1 * 800 + x1];
+            uint32_t o = 0;
+            for (int s = 0; s < 24; s += 8) {
+                int t = ((((a >> s) & 255) * (256 - fx) + ((b >> s) & 255) * fx) * (256 - fy) + (((c >> s) & 255) * (256 - fx) + ((d >> s) & 255) * fx) * fy + 32768) >> 16;
+                o |= (uint32_t)t << s;
+            }
+            out[X] = o;
+        }
+    }
+}
+RECT toPhys(const RECT& r) {
+    RECT p = {gL.ox + (int)floor(r.left * gL.cw / 800.0) - 1, gL.oy + (int)floor(r.top * gL.ch / 600.0) - 1, gL.ox + (int)ceil(r.right * gL.cw / 800.0) + 1, gL.oy + (int)ceil(r.bottom * gL.ch / 600.0) + 1};
+    p.left = std::max<LONG>(0, p.left); p.top = std::max<LONG>(0, p.top); p.right = std::min<LONG>(gBackW, p.right); p.bottom = std::min<LONG>(gBackH, p.bottom);
+    return p;
+}
+void stamp(HDC win, const RECT& logical) {
+    RECT p = toPhys(logical);
+    if (p.right <= p.left || p.bottom <= p.top) return;
+    stretch(p);
+    PaintAbove(gBackDc, gL, p);
+    GdiFlush();
+    BitBlt(win, p.left, p.top, p.right - p.left, p.bottom - p.top, gBackDc, p.left, p.top, SRCCOPY);
+}
+void relayout(HWND h) {
+    RECT c; GetClientRect(h, &c);
+    gL.clientW = c.right; gL.clientH = c.bottom;
+    double k = std::min(c.right / 800.0, c.bottom / 600.0);
+    gL.cw = (int)lround(800 * k); gL.ch = (int)lround(600 * k);
+    gL.ox = (c.right - gL.cw) / 2; gL.oy = (c.bottom - gL.ch) / 2;
+    ensureBack(std::max<LONG>(1, c.right), std::max<LONG>(1, c.bottom));
+}
+}  // namespace
+
+bool Present_Install() {
+    InitializeCriticalSection(&gCs); gInit = true;
+    if (Cfg("hitext_test_multi", 0)) { iat(0x459080, (void*)hOM, (void**)&oOM); iat(0x459084, (void*)hCM, (void**)&oCM); }
+    if (Cfg("hitext_test_gdiprobe", 0)) { InitializeCriticalSection(&gProbeCs); iat(0x459038, (void*)hGGO, (void**)&oGGO); iat(0x459024, (void*)hTO, (void**)&oTO); iat(0x459034, (void*)hCF, (void**)&oCF); }
+    if (Cfg("hitext_test_skipmovie", 0)) iat(0x4592b4, (void*)hMci, (void**)&oMci);
+    gScale = std::max(1, Cfg("present_test_scale", 3));
+    gShadowBmp = dib(800, 600, &gShadow); gShadowDc = CreateCompatibleDC(nullptr); SelectObject(gShadowDc, gShadowBmp);
+    return true;
+}
+void Present_WindowReady(HWND h) { PostMessageW(h, WM_TEST_RESIZE, 0, 0); }
+bool Present_WndProc(HWND h, UINT m, WPARAM w, LPARAM l, LRESULT& r) {
+    if (m == WM_TEST_RESIZE) {
+        RECT rc = {0, 0, 800 * gScale, 600 * gScale};
+        AdjustWindowRectEx(&rc, (DWORD)GetWindowLongW(h, GWL_STYLE), FALSE, (DWORD)GetWindowLongW(h, GWL_EXSTYLE));
+        SetWindowPos(h, nullptr, 0, 0, rc.right - rc.left, rc.bottom - rc.top, SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+        r = 0; return true;
+    }
+    if (m == WM_SIZE) {
+        EnterCriticalSection(&gCs); relayout(h);
+        if (gL.cw != 800 || gL.ch != 600) { HDC d = GetDC(h); stamp(d, RECT{0, 0, 800, 600}); ReleaseDC(h, d); }
+        LeaveCriticalSection(&gCs);
+        if (gL.cw == 800 && gL.ch == 600) InvalidateRect(h, nullptr, FALSE);
+        return false;
+    }
+    if (m == WM_KEYDOWN && w == VK_F12) { if (!(l & (1u << 30))) { gScale = gScale == 3 ? 2 : gScale == 2 ? 1 : 3; PostMessageW(h, WM_TEST_RESIZE, 0, 0); } r = 0; return true; }
+    if (m == WM_KEYUP && w == VK_F12) { r = 0; return true; }
+    if (m == WM_KEYDOWN && w == VK_F11) { if (!(l & (1u << 30))) HiText_SetActive(!HiText_Active()); r = 0; return true; }
+    if (m == WM_KEYUP && w == VK_F11) { r = 0; return true; }
+    return false;
+}
+void Present_MapMouse(UINT, LPARAM& l) {
+    if (gL.cw == 800 && gL.ch == 600) return;
+    int x = (short)LOWORD(l), y = (short)HIWORD(l);
+    x = (int)floor((x - gL.ox) * 800.0 / gL.cw); y = (int)floor((y - gL.oy) * 600.0 / gL.ch);
+    l = MAKELPARAM(x, y);
+}
+bool Present_BitBlt(HDC d, int x, int y, int w, int h, HDC s, int sx, int sy, DWORD rop, BOOL& ret) {
+    if (!gInit || (gL.cw == 800 && gL.ch == 600) || !gBackDc) return false;
+    EnterCriticalSection(&gCs);
+    BitBlt(gShadowDc, x, y, w, h, s, sx, sy, rop);
+    GdiFlush();
+    stamp(d, RECT{x, y, x + w, y + h});
+    LeaveCriticalSection(&gCs);
+    ret = TRUE; return true;
+}
+bool Present_StretchBlt(HDC, int, int, int, int, HDC, int, int, int, int, DWORD, BOOL&) { return false; }
+void Present_InvalidateLogical(const RECT& r) {
+    HWND h = GameWindow(); if (!h || !gBackDc || (gL.cw == 800 && gL.ch == 600)) return;
+    EnterCriticalSection(&gCs); HDC d = GetDC(h); stamp(d, r); ReleaseDC(h, d); LeaveCriticalSection(&gCs);
+}
+POINT Present_ToClient(int x, int y) { return POINT{gL.ox + (int)lround(x * gL.cw / 800.0), gL.oy + (int)lround(y * gL.ch / 600.0)}; }
+Layout CurrentLayout() { return gL; }
+
+}}  // namespace forest::qol

@@ -1,0 +1,260 @@
+[
+ {
+  "uid": "english_patch/2100.gsc::slots/C00060,O00061::VOICE_OVERLAY.text",
+  "before": "맞아, 이제 기억났어.^n나는 부름받았고, 그들을 불렀어.^n다 같이 파티를 열려고...",
+  "after": "맞아, 이제 기억났어.^n나는 부름받았고, 그들을 불렀어.^n다 같이 파티를 열려고……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00069,O00070::VOICE_OVERLAY.text",
+  "before": "알아. 하늘에서...",
+  "after": "난 들려. 하늘에서……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다 / EN 'I do.' 는 앞의 '안 들려?'에 대한 대답이므로 '들린다'는 뜻이다. '알아'는 질문과 맞물리지 않는다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00304,O00305::VOICE_OVERLAY.text",
+  "before": "뭐야...?^n토끼가 아니잖아...",
+  "after": "뭐야……?^n토끼가 아니잖아……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00344,O00345::VOICE_OVERLAY.text",
+  "before": "그리고 그는...",
+  "after": "그리고 그 사람은……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다 / 한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00238,O00239::VOICE_OVERLAY.text",
+  "before": "아, ...네.",
+  "after": "아, ……네.",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00374,O00375::VOICE_OVERLAY.text",
+  "before": "망가진 선물...",
+  "after": "망가진 선물……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00387,O00388::VOICE_OVERLAY.text",
+  "before": "하아...",
+  "after": "하아……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00415,O00416::VOICE_OVERLAY.text",
+  "before": "북적이는 식당...",
+  "after": "북적이는 식당……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00442,O00443::VOICE_OVERLAY.text",
+  "before": "어질러진 방...",
+  "after": "어질러진 방……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00488,O00489::VOICE_OVERLAY.text",
+  "before": "그걸 기억할 수 있을까...?",
+  "after": "그걸 기억할 수 있을까……?",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00490,O00491::VOICE_OVERLAY.text",
+  "before": "그걸 기억할 수 있을까...?",
+  "after": "그걸 기억할 수 있을까……?",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00492,O00493::VOICE_OVERLAY.text",
+  "before": "그걸 기억할 수 있을까...?",
+  "after": "그걸 기억할 수 있을까……?",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00643,O00644::VOICE_OVERLAY.text",
+  "before": "시간은...... 여, 열두 시......",
+  "after": "시간은…… 여, 열두 시……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00655,O00656::VOICE_OVERLAY.text",
+  "before": "아마...... 망가진 건 휴대폰이 아니라 시간인 것 같아.",
+  "after": "아마…… 망가진 건 휴대폰이 아니라 시간인 것 같아.",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다 / before를 현재값(휴대폰, 패치 29 반영)으로 맞춤"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00697,O00698::VOICE_OVERLAY.text",
+  "before": "이대로라면......",
+  "after": "이대로라면……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00700,O00701::VOICE_OVERLAY.text",
+  "before": "후우...",
+  "after": "후우……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00700,O00701::VOICE_OVERLAY.text",
+  "before": "놀라워...... 용 같아.",
+  "after": "놀라워…… 용 같아.",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00085,O00086::VOICE_OVERLAY.text",
+  "before": "어? 저기...... 누구......세요?",
+  "after": "어? 저기…… 누구……세요?",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00088,O00089::VOICE_OVERLAY.text",
+  "before": "피터? 네가......?^n그럼 내가 엄마일지도 몰라.^n그래, 내가 엄마가 틀림없어.",
+  "after": "피터? 네가……?^n그럼 내가 엄마일지도 몰라.^n그래, 내가 엄마가 틀림없어.",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00112,O00113::VOICE_OVERLAY.text",
+  "before": "저게 뭐야? 아마모리?^n우와...... 저런 건 보고 싶지 않았어.",
+  "after": "저게 뭐야? 아마모리?^n우와…… 저런 건 보고 싶지 않았어.",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00176,O00177::VOICE_OVERLAY.text",
+  "before": "기프트에 빙의된 거예요?^n아니면...... 원래 이런 사람이에요?",
+  "after": "기프트에 빙의된 거예요?^n아니면…… 원래 이런 사람이에요?",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00190,O00191::VOICE_OVERLAY.text",
+  "before": "싫지만 기프트의 힘이^n사슬처럼 날 붙잡고 끌고 가......",
+  "after": "싫지만 기프트의 힘이^n사슬처럼 날 붙잡고 끌고 가……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2500.gsc::slots/C02247,O02248::VOICE_OVERLAY.text",
+  "before": "아...... 아! 아......",
+  "after": "아…… 아! 아……",
+  "reason": "본문 11,880건이 「……」로 통일돼 있는데(1,777건) 자막만 ASCII 마침표 셋을 쓰고 있었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00348,O00349::VOICE_OVERLAY.text",
+  "before": "내가 불렀어.^n그를 불렀어.",
+  "after": "내가 불렀어.^n그 사람을 불렀어.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00352,O00353::VOICE_OVERLAY.text",
+  "before": "내가 불렀어.^n그를 불렀어.",
+  "after": "내가 불렀어.^n그 사람을 불렀어.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00356,O00357::VOICE_OVERLAY.text",
+  "before": "내가 불렀어.^n그를 불렀어.",
+  "after": "내가 불렀어.^n그 사람을 불렀어.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00533,O00534::VOICE_OVERLAY.text",
+  "before": "내가 불렀어.^n그를 불렀어.",
+  "after": "내가 불렀어.^n그 사람을 불렀어.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00536,O00537::VOICE_OVERLAY.text",
+  "before": "그는 누구였지?^n왜 여기에 있었어?",
+  "after": "그 사람은 누구였지?^n왜 여기에 있었어?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00572,O00573::VOICE_OVERLAY.text",
+  "before": "내가 불렀어.^n그를 불렀어.",
+  "after": "내가 불렀어.^n그 사람을 불렀어.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00737,O00738::VOICE_OVERLAY.text",
+  "before": "……그녀는 떠났어,^n……자기 의지로.",
+  "after": "……그 사람은 떠났어,^n……자기 의지로.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00149,O00150::VOICE_OVERLAY.text",
+  "before": "그는 그녀를 볼 수 없어.",
+  "after": "아케루는 아마모리를 못 봐.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00172,O00173::VOICE_OVERLAY.text",
+  "before": "그가 사랑하는 카코의 집을 보고 난 뒤에는^n어디로든 마음대로 도망쳐도 되잖아?",
+  "after": "아케루가 사랑하는 카코의 집을 보고 난 뒤에는^n어디로든 마음대로 도망쳐도 되잖아?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00561,O00562::VOICE_OVERLAY.text",
+  "before": "그는 내렸지?",
+  "after": "아케루는 내렸지?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00626,O00627::VOICE_OVERLAY.text",
+  "before": "그는 내리지 않았지?",
+  "after": "아케루는 안 내렸지?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00812,O00813::VOICE_OVERLAY.text",
+  "before": "그는 그녀를 막지 않았어?",
+  "after": "아케루는 안 말렸어?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00040,O00041::VOICE_OVERLAY.text",
+  "before": "하지만 그의 소원은 이루어지지 않았어.^n기프트는 철저히 지켜지고 있었거든.",
+  "after": "하지만 그 소원은 이루어지지 않았어.^n기프트는 철저히 지켜지고 있었거든.",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2400.gsc::slots/C00398,O00399::VOICE_OVERLAY.text",
+  "before": "피터 팬을 돕고 싶다고? 흠흠.^n그래, 너와 나는 뜻이 통하는구나.^n나도 그를 실컷 사랑해 주겠어!",
+  "after": "피터 팬을 돕고 싶다고? 흠흠.^n그래, 너와 나는 뜻이 통하는구나.^n나도 피터 팬을 실컷 사랑해 주겠어!",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2600.gsc::slots/C01164,O01165::VOICE_OVERLAY.text",
+  "before": "원한다면 줘야겠지.^n카리야 씨, 친절한 당신에게 부탁할게.^n그 반지를 그녀에게 주지 않을래?",
+  "after": "원한다면 줘야겠지.^n카리야 씨, 친절한 당신에게 부탁할게.^n그 반지를 저 사람에게 주지 않을래?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2600.gsc::slots/C01215,O01216::VOICE_OVERLAY.text",
+  "before": "카리야 씨, 친절한 당신에게 부탁할게.^n그 반지를 그녀에게 주지 않을래?",
+  "after": "카리야 씨, 친절한 당신에게 부탁할게.^n그 반지를 저 사람에게 주지 않을래?",
+  "reason": "한국어 구어에서 「그/그녀」는 번역투다. 이름·지시어로 바꾸거나 주어를 생략한다. 지문(했다체)은 예외로 두었다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00066,O00067::VOICE_OVERLAY.text",
+  "before": "전화 소리가 안 들려?",
+  "after": "부르는 소리가 안 들려?",
+  "reason": "EN 'Can't he hear the call?' — 바로 다음 줄이 '하늘에서'다. 하늘에서 오는 건 전화가 아니라 부름이고, 작품 전체가 「부르다/불리다」를 축으로 돈다"
+ },
+ {
+  "uid": "english_patch/2100.gsc::slots/C00178,O00179::VOICE_OVERLAY.text",
+  "before": "초과 근무야?",
+  "after": "야근이야?",
+  "reason": "EN 'Overtime?' — 입말이다. 초과 근무는 서류 말투다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00342,O00343::VOICE_OVERLAY.text",
+  "before": "아케루우우, 금세 부끄러워한다니까.^n다들 네가 상냥한 거 알아～",
+  "after": "아케루우우, 금세 부끄러워한다니까.^n다들 네가 상냥한 거 알아~",
+  "reason": "본문이 반각 ~ 195건 / 전각 ～ 28건으로 반각 우세인데 자막만 뒤섞여 있었다"
+ },
+ {
+  "uid": "english_patch/2300.gsc::slots/C00370,O00371::VOICE_OVERLAY.text",
+  "before": "시리우스의 주인인가?^n안녕～ 만나서 잘 먹겠습니다!",
+  "after": "시리우스의 주인인가?^n안녕~ 만나서 잘 먹겠습니다!",
+  "reason": "본문이 반각 ~ 195건 / 전각 ～ 28건으로 반각 우세인데 자막만 뒤섞여 있었다"
+ }
+]

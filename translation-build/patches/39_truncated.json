@@ -1,0 +1,14 @@
+[
+ {
+  "uid": "original_scr/2500.gsc::command/0x003D32::MESSAGE.text",
+  "before": "^g005렇게 단순하게 규정짓지 말아줄래.",
+  "after": "^g005그렇게 단순하게 규정짓지 말아줄래.",
+  "reason": "문장 첫 글자 그가 탈락했다. 원문 そんな는 그렇게다"
+ },
+ {
+  "uid": "original_scr/3031.gsc::command/0x00125C::MESSAGE.text",
+  "before": "^g009지만, 뭐, 이것도 무슨 인연이다.",
+  "after": "^g009하지만, 뭐, 이것도 무슨 인연이다.",
+  "reason": "문장 첫 글자 하가 탈락했다. 지만은 연결어미라 문장을 시작할 수 없다. 원문 けど는 하지만이다"
+ }
+]

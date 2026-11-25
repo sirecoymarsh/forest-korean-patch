@@ -1,0 +1,55 @@
+#pragma once
+#define WIN32_LEAN_AND_MEAN
+#define NOMINMAX
+#include <windows.h>
+#include <string>
+#include <vector>
+#include <set>
+#include <map>
+#include <cstdint>
+#include <mutex>
+namespace forest {
+struct OptionDef { std::wstring label, classification, result; uint32_t target; std::vector<int> nextChoices, nextScenes; };
+struct ChoiceDef { std::string id; int script, chapter, category; uint32_t pc; std::wstring prompt; std::vector<OptionDef> options; bool rejoins; };
+struct SceneDef { int script, chapter; std::wstring title; std::vector<int> choices, parents; };
+extern const std::vector<std::wstring> chapterNames;
+extern const std::vector<SceneDef> scenes;
+extern const std::vector<ChoiceDef> choices;
+extern const std::string modelIdentity;
+enum EventKind { SceneEnter=1, ChoiceReached=2, OptionChosen=3, SceneExit=4, Restart=5 };
+struct Event { int kind, script, choice, option; uint32_t pc; };
+struct RunState { bool known=false; int currentScript=0, currentChoice=-1; uint32_t currentPc=0; std::vector<Event> events; };
+struct Progress { RunState run, primary, secondary; std::set<int> reachedScenes, completedScenes, reachedChoices; std::set<std::pair<int,int>> chosenOptions; };
+extern Progress progress;
+extern std::recursive_mutex progressMutex;
+Progress SnapshotProgress();
+void UnknownRun(const std::string& reason);
+int SceneIndex(int script);
+int ChapterOf(int script);
+int CurrentSelection(int choice);
+bool SceneKnown(int script);
+void LoadProgress(const std::wstring& root);
+void PersistProgress();
+void ObserveOpcode(int script,uint32_t pc,uint16_t op);
+void CapturePrimary();
+void CaptureSecondary();
+void RestoreSecondary();
+// 되감기(qol_rewind.cpp)용: 「이번 회차」 기록의 한 시점. 기록(events)은 한 회차 안에서 덧붙기만 하므로 길이로 적는다.
+struct RunPoint { bool known=false; int script=0, choice=-1; uint32_t pc=0; uint32_t events=0; };
+struct RunMark { uint32_t epoch=0; RunPoint run, primary, secondary; std::vector<int> pending; int lastStory=0; };
+RunMark MarkRun();
+bool RewindRun(const RunMark& mark);   // false = 그 사이에 기록이 통째로 바뀌어 못 돌아감(회차 기록을 「모름」으로 둔다)
+void Saved(unsigned slot,const std::wstring& file);
+void Loaded(unsigned slot,const std::wstring& file,bool success);
+std::string Digest(const void* data,size_t size);
+std::string DigestFile(const std::wstring& file);
+void Log(const std::string& message);
+bool ChartIsOpen();
+bool ChartBegin(HWND game,int mode);
+bool ChartWndProc(HWND h,UINT m,WPARAM wp,LPARAM lp,LRESULT& result);
+void SetChartClosedCallback(void(*callback)(int play));
+void SetChartPaths(const std::wstring& root,const std::wstring& globalSave);
+void SetChartVarSource(const uint16_t*(*source)());
+bool RenderChartPng(const std::wstring& root,int page,bool showAll,const std::wstring& outPng,int hoverType,int hoverA,int hoverB);
+bool TimeChartPaint(const std::wstring& root,int page,int n,int cw,int chh,double* out);   // 시험: 그리기 시간(chart_ui.cpp)
+}

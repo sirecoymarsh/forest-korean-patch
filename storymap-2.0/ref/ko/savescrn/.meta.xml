@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Canvas xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Width>800</Width>
+  <Height>600</Height>
+  <Items>
+    <Item x="-501" y="-89" flag="40">bg_load</Item>
+    <Item x="-501" y="-89" flag="40">bg_save</Item>
+    <Item x="563" y="544" flag="40">prev</Item>
+    <Item x="563" y="544" flag="40">prev_f</Item>
+    <Item x="563" y="544" flag="40">prev_c</Item>
+    <Item x="636" y="544" flag="40">next</Item>
+    <Item x="636" y="544" flag="40">next_f</Item>
+    <Item x="636" y="544" flag="40">next_c</Item>
+    <Item x="707" y="538" flag="40">exit</Item>
+    <Item x="707" y="538" flag="40">exit_f</Item>
+    <Item x="599" y="537" flag="41">number</Item>
+    <Item x="106" y="137" flag="41">0</Item>
+    <Item x="106" y="204" flag="40">1</Item>
+    <Item x="106" y="271" flag="40">2</Item>
+    <Item x="106" y="338" flag="40">3</Item>
+    <Item x="106" y="405" flag="40">4</Item>
+    <Item x="421" y="137" flag="40">5</Item>
+    <Item x="421" y="204" flag="40">6</Item>
+    <Item x="421" y="271" flag="40">7</Item>
+    <Item x="421" y="338" flag="40">8</Item>
+    <Item x="421" y="405" flag="40">9</Item>
+  </Items>
+</Canvas>

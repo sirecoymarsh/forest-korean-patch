@@ -1,0 +1,120 @@
+{"id": "2500:55", "verdict": "KEEP", "cat": "register", "why": "なっちゃった는 구어인데 old 「되어버렸다」만 문어체로 튀던 것을 앞뒤 반말에 맞춤"}
+{"id": "2500:57", "verdict": "KEEP", "cat": "omission", "why": "グリたん의 「たん」을 old 가 빠뜨림 — 다음 줄이 「たん」 호칭을 따지므로 「그리땅」이 맞음"}
+{"id": "2500:58", "verdict": "KEEP", "cat": "omission", "why": "「たん」을 old 「이」로 옮겨 앞 줄과 안 맞던 것을 「땅」으로 맞춤"}
+{"id": "2500:68", "verdict": "KEEP", "cat": "direction", "why": "見られてる(보이는 쪽)를 old 가 「보고 있는 나」로 뒤집었던 것을 바로잡음"}
+{"id": "2500:79", "verdict": "KEEP", "cat": "meaning", "why": "すごい는 눈앞 광경에 대한 감탄인데 old 「너, 대단하잖아」는 상대 칭찬으로 읽힘"}
+{"id": "2500:81", "verdict": "KEEP", "cat": "meaning", "why": "お気楽=태평함; old 「들떠 있구나」는 뜻이 다름"}
+{"id": "2500:89", "verdict": "KEEP", "cat": "meaning", "why": "見上げた、と言うべきじゃない(그리 말하면 안 된다)를 old 가 반대로 옮겼고, 一匹→ひとり 고쳐 말하기도 살림"}
+{"id": "2500:90", "verdict": "KEEP", "cat": "register", "why": "old 는 「안녕」 반말과 높임이 한 줄에 섞였음 — ごきげんよろしゅう 격식에 맞게 고름"}
+{"id": "2500:92", "verdict": "KEEP", "cat": "register", "why": "기사 합쇼체인데 old 끝 「분이다!」만 반말로 튀던 것을 맞춤"}
+{"id": "2500:98", "verdict": "KEEP", "cat": "register", "why": "리피칩은 「저」를 쓰는데 old 「나와 함께」만 어긋났음"}
+{"id": "2500:99", "verdict": "KEEP", "cat": "ok", "why": "줄바꿈만 바뀜, 57칸 넘던 줄을 나눔"}
+{"id": "2500:114", "verdict": "KEEP", "cat": "ok", "why": "쉼표·줄바꿈 정리뿐, 뜻 같음"}
+{"id": "2500:116", "verdict": "FIX", "cat": "omission", "why": "줄 정리는 좋으나 平気ですよ？의 떠보는 물음꼴을 마침표로 지웠음 — 「?」만 되살림", "fix": "^g005하지만 교수님?^n토끼들은 교수님의 마음을 알고 있다고 생각해요.^n그러니까 분명 제법 괜찮을 거예요?"}
+{"id": "2500:125", "verdict": "KEEP", "cat": "ok", "why": "줄바꿈만"}
+{"id": "2500:126", "verdict": "KEEP", "cat": "korean", "why": "오타 「더물거리지」 고침"}
+{"id": "2500:131", "verdict": "KEEP", "cat": "korean", "why": "「쫓아잡히다」는 없는 말 — 「따라잡히다」"}
+{"id": "2500:135", "verdict": "KEEP", "cat": "korean", "why": "「쫓아잡히다」는 없는 말 — 「따라잡히다」"}
+{"id": "2500:141", "verdict": "STYLE", "cat": "style", "why": "「히로인이다」↔「히로인이지」 말맛 차이뿐"}
+{"id": "2500:144", "verdict": "KEEP", "cat": "meaning", "why": "チャーミングな娘さん을 old 「양반」으로 옮긴 오역 바로잡음; 我輩 「이 몸」은 솔로몬 대사 전체와 맞음"}
+{"id": "2500:148", "verdict": "FIX", "cat": "meaning", "why": "old 「싫어·아니」는 뜻이 반대(ヤー·ダー=Ja·Da, 둘 다 「예」); new 는 뜻은 맞으나 「맞습니다」로 풀어 외국어 말장난이 사라짐 — 원문 속 외국어는 소리대로", "fix": "^g007야─입니다 다─입니다 트루입니다!^n카리야 씨~!"}
+{"id": "2500:149", "verdict": "FIX", "cat": "pronoun", "why": "대사의 「그녀」 금지 위반(old·new 둘 다); new 는 앞서 높이던 리피칩에게 반말로 바꾸기까지 함 — old 말씨에 「저 사람」", "fix": "^g006나가츠키 씨…….^n리피칩, 저 사람은 제 친구예요."}
+{"id": "2500:160", "verdict": "KEEP", "cat": "ok", "why": "줄바꿈만"}
+{"id": "2500:164", "verdict": "KEEP", "cat": "korean", "why": "「둘러보는 한 면 가득히」「축소판인 것이었다」 직역투를 풂, 뜻 같음"}
+{"id": "2500:186", "verdict": "KEEP", "cat": "term", "why": "솔로몬의 我輩는 바뀐 뒤 전부 「이 몸」으로 통일됨(과인은 왕의 자칭이라 이 인물 말투에 안 맞음)"}
+{"id": "2500:187", "verdict": "KEEP", "cat": "register", "why": "かい는 반말 — 거친 그리자벨라에게 old 「말인가요?」 존댓말이 안 맞았음"}
+{"id": "2500:189", "verdict": "KEEP", "cat": "term", "why": "我輩 「이 몸」 통일과 쉼표 정리"}
+{"id": "2500:191", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 「아메노모리 씨」, 「고개를 들었다」가 자연스러움"}
+{"id": "2500:201", "verdict": "KEEP", "cat": "korean", "why": "「우리들은…있었지만」을 매끄럽게, 뜻 같음"}
+{"id": "2500:204", "verdict": "KEEP", "cat": "meaning", "why": "ネコのはしくれ(어쨌든 고양이 축)를 old 「너라도 고양이의 일족」이 어색하게 옮겼음"}
+{"id": "2500:214", "verdict": "KEEP", "cat": "korean", "why": "「모습해 보이면」 비문 고침"}
+{"id": "2500:216", "verdict": "KEEP", "cat": "korean", "why": "「낭비고?」를 「낭비잖아?」로, 줄 정리"}
+{"id": "2500:221", "verdict": "KEEP", "cat": "ok", "why": "쉼표·줄바꿈만"}
+{"id": "2500:225", "verdict": "KEEP", "cat": "korean", "why": "오타 「줍다 줘서」 고침"}
+{"id": "2500:230", "verdict": "KEEP", "cat": "korean", "why": "「빼앗겨서 타당할까 보냐」 비문을 たまるか 뜻대로 고침"}
+{"id": "2500:231", "verdict": "KEEP", "cat": "term", "why": "借り暮らし를 old 「더불어 살기」로 잘못 옮김 — 바로 다음 줄들이 쓰는 「빌려 사는 소인」으로 맞춤"}
+{"id": "2500:241", "verdict": "KEEP", "cat": "meaning", "why": "身に覚えがある(찔리는 데가 있다)를 old 「본 적 있는 것 같고」로 오역"}
+{"id": "2500:249", "verdict": "STYLE", "cat": "register", "why": "한 줄 안 「그래요」와 「있네?」 섞임을 해요체로 고름 — 둘 다 무난"}
+{"id": "2500:264", "verdict": "REVERT", "cat": "register", "why": "원문은 です 뒤 「私。」「いいの」로 반말로 내려가는 앨리스의 거만한 말투 — old 가 살렸고 new 는 해요체로 평탄화"}
+{"id": "2500:269", "verdict": "KEEP", "cat": "meaning", "why": "名乗りが挙がった는 스스로 나섰다는 뜻인데 old 「이름이 불렸다」는 남이 부른 것으로 읽힘"}
+{"id": "2500:283", "verdict": "KEEP", "cat": "term", "why": "我輩 「이 몸」 통일"}
+{"id": "2500:285", "verdict": "KEEP", "cat": "korean", "why": "「파트너, 라고」 직역을 「파트너라」로, 我輩 통일"}
+{"id": "2500:295", "verdict": "KEEP", "cat": "korean", "why": "「보잘것없다. …것입니다」 말씨 섞임과 57칸 넘던 줄을 고르고 生き続け의 「계속」도 살림"}
+{"id": "2500:296", "verdict": "REVERT", "cat": "term", "why": "이 장면 앨리스는 소원 의식에서 참가자에게 「너」(바로 앞 「너야말로」 등 안 바뀐 줄들) — 이 줄만 「당신」으로 바꿔 어긋남"}
+{"id": "2500:298", "verdict": "KEEP", "cat": "korean", "why": "쉼표 정리, 「라고」를 「고」로 — 뜻 같음"}
+{"id": "2500:311", "verdict": "KEEP", "cat": "korean", "why": "말줄임표가 줄 사이에서 쪼개지던 것을 고침"}
+{"id": "2500:329", "verdict": "KEEP", "cat": "korean", "why": "「그거 소원해」 어색한 직역을 「소원은 그걸로 할게」로"}
+{"id": "2500:349", "verdict": "KEEP", "cat": "korean", "why": "「무엇을 소란을 피우는」 비문 고침"}
+{"id": "2500:356", "verdict": "KEEP", "cat": "ok", "why": "띄어쓰기·줄바꿈만"}
+{"id": "2500:362", "verdict": "REVERT", "cat": "term", "why": "바로 다음 줄(안 바뀜)이 「너의 소원은」 — 같은 あなたの望み를 이 줄만 「당신」으로 바꿔 두 줄이 어긋남"}
+{"id": "2500:368", "verdict": "KEEP", "cat": "meaning", "why": "脳みそ를 old 「뇌미소」로 잘못 옮긴 것 바로잡음"}
+{"id": "2500:376", "verdict": "KEEP", "cat": "term", "why": "我輩 「이 몸」 통일, 性に合う=성미에 맞다"}
+{"id": "2500:378", "verdict": "KEEP", "cat": "korean", "why": "「관계자 이외는」 다듬고 はねていった를 「통통 뛰어갔다」로 살림"}
+{"id": "2500:388", "verdict": "KEEP", "cat": "korean", "why": "「대기쁨의 대소란」 비문을 자연스럽게"}
+{"id": "2500:393", "verdict": "KEEP", "cat": "korean", "why": "지문 다듬기, 뜻 같음"}
+{"id": "2500:395", "verdict": "FIX", "cat": "term", "why": "줄 정리·「제 검」은 좋으나 ご婦人을 「부인분」(기혼녀로 읽힘)으로 바꿈 — old 「여성분」으로", "fix": "^g033아니오, 저의 공주님. 그것은 기사도에 반하는 일.^n제 검은 이미 공주님께 바쳤습니다.^n다른 여성분은 제 안중에 없습니다."}
+{"id": "2500:405", "verdict": "KEEP", "cat": "meaning", "why": "なれなれしい(친한 척)를 old 「사근사근하게」로 오역"}
+{"id": "2500:409", "verdict": "KEEP", "cat": "korean", "why": "それっきり 「그것으로 끝 그 자리에서」 비문 고침"}
+{"id": "2500:410", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 「고양이와 까마귀」"}
+{"id": "2500:417", "verdict": "KEEP", "cat": "korean", "why": "「맡 겨둬」 띄어쓰기 오류"}
+{"id": "2500:425", "verdict": "KEEP", "cat": "korean", "why": "せいぜい를 old 「제일」로 어색하게 옮김 — 「아무쪼록 정중히」 무난"}
+{"id": "2500:427", "verdict": "KEEP", "cat": "term", "why": "지문의 九月さん은 「나가츠키 씨」로 통일"}
+{"id": "2500:430", "verdict": "KEEP", "cat": "register", "why": "정중체에서 마유즈미의 ボク는 다른 줄도 「저」 — 「나는 차갑습니다」 섞임 고침, 뜻 같음"}
+{"id": "2500:438", "verdict": "KEEP", "cat": "register", "why": "「너…인가요?」 2인칭·어미 짝 어긋남을 「그쪽」으로"}
+{"id": "2500:440", "verdict": "KEEP", "cat": "korean", "why": "それっきり 비문 고침(같은 줄 다른 갈래)"}
+{"id": "2500:444", "verdict": "KEEP", "cat": "korean", "why": "「맡 겨둬」 띄어쓰기 오류(같은 줄 다른 갈래)"}
+{"id": "2500:452", "verdict": "KEEP", "cat": "korean", "why": "せいぜい 「제일」 고침(같은 줄 다른 갈래)"}
+{"id": "2500:461", "verdict": "KEEP", "cat": "korean", "why": "쉼표 정리, 「최초로」를 「가장 먼저」로"}
+{"id": "2500:467", "verdict": "KEEP", "cat": "meaning", "why": "ばらばらに散る를 old 「산산조각이 나」로 옮겨 부서진 뜻이 됨"}
+{"id": "2500:477", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 「배틀이라고」"}
+{"id": "2500:478", "verdict": "KEEP", "cat": "meaning", "why": "腕っぷしはからっきし(완력이 없다)를 old 「싸움꾼은 꽝」으로 흐리게 옮김; 旦那는 다른 줄처럼 「나리」"}
+{"id": "2500:483", "verdict": "KEEP", "cat": "korean", "why": "쉼표·띄어쓰기"}
+{"id": "2500:491", "verdict": "FIX", "cat": "style", "why": "「말을 이었다」는 좋으나 원문 ───(셋)을 ──(둘)로 줄임 — 셋으로", "fix": "^g999───라고 앨리스는 말을 이었다."}
+{"id": "2500:503", "verdict": "KEEP", "cat": "register", "why": "「소개해 드리지요」 높임과 「너희들」이 어긋남 — 규칙 설명의 あなたがた는 「여러분」"}
+{"id": "2500:505", "verdict": "KEEP", "cat": "register", "why": "같은 규칙 설명 줄, 「여러분」"}
+{"id": "2500:506", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기"}
+{"id": "2500:510", "verdict": "KEEP", "cat": "korean", "why": "「쫓아잡히면」 고침"}
+{"id": "2500:536", "verdict": "FIX", "cat": "register", "why": "줄 정리는 좋으나 あんた·見して의 반말을 「보여줄래요?」로 올려 나가츠키의 반말+이상한 존댓말 섞임을 지움 — old 말씨로", "fix": "^g007그리자벨라, 너 주사위 좀 보여줘?^n평범한 네모난 주사위지요?^n로스트한 면, 있어요?"}
+{"id": "2500:561", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기·줄바꿈"}
+{"id": "2500:566", "verdict": "STYLE", "cat": "style", "why": "두 문장을 「없지 않겠습니까?」로 합침 — 뜻 같고 둘 다 무난"}
+{"id": "2500:569", "verdict": "KEEP", "cat": "korean", "why": "오타 「더물거리며」"}
+{"id": "2500:572", "verdict": "KEEP", "cat": "korean", "why": "줄 정리, 「전신」→「온몸」"}
+{"id": "2500:573", "verdict": "KEEP", "cat": "korean", "why": "「아슬아슬함으로」 어색한 꼴 고침"}
+{"id": "2500:586", "verdict": "KEEP", "cat": "meaning", "why": "かったるい=귀찮다; old 「지이증해」는 없는 말"}
+{"id": "2500:587", "verdict": "KEEP", "cat": "meaning", "why": "キィキィ叫ぶ를 old 「킥킥」(웃음소리)으로 오역"}
+{"id": "2500:588", "verdict": "KEEP", "cat": "korean", "why": "「하고 있으면?」 직역을 「먼저 하고 있지 그래?」로"}
+{"id": "2500:589", "verdict": "FIX", "cat": "korean", "why": "쪼개진 말줄임표 고침은 좋으나 「말씀에 기대어」는 甘えて 직역투 — old 「말씀대로」로", "fix": "^g023그렇다고 하시니, 말씀대로…….^n가시지요, 아케루 나리?"}
+{"id": "2500:590", "verdict": "KEEP", "cat": "korean", "why": "「너 다이스」→「네 다이스」, 줄 정리"}
+{"id": "2500:591", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기·줄 정리"}
+{"id": "2500:595", "verdict": "KEEP", "cat": "omission", "why": "グリたん 「그리땅」 통일"}
+{"id": "2500:602", "verdict": "KEEP", "cat": "korean", "why": "先を急ぐ 「앞을 서두른다」 직역을 「갈 길을 서두른다」로"}
+{"id": "2500:605", "verdict": "KEEP", "cat": "direction", "why": "避けられてる(내 쪽이 피함을 당함)를 old 가 주어 없이 「피하고 있다」로 써서 뒤집혀 읽혔음"}
+{"id": "2500:609", "verdict": "KEEP", "cat": "korean", "why": "「「로스트」^n의 틀린 표현」 줄 끊김·직역 고침"}
+{"id": "2500:612", "verdict": "KEEP", "cat": "korean", "why": "「한숨 휴식」 어색 → 「잠시 휴식」"}
+{"id": "2500:619", "verdict": "KEEP", "cat": "ok", "why": "줄 정리"}
+{"id": "2500:625", "verdict": "KEEP", "cat": "korean", "why": "줄 정리, 「끌어안고」"}
+{"id": "2500:627", "verdict": "KEEP", "cat": "korean", "why": "「얼마나 동안」 비문"}
+{"id": "2500:629", "verdict": "KEEP", "cat": "meaning", "why": "すり足(발을 끌며)을 old 「줏대 없이」로 오역"}
+{"id": "2500:637", "verdict": "KEEP", "cat": "korean", "why": "「쫓아잡혀」 고침"}
+{"id": "2500:638", "verdict": "KEEP", "cat": "meaning", "why": "丸くて(둥글고)를 old 「뾰족해서」로 반대로 옮김"}
+{"id": "2500:641", "verdict": "KEEP", "cat": "korean", "why": "「무서워.^n인데」 비문 고침"}
+{"id": "2500:648", "verdict": "KEEP", "cat": "meaning", "why": "手だと思うよ？는 제 생각을 말한 것인데 old 「수라고 생각해?」는 상대에게 묻는 꼴"}
+{"id": "2500:649", "verdict": "KEEP", "cat": "korean", "why": "あとは를 「그 뒤로는」으로, 쉼표 정리"}
+{"id": "2500:652", "verdict": "KEEP", "cat": "term", "why": "九月さん 「나가츠키 씨」 통일"}
+{"id": "2500:653", "verdict": "KEEP", "cat": "korean", "why": "「계속되고 있다」→「이어져 있다」"}
+{"id": "2500:659", "verdict": "KEEP", "cat": "korean", "why": "「쫓아잡히지」 고침"}
+{"id": "2500:660", "verdict": "KEEP", "cat": "korean", "why": "「기회가 있습니다?」 어색한 꼴을 반문으로"}
+{"id": "2500:661", "verdict": "STYLE", "cat": "style", "why": "끝 「있다」를 「있습니다」로 — 기사의 말씨 섞임을 살리느냐 고르느냐 차이, 둘 다 무난"}
+{"id": "2500:664", "verdict": "KEEP", "cat": "meaning", "why": "分のいい勝負じゃない(유리하지 않다)를 old 「불리한 승부가 아니고」로 반대로 옮김"}
+{"id": "2500:666", "verdict": "KEEP", "cat": "ok", "why": "쉼표·줄 정리"}
+{"id": "2500:668", "verdict": "KEEP", "cat": "term", "why": "不敵 「불적」은 한국어에 없는 말 — 「대담」"}
+{"id": "2500:670", "verdict": "KEEP", "cat": "korean", "why": "「10칸을 좁혀져」 비문 고침"}
+{"id": "2500:671", "verdict": "KEEP", "cat": "korean", "why": "「멀리 있는 곳에 있었다」 겹말 정리"}
+{"id": "2500:673", "verdict": "FIX", "cat": "korean", "why": "old 「나이스」(원문에 없는 영어)·「불리하지 않은」 돌려 말하기 고침은 맞으나 しめた를 「좋았군」(지난 일 평가처럼 읽힘)으로 — 「옳거니」", "fix": "^g033옳거니.^n공주님, 이번엔 제법 승산이 있는 승부 아닙니까?"}
+{"id": "2500:686", "verdict": "KEEP", "cat": "korean", "why": "「나 상관없어?」 어색 → 「난 상관없는데?」"}
+{"id": "2500:688", "verdict": "KEEP", "cat": "korean", "why": "「등 뒤가」→「등이」, 되풀이는 살림"}
+{"id": "2500:698", "verdict": "FIX", "cat": "term", "why": "줄 정리는 좋으나 模様을 「문양」으로 바꿔 바로 뒤 「패턴은 글자」와 어긋나고 「보풀 인」은 조사 빠짐 — 「보풀이 인」「패턴」", "fix": "^g005내가 주목한 것은, 몸을 둥글게 말고 떨고 있는^n토끼가 누운 노랗게 빛나는 보풀이 인 코스의^n그 표면에 떠오르는 패턴──"}
+{"id": "2500:700", "verdict": "FIX", "cat": "term", "why": "うちのデータ를 「연구실」로 바로잡은 건 맞으나 模様 「문양」이 앞 줄 「패턴은 글자」와 어긋남 — 「패턴」으로", "fix": "^g005천으로 깔린 코스에 빽빽하게 짜여^n있는 패턴은 실험 데이터다.^n우리 연구실 데이터다. 날짜는 미래."}
+{"id": "2500:704", "verdict": "KEEP", "cat": "korean", "why": "「코스에 만져보았다」 조사 오류, 줄 정리"}
+{"id": "2500:707", "verdict": "KEEP", "cat": "register", "why": "앞뒤가 「~다」 독백 지문인데 old 만 「뗐어·크러셔야」 반말로 튀었음"}
+{"id": "2500:710", "verdict": "KEEP", "cat": "korean", "why": "「말해라고」 비문, 「똥의 처리」 직역 고침"}

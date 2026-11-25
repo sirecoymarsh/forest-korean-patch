@@ -1,0 +1,10 @@
+{
+ "checked": 3219,
+ "flagged_rows": 165,
+ "flags": {
+  "LINES": 70,
+  "QUOTE": 89,
+  "HALF_LATIN": 5,
+  "CONSIST": 1
+ }
+}

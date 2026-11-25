@@ -1,0 +1,120 @@
+{"id": "2100:144", "verdict": "KEEP", "cat": "register", "why": "원문은 평서체인데 old가 한 줄 안에 해요체와 반말을 섞음; new가 반말로 맞춤"}
+{"id": "2100:159", "verdict": "KEEP", "cat": "register", "why": "앞뒤가 반말인데 old만 「그렇죠?/해요」로 높임이 튐; new가 반말로 통일"}
+{"id": "2100:162", "verdict": "REVERT", "cat": "overcorrect", "why": "old 「고맙기도 해라」가 비꼬는 ご親切に 뜻까지 담음; new는 「고맙고 친절하시기도」로 두 말을 이어 붙여 어색"}
+{"id": "2100:180", "verdict": "STYLE", "cat": "style", "why": "「라기보다」/「그보다 ~랄까」 말맛 차이, 둘 다 자연스러움"}
+{"id": "2100:183", "verdict": "REVERT", "cat": "overcorrect", "why": "old 「정말 울고 싶어」로 뜻이 통함; new는 세기 맞추기에 「회계연도 말이라.」 끝맺음이 어색"}
+{"id": "2100:226", "verdict": "FIX", "cat": "korean", "why": "3인칭 서술의 「나도 모르게」와 신음 보탬을 고친 방향은 맞으나 思わず=「무심코」는 번역투; 「자기도 모르게」로", "fix": "^g999자기도 모르게 숨을 삼켰다. 희미하게 목소리가 샜다.^n그 목소리는 휴대폰에 포착되어,^n증폭되어 울려 퍼졌다. 텔레비전 속에서."}
+{"id": "2100:281", "verdict": "STYLE", "cat": "style", "why": "「고의로?」/「일부러 그런 거니?」 말맛 차이, new가 앞 「눈치챘니?」와 잘 붙음"}
+{"id": "2100:351", "verdict": "KEEP", "cat": "register", "why": "원문은 평서체인데 old가 한 줄 안에 해요체와 반말을 섞음; new가 반말로 맞춤"}
+{"id": "2100:366", "verdict": "KEEP", "cat": "register", "why": "앞뒤가 반말인데 old만 「그렇죠?/해요」로 높임이 튐; new가 반말로 통일"}
+{"id": "2100:369", "verdict": "REVERT", "cat": "overcorrect", "why": "old 「고맙기도 해라」가 비꼬는 ご親切に 뜻까지 담음; new는 「고맙고 친절하시기도」로 두 말을 이어 붙여 어색"}
+{"id": "2100:418", "verdict": "KEEP", "cat": "meaning", "why": "「창가 자리도」는 마지못한 뉘앙스가 생김; 「창가 자리로」가 맞고 ですね 확인 말투도 자연스러움"}
+{"id": "2100:478", "verdict": "REVERT", "cat": "term", "why": "old 노신사 말투(타렴·뿌려다오)로 뜻이 통함; new 「나눠 주세요」는 바로 뒤 「호외를 뿌리는」과 같은 配る를 어긋나게 함"}
+{"id": "2100:480", "verdict": "KEEP", "cat": "meaning", "why": "言われたとおり를 「말한 대로」로 하면 누가 말했는지 흐림; 「시키는 대로」가 정확"}
+{"id": "2100:601", "verdict": "STYLE", "cat": "style", "why": "「피우게 하는」/「꽃피우는」 말맛 차이"}
+{"id": "2100:610", "verdict": "KEEP", "cat": "register", "why": "카리야가 한 줄 안에서 해요체와 반말을 섞던 것을 반말로 통일"}
+{"id": "2100:612", "verdict": "KEEP", "cat": "pronoun", "why": "대사의 「그를」을 「저 사람을」로, 섞인 높임을 반말로 바로잡음"}
+{"id": "2100:625", "verdict": "KEEP", "cat": "register", "why": "「그만둬요/진정해」 섞임을 반말로 통일"}
+{"id": "2100:627", "verdict": "KEEP", "cat": "register", "why": "한 대사 안의 해요체·반말 섞임을 반말로 통일"}
+{"id": "2100:712", "verdict": "KEEP", "cat": "korean", "why": "「나, 의, 꿈?」 직역을 말 더듬는 「내…… 내, 꿈?」으로 자연스럽게"}
+{"id": "2100:721", "verdict": "KEEP", "cat": "register", "why": "앞 두 줄은 해요체인데 끝만 「말란 말이야」로 깨짐; new가 바로잡음"}
+{"id": "2100:722", "verdict": "KEEP", "cat": "meaning", "why": "言い方=말하는 방식, 「그런 식으로 말하면」이 정확하고 높임 섞임도 정리"}
+{"id": "2100:723", "verdict": "KEEP", "cat": "register", "why": "해요체 대사에 섞인 「그렇지」 반말을 「안 그래요」로 맞춤"}
+{"id": "2100:748", "verdict": "KEEP", "cat": "korean", "why": "「그건 말이네요?」 비문을 「그건 말이야,」로"}
+{"id": "2100:756", "verdict": "KEEP", "cat": "register", "why": "「그래요/나 기억나」 섞임을 반말로 통일"}
+{"id": "2100:780", "verdict": "KEEP", "cat": "korean", "why": "「아마모리에게는 ~알고 있었습니다」 비문을 바로잡음"}
+{"id": "2100:783", "verdict": "KEEP", "cat": "meaning", "why": "あと=그 뒤; old 「남은 건」은 오역"}
+{"id": "2100:794", "verdict": "KEEP", "cat": "meaning", "why": "あと=그 뒤; old 「남은 건」은 오역"}
+{"id": "2100:795", "verdict": "KEEP", "cat": "korean", "why": "「우리들은 놀자고요?」 어색함을 「우리끼리 놀자고요!」로"}
+{"id": "2100:796", "verdict": "KEEP", "cat": "meaning", "why": "誘う=불러 권함; 「유혹했습니다」는 뜻이 지나침"}
+{"id": "2100:800", "verdict": "KEEP", "cat": "meaning", "why": "あと=그 뒤 오역을 바로잡음, どんどん을 「점점」으로 한 어긋남도 고침"}
+{"id": "2100:805", "verdict": "KEEP", "cat": "meaning", "why": "あと=그 뒤; old 「남은 건」 오역을 바로잡음"}
+{"id": "2100:843", "verdict": "STYLE", "cat": "style", "why": "「누구, 신가요」/「어느 분, 이세요」 더듬는 꼴만 다름, 둘 다 통함"}
+{"id": "2100:899", "verdict": "KEEP", "cat": "meaning", "why": "見られている는 남의 눈에 보여지는 것; 「감시당하고」는 뜻이 지나침"}
+{"id": "2100:942", "verdict": "KEEP", "cat": "korean", "why": "って、おい를 「잠깐, 어이」로 살리고 old가 보탠 「너」를 뺌"}
+{"id": "2100:950", "verdict": "KEEP", "cat": "meaning", "why": "言葉責め를 「말솜씨」로 한 오역과 「해야지 안 되염」 비문을 바로잡음"}
+{"id": "2100:958", "verdict": "KEEP", "cat": "meaning", "why": "して？는 부탁인데 old 「직접 해?」는 되묻는 말로 읽힘"}
+{"id": "2100:960", "verdict": "KEEP", "cat": "register", "why": "원문이 전부 반말인데 old가 해요체를 섞음; new가 반말로 맞춤"}
+{"id": "2100:970", "verdict": "REVERT", "cat": "register", "why": "원문도 どうですか 뒤 だったんだ！로 혼잣말 반말로 넘어감; old가 그대로 살렸고 new는 높임으로 덮음"}
+{"id": "2100:976", "verdict": "KEEP", "cat": "korean", "why": "「헛수고하며 벗은」 어색함을 「괜히 벗기만 한」으로"}
+{"id": "2101:2", "verdict": "REVERT", "cat": "term", "why": "한자 雨森은 사용자 결정 「아메노모리」인데 new가 「아마모리」로 바꿈"}
+{"id": "2101:16", "verdict": "KEEP", "cat": "korean", "why": "求める를 「구하려고」로 한 직역을 「나를 갈구하려」로"}
+{"id": "2101:35", "verdict": "STYLE", "cat": "style", "why": "「그래도 알아」/「알 수는 있지」 말맛 차이"}
+{"id": "2101:43", "verdict": "KEEP", "cat": "pronoun", "why": "我が身는 걸터앉은 너 자신의 몸; old 「내 몸」은 화자의 몸으로 읽힘"}
+{"id": "2101:60", "verdict": "KEEP", "cat": "meaning", "why": "さらけだされた는 남이 드러낸 것; old 「드러낸」은 스스로 한 것처럼 읽힘"}
+{"id": "2101:67", "verdict": "KEEP", "cat": "meaning", "why": "繰り言=넋두리, 「잠꼬대」보다 정확"}
+{"id": "2101:111", "verdict": "KEEP", "cat": "meaning", "why": "매달려 등에 파고드는 것은 손톱 끝; old 「발톱」은 오역"}
+{"id": "2101:114", "verdict": "STYLE", "cat": "style", "why": "「추삽질」/「추삽」 말맛 차이"}
+{"id": "2101:117", "verdict": "FIX", "cat": "term", "why": "줄머리 빈칸을 지운 건 맞으나 한자 雨森은 사용자 결정 「아메노모리」", "fix": "^g999아메노모리는 내 아래에서^n끝없이 고분고분 따랐다.^n복종했다고 해도 좋다."}
+{"id": "2101:118", "verdict": "KEEP", "cat": "korean", "why": "「허리까지 맞추기조차」 겹친 토씨를 바로잡음"}
+{"id": "2101:131", "verdict": "KEEP", "cat": "meaning", "why": "たった今=바로 지금; 「방금」과 진행형이 어긋나던 것을 바로잡음"}
+{"id": "2101:136", "verdict": "KEEP", "cat": "meaning", "why": "振りかぶり를 「휘두르며」로 한 뜻 모를 말을 바로잡음"}
+{"id": "2101:165", "verdict": "STYLE", "cat": "style", "why": "脈打ち吐き出すもの를 어느 쪽으로 읽느냐 차이, new도 통하고 시제가 더 맞음"}
+{"id": "2200:7", "verdict": "KEEP", "cat": "korean", "why": "「들어보실까」 어색한 높임을 「그럼 한번 들어볼까」로"}
+{"id": "2200:25", "verdict": "KEEP", "cat": "register", "why": "메리의 해요·하십시오체 속에 「꾸물거리지 마!」만 반말로 튐; new가 맞춤"}
+{"id": "2200:26", "verdict": "KEEP", "cat": "meaning", "why": "言われたとおり=시키는 대로"}
+{"id": "2200:32", "verdict": "KEEP", "cat": "meaning", "why": "移動していました는 이미 옮겨진 상태; 「이동해 있었습니다」가 맞음"}
+{"id": "2200:61", "verdict": "KEEP", "cat": "korean", "why": "「카리야에게는 알 수 있었습니다」 비문을 바로잡음"}
+{"id": "2200:68", "verdict": "REVERT", "cat": "register", "why": "かしらん은 장난스러운 반말(앞줄도 반말)인데 new 「뜻일까요오?」는 높임으로 바꿈"}
+{"id": "2200:93", "verdict": "KEEP", "cat": "register", "why": "「살아남아 왔어. 그렇죠?」 섞임을 높임으로 맞춤"}
+{"id": "2200:98", "verdict": "KEEP", "cat": "meaning", "why": "あとは誰も=그 밖엔 아무도; old가 보탠 「지만」을 덜어냄"}
+{"id": "2200:121", "verdict": "KEEP", "cat": "register", "why": "원문이 전부 반말인데 old 둘째 줄만 해요체; new가 맞춤"}
+{"id": "2200:144", "verdict": "KEEP", "cat": "korean", "why": "「카리야에게는 알 수 있었습니다」 비문을 바로잡음"}
+{"id": "2200:145", "verdict": "KEEP", "cat": "korean", "why": "「누구에게도 ~알 수 없는」을 「누구도」로 바로잡음"}
+{"id": "2200:153", "verdict": "REVERT", "cat": "register", "why": "원문이 ですよ 뒤 まっぴらだ·逃げたい로 반말로 넘어가는 말투; old가 살렸고 new는 전부 높임으로 덮음"}
+{"id": "2200:163", "verdict": "KEEP", "cat": "korean", "why": "やれば？ 내치는 말투를 「마음대로 하든가」로 자연스럽게"}
+{"id": "2200:165", "verdict": "KEEP", "cat": "register", "why": "해요체·반말 섞임을 반말로 통일"}
+{"id": "2200:196", "verdict": "KEEP", "cat": "korean", "why": "取り合う를 「배트를 뺏으며」로 한 어색함을 「서로 뺏으려 하며」로"}
+{"id": "2200:211", "verdict": "STYLE", "cat": "style", "why": "「내가」/「제가」 차이, 습니다체에 「제가」도 자연스러움"}
+{"id": "3011:3", "verdict": "KEEP", "cat": "register", "why": "소녀는 이 대화 내내 반말; ごめんなさい도 「미안해」가 자연스러움"}
+{"id": "3011:20", "verdict": "STYLE", "cat": "style", "why": "「네-」/「네에」 길게 끄는 표기 차이"}
+{"id": "3011:22", "verdict": "STYLE", "cat": "style", "why": "「그놈은」/「그건」 말맛 차이"}
+{"id": "3011:29", "verdict": "KEEP", "cat": "korean", "why": "名乗る를 「칭하기 위한」 직역에서 「남에게 댈 이름」으로"}
+{"id": "3011:38", "verdict": "KEEP", "cat": "meaning", "why": "そうだな……는 궁리하는 「글쎄다」; 「그렇지」는 맞장구로 읽힘"}
+{"id": "3021:3", "verdict": "STYLE", "cat": "style", "why": "「그럴 법하네요, 저지를 만해」/「딱 저지를 법도 하네요」 말맛 차이"}
+{"id": "3021:5", "verdict": "KEEP", "cat": "meaning", "why": "え는 놀람의 「어」; old 「네」는 대답으로 읽힘"}
+{"id": "3021:13", "verdict": "KEEP", "cat": "korean", "why": "「다행인지 불행인지, 싶지 않은 것도」 비문을 바로잡음"}
+{"id": "3021:15", "verdict": "KEEP", "cat": "korean", "why": "負ける気はしない를 「질 생각은 들지 않는다」로 한 직역과 빠진 ろくに를 바로잡음"}
+{"id": "3021:25", "verdict": "KEEP", "cat": "meaning", "why": "逃げられるつもり=빠져나갈 수 있다고 여김; old는 가능의 뜻이 빠짐"}
+{"id": "3021:32", "verdict": "KEEP", "cat": "korean", "why": "「아케루의 쪽으로」의 군더더기 「의」를 뺌"}
+{"id": "3021:34", "verdict": "KEEP", "cat": "korean", "why": "「그대로 있어라, 하고 ~표시하고」 직역을 매끄럽게"}
+{"id": "3021:37", "verdict": "KEEP", "cat": "korean", "why": "「째지고 다물어진」 「집어넣어져」 어색함을 바로잡음"}
+{"id": "3021:50", "verdict": "KEEP", "cat": "korean", "why": "「눈앞에 내보여지고는」 비문을 바로잡음"}
+{"id": "3021:55", "verdict": "STYLE", "cat": "style", "why": "「쭝긋하고」/「쫑긋」 말맛 차이"}
+{"id": "3021:56", "verdict": "KEEP", "cat": "register", "why": "카코에게 하는 대사인데 old 「있었다」는 글말; 반말로 맞춤"}
+{"id": "3021:57", "verdict": "KEEP", "cat": "register", "why": "한 대사 안의 글말 「넓었다」와 「가까웠지·몰라」 섞임을 통일"}
+{"id": "3021:62", "verdict": "KEEP", "cat": "register", "why": "앞뒤 대사와 같은 반말로 통일"}
+{"id": "3021:63", "verdict": "KEEP", "cat": "register", "why": "앞뒤 대사와 같은 반말로 통일"}
+{"id": "3022:3", "verdict": "STYLE", "cat": "style", "why": "「좀 볼까나」/「시간 좀 괜찮을까~」 말맛 차이"}
+{"id": "3022:13", "verdict": "KEEP", "cat": "meaning", "why": "手洗い=화장실; 「손 씻으러」는 직역 오역"}
+{"id": "3022:17", "verdict": "FIX", "cat": "korean", "why": "「단체에서」 「붙어 있다」는 나아졌으나 원문 ───(3개)를 ────(4개)로 늘림", "fix": "^g999입구에는 \"동성애자·입장 사절\"^n───같은, 어딘가의 단체에서 고함치며^n들이닥칠 법한 벽보도 제대로 붙어 있다."}
+{"id": "3022:23", "verdict": "STYLE", "cat": "ok", "why": "전각 물음표를 반각으로만 바꿈, 뜻 차이 없음"}
+{"id": "3022:26", "verdict": "KEEP", "cat": "register", "why": "나가츠키의 っす를 다른 장처럼 「임다」 말투로, ましたです를 높임으로 맞춤"}
+{"id": "3022:28", "verdict": "STYLE", "cat": "ok", "why": "전각 물음표를 반각으로만 바꿈, 뜻 차이 없음"}
+{"id": "3022:29", "verdict": "KEEP", "cat": "register", "why": "っす를 같은 장 나가츠키 말투(~여)로 맞춤"}
+{"id": "3022:30", "verdict": "KEEP", "cat": "register", "why": "っす를 같은 장 나가츠키 말투(~여)로 맞춤"}
+{"id": "3022:31", "verdict": "KEEP", "cat": "meaning", "why": "ありゃ=あれは(그건), だいたい=애초에; old 「이런」 「대체로」는 오역"}
+{"id": "3022:32", "verdict": "KEEP", "cat": "register", "why": "「랬던가」 잘림을 고치고 っす 말투를 같은 장에 맞춤"}
+{"id": "3022:35", "verdict": "STYLE", "cat": "style", "why": "「아-」/「아~」 길게 끄는 표기 차이"}
+{"id": "3022:37", "verdict": "KEEP", "cat": "register", "why": "っす를 같은 장 나가츠키 말투(~여)로 맞춤"}
+{"id": "3022:44", "verdict": "KEEP", "cat": "korean", "why": "「흥미사」 오타를 「관심사」로"}
+{"id": "3023:2", "verdict": "KEEP", "cat": "meaning", "why": "ほら=있잖아; 「봐봐」는 직역 오역"}
+{"id": "3023:5", "verdict": "FIX", "cat": "korean", "why": "そしたら를 가정 「그랬더라면」으로, ねえ를 「그러게」로 바로잡은 건 맞으나 あんな를 「저런」으로 직역; 지난 일은 「그런 일」", "fix": "^g999\"그러게. 그랬더라면, 그런 일까지는…….^n　아니 뭐, 그야 참, 그렇지?^n　아직 확정된 건 아니지만 말야……\""}
+{"id": "3023:9", "verdict": "KEEP", "cat": "meaning", "why": "娘さん=남의 딸 「따님」; 「딸아이」는 제 딸을 이르는 말"}
+{"id": "3024:8", "verdict": "KEEP", "cat": "korean", "why": "「물론, 중에는」 비문을 「그중에는」으로"}
+{"id": "3024:18", "verdict": "KEEP", "cat": "korean", "why": "「부추김당하고」 어색함을 「권유받고」로, 뜻 통함"}
+{"id": "3024:28", "verdict": "KEEP", "cat": "korean", "why": "「뛰어쳐나갔던」 오타를 바로잡음"}
+{"id": "3031:6", "verdict": "KEEP", "cat": "korean", "why": "「실례.」 토막을 「실례거든.」으로 읽히게, 툴→도구"}
+{"id": "3031:12", "verdict": "STYLE", "cat": "ok", "why": "따옴표 모양만 바뀜(판정 제외, 통합 세션 처리)"}
+{"id": "3031:70", "verdict": "STYLE", "cat": "ok", "why": "따옴표 모양만 바뀜(판정 제외, 통합 세션 처리)"}
+{"id": "3031:97", "verdict": "REVERT", "cat": "term", "why": "借り暮らし는 사용자 결정으로 원래 표기(바로우어즈) 유지; new가 「빌려 사는 소인들」로 통일함"}
+{"id": "3031:100", "verdict": "KEEP", "cat": "meaning", "why": "あーらよッと 들어 올리는 소리는 「영차」가 맞음; 「에라잇」은 어긋남"}
+{"id": "3031:101", "verdict": "STYLE", "cat": "style", "why": "비명 늘이는 꼴 차이"}
+{"id": "3031:105", "verdict": "REVERT", "cat": "term", "why": "借り暮らし는 사용자 결정으로 원래 표기(바로우어즈) 유지; new가 「빌려 사는 소인들」로 바꿈"}
+{"id": "3031:106", "verdict": "STYLE", "cat": "style", "why": "「이놈은」/「이건」 말맛 차이"}
+{"id": "3031:108", "verdict": "STYLE", "cat": "style", "why": "「이놈/그건」 「구속되지/얽매이는 법」 말맛 차이, new도 자연스러움"}
+{"id": "3031:109", "verdict": "STYLE", "cat": "style", "why": "「싫어-」/「싫어어」 표기 차이"}
+{"id": "3031:115", "verdict": "STYLE", "cat": "style", "why": "길게 끄는 「-」를 뺀 차이"}
+{"id": "3031:116", "verdict": "KEEP", "cat": "korean", "why": "「무슨 인연이다」 비문을 「인연이겠지」로"}
+{"id": "3031:143", "verdict": "KEEP", "cat": "korean", "why": "「알았어.!」 오타를 바로잡음"}
+{"id": "3031:147", "verdict": "STYLE", "cat": "style", "why": "「만세-」/「만세에」 표기 차이"}

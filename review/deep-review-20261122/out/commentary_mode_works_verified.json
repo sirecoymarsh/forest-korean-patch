@@ -1,0 +1,1321 @@
+[
+ {
+  "work_id": "alice_wonderland",
+  "ko_published_title": "이상한 나라의 앨리스",
+  "original_title": "Alice's Adventures in Wonderland",
+  "original_lang": "en",
+  "author": "Lewis Carroll (루이스 캐럴)",
+  "original_year": 1865,
+  "ja_title": "不思議の国のアリス",
+  "ko_editions_verified": [
+   {
+    "title": "이상한 나라의 앨리스 (네버랜드 클래식 1)",
+    "translator": "(페이지에서 확인 못 함)",
+    "publisher": "시공주니어",
+    "date": "2019-02-22",
+    "isbn13": "9788952787705",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=185579155"
+   }
+  ],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "「김석희 역, 시공사, 1999」 판은 찾지 못했다. 제목은 모든 판이 같다.",
+  "gemini_claim": {
+   "ko_published_title": "이상한 나라의 앨리스",
+   "ko_biblio": "김석희 역, 시공사, 1999, ISBN 978-89-527-0269-2",
+   "isbn13": [
+    "9788952702692"
+   ],
+   "isbn_actual": [
+    "다른 책: 『터널괴담 - 이토준지 공포만화 콜렉션 14』(시공사 만화, 1999-12-03)"
+   ],
+   "original_year": 1865,
+   "ja_script_title": "不思議の国のアリス"
+  },
+  "sample_slots": [
+   {
+    "slot": "2100:601",
+    "check": "약함 — 그 작품을 직접 말하지 않는 칸"
+   },
+   {
+    "slot": "2300:130",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:976",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "alice_looking_glass",
+  "ko_published_title": "거울 나라의 앨리스",
+  "original_title": "Through the Looking-Glass, and What Alice Found There",
+  "original_lang": "en",
+  "author": "Lewis Carroll (루이스 캐럴)",
+  "original_year": 1871,
+  "ja_title": "鏡の国のアリス",
+  "ko_editions_verified": [
+   {
+    "title": "거울 나라의 앨리스 (네버랜드 클래식 2)",
+    "translator": "(페이지에서 확인 못 함)",
+    "publisher": "시공주니어",
+    "date": "2019-02-22",
+    "isbn13": "9788952787712",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=185579885"
+   }
+  ],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "「김석희 역, 시공주니어, 2000」 판은 찾지 못했다.",
+  "gemini_claim": {
+   "ko_published_title": "거울 나라의 앨리스",
+   "ko_biblio": "김석희 역, 시공주니어, 2000, ISBN 978-89-527-0662-1",
+   "isbn13": [
+    "9788952706621"
+   ],
+   "isbn_actual": [
+    "다른 책: 『미열소녀 2』(시공사 만화, 2000-02-26)"
+   ],
+   "original_year": 1871,
+   "ja_script_title": "鏡の国のアリス"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:2842",
+    "check": "약함 — 그 작품을 직접 말하지 않는 칸"
+   },
+   {
+    "slot": "2500:2847",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:919",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "hunting_of_the_snark",
+  "ko_published_title": "스나크 사냥 (종이책 번역본 없음, 전자책뿐)",
+  "original_title": "The Hunting of the Snark",
+  "original_lang": "en",
+  "author": "Lewis Carroll (루이스 캐럴)",
+  "original_year": 1876,
+  "ja_title": "スナーク狩り",
+  "ko_editions_verified": [
+   {
+    "title": "스나크 사냥 (전자책)",
+    "translator": "(앞선 조사에서 역자 표기 확인 못 함)",
+    "publisher": "온이퍼브",
+    "date": "2025-05-09",
+    "isbn13": "9791172372842",
+    "status": "",
+    "source": "https://ridibooks.com/books/315002182 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "종이책 한국어 번역본은 찾지 못했다. 「김정매 역, 열림원, 2005」 판은 없다(그 ISBN 은 다른 책).",
+  "gemini_claim": {
+   "ko_published_title": "스나크 사냥",
+   "ko_biblio": "김정매 역, 열림원, 2005, ISBN 978-89-7063-501-9",
+   "isbn13": [
+    "9788970635019"
+   ],
+   "isbn_actual": [
+    "다른 책: 『바빌론 특급우편』(방현희, 열림원, 2006-06-08)"
+   ],
+   "original_year": 1876,
+   "ja_script_title": "スナーク狩り"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:846",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "narnia_wardrobe",
+  "ko_published_title": "사자와 마녀와 옷장",
+  "original_title": "The Lion, the Witch and the Wardrobe",
+  "original_lang": "en",
+  "author": "C. S. Lewis (C.S. 루이스)",
+  "original_year": 1950,
+  "ja_title": "ライオンと魔女",
+  "ko_editions_verified": [
+   {
+    "title": "사자와 마녀와 옷장 (나니아 나라 이야기 2, 네버랜드 클래식)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2018-12-30",
+    "isbn13": "9788952787736",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=183936442 (앞선 조사)"
+   },
+   {
+    "title": "사자와 마녀와 옷장 (구판)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2001-07-30",
+    "isbn13": "9788952723161",
+    "status": "구판 절판",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=9788952723161"
+   }
+  ],
+  "verify_grade": "역자·출판사는 맞고 연도·ISBN 만 틀림",
+  "verify_note": "연도만 틀림(2000 → 2001).",
+  "gemini_claim": {
+   "ko_published_title": "사자와 마녀와 옷장",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 2000, ISBN 978-89-527-2316-1",
+   "isbn13": [
+    "9788952723161"
+   ],
+   "isbn_actual": [
+    "맞음: 『사자와 마녀와 옷장』 나니아 나라 이야기(네버랜드 클래식) 2, 햇살과나무꾼, 시공주니어, 2001-07-30 (구판 절판)"
+   ],
+   "original_year": 1950,
+   "ja_script_title": "ライオンと魔女"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:1142",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1332",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1599",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "narnia_dawn_treader",
+  "ko_published_title": "새벽 출정호의 항해",
+  "original_title": "The Voyage of the Dawn Treader",
+  "original_lang": "en",
+  "author": "C. S. Lewis (C.S. 루이스)",
+  "original_year": 1952,
+  "ja_title": "朝びらき丸 東の海へ",
+  "ko_editions_verified": [
+   {
+    "title": "새벽 출정호의 항해 (나니아 나라 이야기 5)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2019-02-20",
+    "isbn13": "9788952787767",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8952787765 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자·출판사는 맞고 연도·ISBN 만 틀림",
+  "verify_note": "서지 제목은 「새벽 출정호」로 띄어 쓴다(제미나이·지금 대본은 붙여 씀). 2001년 판의 ISBN 은 확인 못 함.",
+  "gemini_claim": {
+   "ko_published_title": "새벽출정호의 항해",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 2001, ISBN 978-89-527-1155-7",
+   "isbn13": [
+    "9788952711557"
+   ],
+   "isbn_actual": [
+    "알라딘에 없음(상품·검색 0건)"
+   ],
+   "original_year": 1952,
+   "ja_script_title": "朝びらき丸 東の海へ"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:544",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:554",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1873",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "narnia_chronicles",
+  "ko_published_title": "나니아 연대기",
+  "original_title": "The Chronicles of Narnia",
+  "original_lang": "en",
+  "author": "C. S. Lewis (C.S. 루이스)",
+  "original_year": "1950~1956",
+  "ja_title": "ナルニア国物語",
+  "ko_editions_verified": [
+   {
+    "title": "나니아 연대기 (한 권짜리, 양장 1080쪽)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2005-11-05",
+    "isbn13": "9788952744852",
+    "status": "구판 절판",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=592359"
+   },
+   {
+    "title": "나니아 연대기 (한 권짜리)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2005-11-05",
+    "isbn13": "9788952789020",
+    "status": "판매 중",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=186565665"
+   },
+   {
+    "title": "나니아 연대기 (리커버 특별판)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2023-07-10",
+    "isbn13": "9791169259255",
+    "status": "판매 중",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=319793857"
+   }
+  ],
+  "verify_grade": "역자·출판사는 맞고 연도·ISBN 만 틀림",
+  "verify_note": "ISBN 만 틀림. 원작 발표는 1950~1956(제미나이는 1956 한 해로 적음).",
+  "gemini_claim": {
+   "ko_published_title": "나니아 연대기",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어 합본, 2005, ISBN 978-89-527-4390-9",
+   "isbn13": [
+    "9788952743909"
+   ],
+   "isbn_actual": [
+    "알라딘에 없음(상품·검색 0건)"
+   ],
+   "original_year": 1956,
+   "ja_script_title": "ナルニア国物語"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:130",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:91",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1142",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "winnie_the_pooh",
+  "ko_published_title": "곰돌이 푸",
+  "original_title": "Winnie-the-Pooh",
+  "original_lang": "en",
+  "author": "A. A. Milne (A.A. 밀른)",
+  "original_year": 1926,
+  "ja_title": "クマのプーさん",
+  "ko_editions_verified": [
+   {
+    "title": "곰돌이 푸 전집",
+    "translator": "이종인",
+    "publisher": "현대지성",
+    "date": "2025-07-08",
+    "isbn13": "9791139724929",
+    "status": "현행",
+    "source": "https://www.yes24.com/Product/Goods/147965374 (앞선 조사)"
+   },
+   {
+    "title": "곰돌이 푸",
+    "translator": "전하림",
+    "publisher": "에프",
+    "date": "2018-06-20",
+    "isbn13": "9788961706650",
+    "status": "",
+    "source": "https://www.yes24.com/Product/Goods/61178103 (앞선 조사)"
+   },
+   {
+    "title": "위니 더 푸우 (네버랜드 스토리 북스 13)",
+    "translator": "(페이지에 표기 없음)",
+    "publisher": "시공사",
+    "date": "1995-08-01",
+    "isbn13": "9788972592297",
+    "status": "절판",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=112271"
+   }
+  ],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "정착 제목은 『곰돌이 푸』. 「위니 더 푸, 김석희 역, 시공사, 2001」 판은 찾지 못했다(시공사 구판 제목은 「위니 더 푸우」, 1995).",
+  "gemini_claim": {
+   "ko_published_title": "위니 더 푸 (곰돌이 푸)",
+   "ko_biblio": "김석희 역, 시공사, 2001, ISBN 978-89-527-1356-8",
+   "isbn13": [
+    "9788952713568"
+   ],
+   "isbn_actual": [
+    "알라딘에 없음(상품·검색 0건)"
+   ],
+   "original_year": 1926,
+   "ja_script_title": "クマのプーさん"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:503",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1464",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:2463",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "peter_pan",
+  "ko_published_title": "피터 팬",
+  "original_title": "Peter and Wendy",
+  "original_lang": "en",
+  "author": "J. M. Barrie (J.M. 배리)",
+  "original_year": 1911,
+  "ja_title": "ピーター・パン",
+  "ko_editions_verified": [
+   {
+    "title": "피터 팬 (네버랜드 클래식 25)",
+    "translator": "김영선",
+    "publisher": "시공주니어",
+    "date": "2005-11-01",
+    "isbn13": "9788952787941",
+    "status": "현행(개정판)",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=185588124"
+   },
+   {
+    "title": "피터 팬 (비룡소 클래식 5)",
+    "translator": "장영희",
+    "publisher": "비룡소",
+    "date": "2004-01-10",
+    "isbn13": "9788949140773",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=454252 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "시공주니어판 옮긴이는 김영선(2005). 「햇살과나무꾼 역, 2001」 판은 없다.",
+  "gemini_claim": {
+   "ko_published_title": "피터 팬",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 2001, ISBN 978-89-527-1404-6",
+   "isbn13": [
+    "9788952714046"
+   ],
+   "isbn_actual": [
+    "알라딘에 없음(상품·검색 0건)"
+   ],
+   "original_year": 1911,
+   "ja_script_title": "ピーター・パン"
+  },
+  "sample_slots": [
+   {
+    "slot": "2400:189",
+    "check": "맞음"
+   },
+   {
+    "slot": "2400:282",
+    "check": "맞음"
+   },
+   {
+    "slot": "2400:459",
+    "check": "약함 — 그 작품을 직접 말하지 않는 칸"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "the_borrowers",
+  "ko_published_title": "마루 밑 바로우어즈",
+  "original_title": "The Borrowers",
+  "original_lang": "en",
+  "author": "Mary Norton (메리 노튼)",
+  "original_year": 1952,
+  "ja_title": "床下の小人たち",
+  "ko_editions_verified": [
+   {
+    "title": "마루 밑 바로우어즈 (시공주니어 문고 2단계 23)",
+    "translator": "(페이지에서 확인 못 함)",
+    "publisher": "시공주니어",
+    "date": "2019-04-05",
+    "isbn13": "9788952789105",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=191469657"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "출판사는 비룡소가 아니라 시공주니어. 일본어판 제목은 『床下の小人たち』뿐이다(제미나이가 괄호에 넣은 「借り暮らしの小人たち」는 책 제목이 아님 — 借り暮らし는 대본의 낱말).",
+  "gemini_claim": {
+   "ko_published_title": "마루 밑 바로우어즈",
+   "ko_biblio": "김서정 역, 비룡소, 2005, ISBN 978-89-491-9053-2",
+   "isbn13": [
+    "9788949190532"
+   ],
+   "isbn_actual": [
+    "다른 책: 『판타지 책을 읽는다』(가와이 하야오, 비룡소, 2006-05-04)"
+   ],
+   "original_year": 1952,
+   "ja_script_title": "床下の小人たち (借り暮らしの小人たち)"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:230",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:476",
+    "check": "맞음"
+   },
+   {
+    "slot": "3081:128",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "watership_down",
+  "ko_published_title": "워터십 다운 (구판: 워터십 다운의 열한 마리 토끼)",
+  "original_title": "Watership Down",
+  "original_lang": "en",
+  "author": "Richard Adams (리처드 애덤스)",
+  "original_year": 1972,
+  "ja_title": "ウォーターシップ・ダウンのうさぎたち",
+  "ko_editions_verified": [
+   {
+    "title": "워터십 다운",
+    "translator": "햇살과나무꾼",
+    "publisher": "사계절",
+    "date": "2019-01-02",
+    "isbn13": "9791160944235",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=176039339 (앞선 조사)"
+   },
+   {
+    "title": "워터십 다운의 열한 마리 토끼 1~4 (구판)",
+    "translator": "햇살과나무꾼",
+    "publisher": "사계절",
+    "date": "2002-10",
+    "isbn13": "",
+    "status": "구판",
+    "source": "알라딘 검색 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "「김영무 역, 문예출판사, 1998」 판은 없다. 현행 제목은 『워터십 다운』, 「열한 마리 토끼」는 사계절 구판 제목.",
+  "gemini_claim": {
+   "ko_published_title": "워터십 다운의 열한 마리 토끼",
+   "ko_biblio": "김영무 역, 문예출판사, 1998, ISBN 978-89-310-0071-9",
+   "isbn13": [
+    "9788931000719"
+   ],
+   "isbn_actual": [
+    "다른 책: 『자유란 무엇인가 - 현대신서 7』(모리스 크랜스턴, 문예출판사, 1990-08-01)"
+   ],
+   "original_year": 1972,
+   "ja_script_title": "ウォーターシップ・ダウンのうさぎたち"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:788",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:1733",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:2711",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "gullivers_travels",
+  "ko_published_title": "걸리버 여행기",
+  "original_title": "Travels into Several Remote Nations of the World (Gulliver's Travels)",
+  "original_lang": "en",
+  "author": "Jonathan Swift (조너선 스위프트)",
+  "original_year": 1726,
+  "ja_title": "ガリヴァー旅行記",
+  "ko_editions_verified": [
+   {
+    "title": "걸리버 여행기 (개정판)",
+    "translator": "신현철",
+    "publisher": "문학수첩",
+    "date": "1992-07-07",
+    "isbn13": "9788983920775",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=7679 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "신현철 역은 문학동네가 아니라 문학수첩.",
+  "gemini_claim": {
+   "ko_published_title": "걸리버 여행기",
+   "ko_biblio": "신현철 역, 문학동네, 2010 / 민음사 세계문학전집, ISBN 978-89-374-6251-1",
+   "isbn13": [
+    "9788937462511"
+   ],
+   "isbn_actual": [
+    "다른 책: 『의지와 운명 1』(카를로스 푸엔테스, 민음사 세계문학전집 251, 2010-07-16)"
+   ],
+   "original_year": 1726,
+   "ja_script_title": "ガリヴァー旅行記"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:1265",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1312",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "treasure_island",
+  "ko_published_title": "보물섬",
+  "original_title": "Treasure Island",
+  "original_lang": "en",
+  "author": "Robert Louis Stevenson (로버트 루이스 스티븐슨)",
+  "original_year": 1883,
+  "ja_title": "宝島",
+  "ko_editions_verified": [
+   {
+    "title": "보물섬 (네버랜드 클래식 29)",
+    "translator": "김영선",
+    "publisher": "시공주니어",
+    "date": "2006-08-30",
+    "isbn13": "9788952787989",
+    "status": "현행(개정판)",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=185589084"
+   },
+   {
+    "title": "보물섬 (비룡소 클래식 1)",
+    "translator": "정영목",
+    "publisher": "비룡소",
+    "date": "2003-10-15",
+    "isbn13": "9788949140735",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=439181 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "시공주니어판 옮긴이는 김영선(2006). 「김석희 역, 2003」 판은 없다.",
+  "gemini_claim": {
+   "ko_published_title": "보물섬",
+   "ko_biblio": "김석희 역, 시공주니어, 2003, ISBN 978-89-527-3189-0",
+   "isbn13": [
+    "9788952731890"
+   ],
+   "isbn_actual": [
+    "다른 책: 『사라전종횡기 5』(시공사, 2004-02-18)"
+   ],
+   "original_year": 1883,
+   "ja_script_title": "宝島"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:583",
+    "check": "맞음"
+   },
+   {
+    "slot": "2700:32",
+    "check": "맞음"
+   },
+   {
+    "slot": "2700:758",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "secret_garden",
+  "ko_published_title": "비밀의 화원",
+  "original_title": "The Secret Garden",
+  "original_lang": "en",
+  "author": "Frances Hodgson Burnett (프랜시스 호지슨 버넷)",
+  "original_year": 1911,
+  "ja_title": "秘密の花園",
+  "ko_editions_verified": [
+   {
+    "title": "비밀의 화원 (네버랜드 클래식 11)",
+    "translator": "공경희",
+    "publisher": "시공주니어",
+    "date": "2019-01-30",
+    "isbn13": "9788952787804",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=181537753"
+   },
+   {
+    "title": "비밀의 화원 (네버랜드 클래식 11, 구판)",
+    "translator": "공경희",
+    "publisher": "시공주니어",
+    "date": "2002-07-20",
+    "isbn13": "9788952723734",
+    "status": "구판 절판",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=368735"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "옮긴이는 공경희(햇살과나무꾼이 아님), 초판은 2002.",
+  "gemini_claim": {
+   "ko_published_title": "비밀의 화원",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 1999, ISBN 978-89-527-0162-6",
+   "isbn13": [
+    "9788952701626"
+   ],
+   "isbn_actual": [
+    "다른 책: 『이야기하는 그림』(이규일, 시공사, 1999-11-30)"
+   ],
+   "original_year": 1911,
+   "ja_script_title": "秘密の花園"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:659",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "mary_poppins",
+  "ko_published_title": "메리 포핀스 (시공주니어판 1권: 우산 타고 날아온 메리 포핀스)",
+  "original_title": "Mary Poppins",
+  "original_lang": "en",
+  "author": "P. L. Travers (P.L. 트래버스)",
+  "original_year": 1934,
+  "ja_title": "メアリー・ポピンズ",
+  "ko_editions_verified": [
+   {
+    "title": "우산 타고 날아온 메리 포핀스 (네버랜드 클래식 14)",
+    "translator": "우순교",
+    "publisher": "시공주니어",
+    "date": "2003-08-10",
+    "isbn13": "9788952787835",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=185581689 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "시공주니어판 1권 제목은 『우산 타고 날아온 메리 포핀스』, 옮긴이 우순교. 『메리 포핀스』 제목은 윌북(2020, 황소연)·허밍버드(2017, 윤이형).",
+  "gemini_claim": {
+   "ko_published_title": "메리 포핀스",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 2000, ISBN 978-89-527-0720-8",
+   "isbn13": [
+    "9788952707208"
+   ],
+   "isbn_actual": [
+    "다른 책: 『저절로 공부가 된다』(전자책, 알키)"
+   ],
+   "original_year": 1934,
+   "ja_script_title": "メアリー・ポピンズ"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:130",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:1743",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "lord_of_the_rings",
+  "ko_published_title": "반지의 제왕",
+  "original_title": "The Lord of the Rings",
+  "original_lang": "en",
+  "author": "J. R. R. Tolkien (J.R.R. 톨킨)",
+  "original_year": "1954~1955",
+  "ja_title": "指輪物語",
+  "ko_editions_verified": [
+   {
+    "title": "반지의 제왕 - 전7권 세트",
+    "translator": "김번·김보원·이미애",
+    "publisher": "씨앗을뿌리는사람",
+    "date": "2002-11-25",
+    "isbn13": "9788956372044",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=387863"
+   },
+   {
+    "title": "반지의 제왕 1 - 반지 원정대 - 상",
+    "translator": "김번·김보원·이미애",
+    "publisher": "씨앗을뿌리는사람",
+    "date": "2002-11-25",
+    "isbn13": "9788956372051",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=387785"
+   },
+   {
+    "title": "반지의 제왕 일러스트 특별판",
+    "translator": "김보원·김번·이미애",
+    "publisher": "아르테",
+    "date": "2023-03-20",
+    "isbn13": "9788950922382",
+    "status": "현행",
+    "source": "https://www.yes24.com/Product/Goods/118100685 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자·출판사는 맞고 연도·ISBN 만 틀림",
+  "verify_note": "옮긴이·출판사는 맞고 연도(2001 → 2002-11)와 ISBN 이 틀림. 원작 발표 1954~1955.",
+  "gemini_claim": {
+   "ko_published_title": "반지의 제왕",
+   "ko_biblio": "김번·김보원·이미애 역, 씨앗을뿌리는사람, 2001, ISBN 978-89-88800-47-8",
+   "isbn13": [
+    "9788988800478"
+   ],
+   "isbn_actual": [
+    "다른 책: 『여자도 때론 본능적이고 싶다』(윤치영, 무한, 2000-09-06)"
+   ],
+   "original_year": 1954,
+   "ja_script_title": "指輪物語"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:460",
+    "check": "약함 — 그 작품을 직접 말하지 않는 칸"
+   },
+   {
+    "slot": "2600:238",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "wizard_of_earthsea",
+  "ko_published_title": "어스시의 마법사",
+  "original_title": "A Wizard of Earthsea",
+  "original_lang": "en",
+  "author": "Ursula K. Le Guin (어슐러 K. 르 귄)",
+  "original_year": 1968,
+  "ja_title": "ゲド戦記 (시리즈 이름; 1권 影との戦い)",
+  "ko_editions_verified": [
+   {
+    "title": "어스시의 마법사 (어스시 전집 1)",
+    "translator": "최준영·이지연",
+    "publisher": "황금가지",
+    "date": "2006-07-24",
+    "isbn13": "9788982731914",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=9788982731914"
+   },
+   {
+    "title": "어스시 전집 세트 - 전6권",
+    "translator": "최준영·이지연",
+    "publisher": "황금가지",
+    "date": "2015-06-09",
+    "isbn13": "9788982731976",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=9788982731976"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "ISBN 둘은 맞다. 옮긴이(김상훈 → 최준영·이지연)와 연도(2002 → 2006)가 틀림. 일본어 제목 ゲド戦記는 시리즈 이름이고 1권은 『影との戦い』.",
+  "gemini_claim": {
+   "ko_published_title": "어스시의 마법사",
+   "ko_biblio": "김상훈 역, 황금가지, 2002, ISBN 978-89-8273-191-4 (전집 세트 978-89-8273-197-6)",
+   "isbn13": [
+    "9788982731914",
+    "9788982731976"
+   ],
+   "isbn_actual": [
+    "맞음: 『어스시의 마법사』 어스시 전집 1, 황금가지, 2006-07-24",
+    "맞음: 『어스시 전집 세트 - 전6권』 황금가지, 2015-06-09"
+   ],
+   "original_year": 1968,
+   "ja_script_title": "ゲド戦記"
+  },
+  "sample_slots": [
+   {
+    "slot": "3011:26",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "pippi_longstocking",
+  "ko_published_title": "내 이름은 삐삐 롱스타킹",
+  "original_title": "Pippi Långstrump",
+  "original_lang": "sv",
+  "author": "Astrid Lindgren (아스트리드 린드그렌)",
+  "original_year": 1945,
+  "ja_title": "長靴下のピッピ",
+  "ko_editions_verified": [
+   {
+    "title": "내 이름은 삐삐 롱스타킹 (시공주니어 문고 2단계 15)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2017-05-15",
+    "isbn13": "9788952785404",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=109313959 (앞선 조사)"
+   },
+   {
+    "title": "내 이름은 삐삐 롱스타킹 (양장)",
+    "translator": "햇살과나무꾼",
+    "publisher": "시공주니어",
+    "date": "2007-12-01",
+    "isbn13": "9788952749758",
+    "status": "품절",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=9788952749758"
+   }
+  ],
+  "verify_grade": "다 맞음",
+  "verify_note": "다 맞다. 2025년 80주년 특별판 제목은 『삐삐 롱스타킹』.",
+  "gemini_claim": {
+   "ko_published_title": "내 이름은 삐삐 롱스타킹",
+   "ko_biblio": "햇살과나무꾼 역, 시공주니어, 2007 (개정 2017), ISBN 978-89-527-4975-8",
+   "isbn13": [
+    "9788952749758"
+   ],
+   "isbn_actual": [
+    "맞음: 『내 이름은 삐삐 롱스타킹 (양장)』 햇살과나무꾼, 시공주니어, 2007-12-01 (품절)"
+   ],
+   "original_year": 1945,
+   "ja_script_title": "長靴下のピッピ"
+  },
+  "sample_slots": [
+   {
+    "slot": "3011:1",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "faerie_queene",
+  "ko_published_title": "선녀여왕",
+  "original_title": "The Faerie Queene",
+  "original_lang": "en",
+  "author": "Edmund Spenser (에드먼드 스펜서)",
+  "original_year": "1590·1596",
+  "ja_title": "神仙女王 (妖精の女王)",
+  "ko_editions_verified": [
+   {
+    "title": "선녀여왕 1 (한국연구재단 학술명저번역총서 서양편 207)",
+    "translator": "임성균",
+    "publisher": "나남",
+    "date": "2007-11-05",
+    "isbn13": "9788930082501",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=1001799 (앞선 조사)"
+   },
+   {
+    "title": "선녀여왕 3~7",
+    "translator": "임성균",
+    "publisher": "아카넷",
+    "date": "2012-12",
+    "isbn13": "",
+    "status": "",
+    "source": "알라딘 검색 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "제목·옮긴이는 맞다. 「나남 전6권 세트」는 없다 — 나남은 1~2권(2007), 3권부터는 아카넷(2012). 원작 1590(1~3권)·1596(4~6권).",
+  "gemini_claim": {
+   "ko_published_title": "선녀여왕",
+   "ko_biblio": "임성균 완역, 나남, 2007, 전6권 세트 ISBN 978-89-300-8215-0",
+   "isbn13": [
+    "9788930082150"
+   ],
+   "isbn_actual": [
+    "다른 책: 『레프 톨스토이 세트 - 전2권』(쉬클롭스키, 나남, 2009-01-05)"
+   ],
+   "original_year": 1590,
+   "ja_script_title": "神仙女王 (妖精の女王)"
+  },
+  "sample_slots": [
+   {
+    "slot": "2400:50",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:80",
+    "check": "맞음"
+   },
+   {
+    "slot": "2600:908",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "body_snatchers",
+  "ko_published_title": "바디 스내처",
+  "original_title": "The Body Snatchers",
+  "original_lang": "en",
+  "author": "Jack Finney (잭 피니)",
+  "original_year": 1955,
+  "ja_title": "盗まれた街",
+  "ko_editions_verified": [
+   {
+    "title": "바디 스내처 (이색작가총서 1)",
+    "translator": "강수백",
+    "publisher": "너머",
+    "date": "2004-08-10",
+    "isbn13": "9788995529713",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=506541 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "「김이선 역, 문학수첩, 2008」 판은 없다.",
+  "gemini_claim": {
+   "ko_published_title": "바디 스내처",
+   "ko_biblio": "김이선 역, 문학수첩, 2008, ISBN 978-89-8392-279-3",
+   "isbn13": [
+    "9788983922793"
+   ],
+   "isbn_actual": [
+    "알라딘에 없음(상품·검색 0건)"
+   ],
+   "original_year": 1955,
+   "ja_script_title": "盗まれた街"
+  },
+  "sample_slots": [
+   {
+    "slot": "2600:2597",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "two_years_vacation",
+  "ko_published_title": "15소년 표류기",
+  "original_title": "Deux ans de vacances",
+  "original_lang": "fr",
+  "author": "Jules Verne (쥘 베른)",
+  "original_year": 1888,
+  "ja_title": "十五少年漂流記",
+  "ko_editions_verified": [
+   {
+    "title": "15소년 표류기 (비룡소 클래식 15)",
+    "translator": "김윤진",
+    "publisher": "비룡소",
+    "date": "2005-03-17",
+    "isbn13": "9788949140872",
+    "status": "",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=549317 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "비룡소판 옮긴이는 김윤진(김석희 역은 열림원 2022).",
+  "gemini_claim": {
+   "ko_published_title": "15소년 표류기",
+   "ko_biblio": "김석희 역, 비룡소, 2005, ISBN 978-89-491-9045-7",
+   "isbn13": [
+    "9788949190457"
+   ],
+   "isbn_actual": [
+    "다른 책: 『괴짜탐정의 사건노트 1~14권 세트』(하야미네 가오루, 비룡소, 2008-09-15)"
+   ],
+   "original_year": 1888,
+   "ja_script_title": "十五少年漂流記"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:127",
+    "check": "맞음"
+   },
+   {
+    "slot": "2300:129",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "robinson_crusoe",
+  "ko_published_title": "로빈슨 크루소",
+  "original_title": "The Life and Strange Surprizing Adventures of Robinson Crusoe",
+  "original_lang": "en",
+  "author": "Daniel Defoe (대니얼 디포)",
+  "original_year": 1719,
+  "ja_title": "ロビンソン・クルーソー",
+  "ko_editions_verified": [
+   {
+    "title": "로빈슨 크루소 (열린책들 세계문학 163)",
+    "translator": "류경희",
+    "publisher": "열린책들",
+    "date": "2011-03-20",
+    "isbn13": "9788932911632",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=11203976"
+   }
+  ],
+  "verify_grade": "역자나 출판사가 틀림",
+  "verify_note": "옮긴이는 류경희(김훈이 아님), 2011.",
+  "gemini_claim": {
+   "ko_published_title": "로빈슨 크루소",
+   "ko_biblio": "김훈 역, 열린책들, 2009, ISBN 978-89-329-0921-9",
+   "isbn13": [
+    "9788932909219"
+   ],
+   "isbn_actual": [
+    "다른 책: 『우주 만화』(이탈로 칼비노, 열린책들 세계문학 7, 2009-11-30)"
+   ],
+   "original_year": 1719,
+   "ja_script_title": "ロビンソン・クルーソー"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:123",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "king_solomons_ring",
+  "ko_published_title": "솔로몬의 반지",
+  "original_title": "Er redete mit dem Vieh, den Vögeln und den Fischen (King Solomon's Ring)",
+  "original_lang": "de",
+  "author": "Konrad Lorenz (콘라트 로렌츠)",
+  "original_year": 1949,
+  "ja_title": "ソロモンの指環",
+  "ko_editions_verified": [
+   {
+    "title": "솔로몬의 반지 - 그는 짐승, 새, 물고기와 이야기했다",
+    "translator": "김천혜",
+    "publisher": "사이언스북스",
+    "date": "2000-07-05",
+    "isbn13": "9788983710536",
+    "status": "현행",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=240191"
+   }
+  ],
+  "verify_grade": "역자·출판사는 맞고 연도·ISBN 만 틀림",
+  "verify_note": "옮긴이·출판사는 맞고 연도(1998 → 2000)와 ISBN 이 틀림.",
+  "gemini_claim": {
+   "ko_published_title": "솔로몬의 반지",
+   "ko_biblio": "김천혜 역, 사이언스북스, 1998, ISBN 978-89-8371-021-5",
+   "isbn13": [
+    "9788983710215"
+   ],
+   "isbn_actual": [
+    "다른 책: 『진화론 논쟁』(에른스트 마이어, 사이언스북스, 1998-04-10)"
+   ],
+   "original_year": 1949,
+   "ja_script_title": "ソロモンの指環"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:283",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:3172",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "book_of_nonsense",
+  "ko_published_title": "(국내 번역본 없음) A Book of Nonsense",
+  "original_title": "A Book of Nonsense",
+  "original_lang": "en",
+  "author": "Edward Lear (에드워드 리어)",
+  "original_year": 1846,
+  "ja_title": "ノンセンスの絵本 (ナンセンスの絵本)",
+  "ko_editions_verified": [],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "A Book of Nonsense 의 한국어 단독 번역본은 찾지 못했다. 제미나이가 든 부크크 책은 영어 원서다 — 「국내 정발명」으로 쓸 수 없다.",
+  "gemini_claim": {
+   "ko_published_title": "넌센스 시 그림책",
+   "ko_biblio": "부크크, 2022, ISBN 979-11-372-7121-0 (영국 리머릭 시집 원전)",
+   "isbn13": [
+    "9791137271210"
+   ],
+   "isbn_actual": [
+    "ISBN 은 맞으나 번역본이 아님: 『4차넌센스 시 그림책 The Book of Nonsense (영어원서)』 부크크, 2022-01-20"
+   ],
+   "original_year": 1846,
+   "ja_script_title": "ノンセンスの絵本 (ナンセンスの絵本)"
+  },
+  "sample_slots": [
+   {
+    "slot": "2300:21",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:2459",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:2460",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "cats_old_possum",
+  "ko_published_title": "캣츠 (뮤지컬) / 시집 『캣츠 - 노련한 고양이에 관한 늙은 주머니쥐의 책』",
+  "original_title": "Cats / Old Possum's Book of Practical Cats",
+  "original_lang": "en",
+  "author": "Andrew Lloyd Webber / T. S. Eliot (앤드루 로이드 웨버 / T.S. 엘리엇)",
+  "original_year": "1939 (시집) / 1981 (뮤지컬)",
+  "ja_title": "キャッツ (ジェリクルキャッツ)",
+  "ko_editions_verified": [
+   {
+    "title": "캣츠 - 노련한 고양이에 관한 늙은 주머니쥐의 책",
+    "translator": "김승희",
+    "publisher": "문학세계사",
+    "date": "2008-07-17",
+    "isbn13": "9788970754345",
+    "status": "절판",
+    "source": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=2384922 (앞선 조사)"
+   },
+   {
+    "title": "주머니쥐 할아버지가 들려주는 지혜로운 고양이 이야기 (생각하는 숲 12)",
+    "translator": "이주희",
+    "publisher": "시공주니어",
+    "date": "2012-07",
+    "isbn13": "",
+    "status": "",
+    "source": "알라딘 검색 (앞선 조사)"
+   }
+  ],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "「지혜로운 고양이가 되기 위한 지침서, 이종인 역, 민음사, 2003」 판은 찾지 못했다. 뮤지컬은 《캣츠》(1981), 시집은 1939.",
+  "gemini_claim": {
+   "ko_published_title": "캣츠 / 지혜로운 고양이가 되기 위한 지침서",
+   "ko_biblio": "이종인 역, 민음사, 2003, ISBN 978-89-374-0745-1",
+   "isbn13": [
+    "9788937407451"
+   ],
+   "isbn_actual": [
+    "다른 책: 『녹슨 방』(송종규, 민음의 시 136, 민음사, 2006-06-12)"
+   ],
+   "original_year": 1939,
+   "ja_script_title": "キャッツ (ジェリクルキャッツ)"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:885",
+    "check": "맞음"
+   },
+   {
+    "slot": "2500:1263",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "coppelia",
+  "ko_published_title": "코펠리아",
+  "original_title": "Coppélia, ou La Fille aux yeux d'émail",
+  "original_lang": "fr",
+  "author": "Léo Delibes / E. T. A. Hoffmann (레오 들리브 / 호프만 『모래 사나이』 원작)",
+  "original_year": 1870,
+  "ja_title": "コッペリア",
+  "ko_editions_verified": [],
+  "verify_grade": "서지 없음(공연)",
+  "verify_note": "발레 공연명 「코펠리아」(위키백과·공연 기사 — 앞선 조사). 서지 없음.",
+  "gemini_claim": {
+   "ko_published_title": "코펠리아",
+   "ko_biblio": "국립발레단 정착 공연명 《코펠리아》",
+   "isbn13": [],
+   "isbn_actual": [],
+   "original_year": 1870,
+   "ja_script_title": "コッペリア"
+  },
+  "sample_slots": [
+   {
+    "slot": "2500:2446",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ },
+ {
+  "work_id": "leprechaun_crossing",
+  "ko_published_title": "(국내 번역본 없음) 街道をゆく 30 愛蘭土紀行",
+  "original_title": "街道をゆく 30 愛蘭土紀行",
+  "original_lang": "ja",
+  "author": "司馬遼太郎 (시바 료타로)",
+  "original_year": 1988,
+  "ja_title": "街道をゆく 30 愛蘭土紀行 I (대본 표기: レプラコーン・クローシング)",
+  "ko_editions_verified": [],
+  "verify_grade": "적힌 판을 못 찾음(또는 번역본 없음)",
+  "verify_note": "한국어 번역본은 찾지 못했다(알라딘 검색 0건). 원서는 『街道をゆく 30 愛蘭土紀行 I』(司馬遼太郎, 朝日新聞社, 1988 — 일본 국회도서관 서지, 앞선 원전 모티브 검수 F1757). 대본(3081:129)이 「시바 료타로의 기행문」이라고 직접 말하므로 원전 지목은 맞다. 「국내 정발명」은 없으므로 해설에는 원제를 쓸 것.",
+  "gemini_claim": {
+   "ko_published_title": "가도를 가다: 아일랜드 기행 (레프러콘 크로싱)",
+   "ko_biblio": "양억관 역, 《아일랜드 기행》(가도를 가다 시리즈), 창해, 2002, ISBN 978-89-7919-396-1",
+   "isbn13": [
+    "9788979193961"
+   ],
+   "isbn_actual": [
+    "다른 책: 『비밀 2』(히가시노 게이고, 창해, 2002-10-07)"
+   ],
+   "original_year": 1988,
+   "ja_script_title": "司馬遼太郎の紀行文 (レプラコーン・クローシング)"
+  },
+  "sample_slots": [
+   {
+    "slot": "3081:129",
+    "check": "맞음"
+   },
+   {
+    "slot": "3081:131",
+    "check": "맞음"
+   }
+  ],
+  "verified_on": "2026-11-22",
+  "note_field": "제미나이 원본의 note(작품 속 쓰임 설명)는 이번 확인 범위 밖 — 원전 모티브 정정본을 쓸 것"
+ }
+]

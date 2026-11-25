@@ -1,0 +1,134 @@
+[
+ {
+  "uid": "original_scr/2500.gsc::command/0x01FD68::MESSAGE.text",
+  "before": "^g018그렇고말고, 정녕, 참으로 그러하다!^n어쨌든, 저분은 오리지널!^n이 숲의 창조주, 말의 영애!",
+  "after": "^g018그렇고말고, 정녕, 참으로 그러하다!^n어쨌든, 저분은 오리지널!^n이 숲의 창조주, 말의 공주님!",
+  "reason": "言ノ葉の姫君 3판본(말의 영애/언어의 공주님/언령의 공주님) 통일. 영문판도 princess of words"
+ },
+ {
+  "uid": "original_scr/2500.gsc::command/0x022ACC::MESSAGE.text",
+  "before": "^g018그렇소, 참으로, 참말로 그렇도다!^n하물며, 그분은 오리지널!^n이 숲의 창조주, 언어의 공주님!",
+  "after": "^g018그렇소, 참으로, 참말로 그렇도다!^n하물며, 그분은 오리지널!^n이 숲의 창조주, 말의 공주님!",
+  "reason": "言ノ葉の姫君 3판본(말의 영애/언어의 공주님/언령의 공주님) 통일. 영문판도 princess of words"
+ },
+ {
+  "uid": "original_scr/2500.gsc::command/0x023558::MESSAGE.text",
+  "before": "^g018시작의 아이.^n이름 짓는 무녀.^n언령의 공주님.",
+  "after": "^g018시작의 아이.^n이름 짓는 무녀.^n말의 공주님.",
+  "reason": "言ノ葉の姫君 3판본(말의 영애/언어의 공주님/언령의 공주님) 통일. 영문판도 princess of words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x00005E::CHOICE.prompt",
+  "before": "언어의 마디에 닿아주십시오──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0009C0::CHOICE.prompt",
+  "before": "언어의 마디에 닿아주십시오──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x000BCA::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x000C42::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0025A4::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x00261C::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x005928::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x006214::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x008032::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0083E4::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0091BC::CHOICE.prompt",
+  "before": "말씀의 잎에 건드려 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x00B01C::CHOICE.prompt",
+  "before": "언어의 잎을 터치해 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x00C4C6::CHOICE.prompt",
+  "before": "언어의 잎을 터치해 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x00C53E::CHOICE.prompt",
+  "before": "언어의 잎을 터치해 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x011C22::CHOICE.prompt",
+  "before": "언어의 잎을 터치해 주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x015A7E::CHOICE.prompt",
+  "before": "언령에 닿아주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x016CA8::CHOICE.prompt",
+  "before": "언령에 닿아주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0171C6::CHOICE.prompt",
+  "before": "언령에 닿아주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0182BA::CHOICE.prompt",
+  "before": "언령에 닿아주세요──",
+  "after": "말에 닿아 주세요──",
+  "reason": "선택지 프롬프트 4판본(언어의 마디에 닿아주십시오/말씀의 잎에 건드려/언어의 잎을 터치해/언령에 닿아주세요) 통일. 영문판 Touch the words"
+ }
+]

@@ -1,0 +1,110 @@
+{"id": "2100:691", "verdict": "STYLE", "cat": "style", "why": "두 받아쓰기 같음(やめて・お願い・いや); 「안 돼」/「싫어」 말맛 차이, 둘 다 괜찮음"}
+{"id": "2100:694", "verdict": "STYLE", "cat": "style", "why": "もういい 「그만」/「이제 됐어」 둘 다 맞음, 뜻 차이 없음"}
+{"id": "2100:704", "verdict": "KEEP", "cat": "meaning", "why": "old 「그래서 뭐?/재미있을 거야」는 영문 따라 何が悪いの·楽しいじゃない(즐겁잖아)를 추측·미래로 바꿈; new가 원음대로"}
+{"id": "2100:734", "verdict": "STYLE", "cat": "style", "why": "もういい 「그만」/「이제 됐어」 차이, 뜻 같음(앞 칸과 같은 처리)"}
+{"id": "2100:737", "verdict": "KEEP", "cat": "meaning", "why": "old 「그 사람은 떠났어」는 영문 따라 과거·3인칭을 보탬; 원음 出ていく……自分から……에 new가 맞음"}
+{"id": "2100:766", "verdict": "STYLE", "cat": "style", "why": "きっとそうだ 「틀림없어」/「분명 그래」 말맛 차이"}
+{"id": "2100:768", "verdict": "STYLE", "cat": "style", "why": "old 「무슨 마법 같은」은 영문식 보탬이나 뜻 차이 작음; new도 자연스러움"}
+{"id": "2100:770", "verdict": "KEEP", "cat": "addition", "why": "old는 영문 따라 「기프트 하나 때문에」를 보태고 前に를 「얼마 전」으로 옮김; new가 원음 ていうより呪いですよ…遭ったんだ대로"}
+{"id": "2100:773", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; new 「마음대로 해」가 勝手にしてよ 말맛을 조금 더 살림, old도 괜찮음"}
+{"id": "2100:775", "verdict": "STYLE", "cat": "style", "why": "「이제」「그 정도는」 군말 차이뿐, 뜻 같음"}
+{"id": "2100:778", "verdict": "KEEP", "cat": "register", "why": "원음 あなたはもう帰っていいです의 차갑게 높인 말씨를 old가 반말로 바꿈; new가 살림"}
+{"id": "2100:781", "verdict": "STYLE", "cat": "style", "why": "「시간만 버렸네」/「시간 낭비였네」 말맛 차이, 뜻 같음"}
+{"id": "2100:784", "verdict": "KEEP", "cat": "register", "why": "원음 帰りたいんですね의 높임을 old가 반말로; new가 앞 칸 「~됩니다」와 말씨를 맞춤"}
+{"id": "2100:786", "verdict": "STYLE", "cat": "style", "why": "つもり 「거야」/「셈이야」 차이, 이름 표기 같음"}
+{"id": "2100:789", "verdict": "KEEP", "cat": "register", "why": "앞 칸과 같은 원음 あなたはもう帰っていいです; 높인 말씨를 살리고 같은 한국어로 맞춤"}
+{"id": "2100:806", "verdict": "STYLE", "cat": "style", "why": "思い出したわ 「기억났어」/「생각났어」 차이; new는 바로 뒤 「생각났구나」에 메아리"}
+{"id": "2100:809", "verdict": "STYLE", "cat": "style", "why": "「이대로도」/「이걸로도」 차이; new는 앞 물음 「이걸로도 괜찮겠니?」에 메아리"}
+{"id": "2100:812", "verdict": "STYLE", "cat": "style", "why": "「알아」/「알고 있어」 차이, 뜻 같음"}
+{"id": "2100:815", "verdict": "STYLE", "cat": "style", "why": "欠けている 「뭔가 빠졌어」/「부족해」 둘 다 맞음; new는 앞 대사와 같은 말로 맞춤"}
+{"id": "2100:818", "verdict": "FIX", "cat": "korean", "why": "old가 やっぱり를 빠뜨려 new의 「역시」가 맞으나 「나, 역시」는 쉼표 번역투", "fix": "^cy난 역시 마법사가 아니야.^n아무것도 할 수 없어."}
+{"id": "2100:829", "verdict": "STYLE", "cat": "style", "why": "old 「여기로」 정도 차이, 뜻 같음"}
+{"id": "2100:835", "verdict": "KEEP", "cat": "meaning", "why": "old 「다른 남자는 없었어」는 되물음 もうひとり？와 높임 いませんよ를 잃음; new가 원음대로"}
+{"id": "2100:837", "verdict": "STYLE", "cat": "style", "why": "いたよー 늘임 표기 차이뿐"}
+{"id": "2100:839", "verdict": "STYLE", "cat": "style", "why": "だって 「하지만」/「그야」 차이, 뜻 같음"}
+{"id": "2100:847", "verdict": "LISTEN", "cat": "meaning", "why": "받아쓰기 갈림: 제미나이 「灰流じゃーん」(아케루잖아) / Whisper·영문 「アケルちゃん」(아케루 짱); 대본의 나가츠키는 아케루를 맨이름으로만 부르나 ちゃん 쪽 둘이 일치"}
+{"id": "2100:850", "verdict": "KEEP", "cat": "addition", "why": "old는 영문 따라 「프랑스어로 이방인이란 뜻」 설명을 보탬; 원음은 エトランジェ、異邦人뿐(Whisper 違法人은 동음 오기)"}
+{"id": "2100:852", "verdict": "STYLE", "cat": "style", "why": "言いたいの 「~라는 거야」/「~라고 말하고 싶은 거야」 차이, 둘 다 자연스러움"}
+{"id": "2100:855", "verdict": "KEEP", "cat": "pronoun", "why": "원음 あいついたんだ(저 녀석이 있었다)를 old는 영문 따라 「너도 여기 있었어」로 대상을 바꿈; new가 바로잡음"}
+{"id": "2100:864", "verdict": "STYLE", "cat": "style", "why": "문장부호(?/,)만 다름"}
+{"id": "2100:867", "verdict": "KEEP", "cat": "meaning", "why": "원음 何考えてるの를 old는 영문 따라 「뭘 하려는 거야」로 옮김; new가 「무슨 생각하는 거야」로 바로잡음"}
+{"id": "2100:870", "verdict": "STYLE", "cat": "style", "why": "ふざけてるの 「날 갖고 노는 거야」/「장난하는 거야」 둘 다 맞음"}
+{"id": "2100:873", "verdict": "STYLE", "cat": "style", "why": "もう 「이제」 하나 차이"}
+{"id": "2100:876", "verdict": "STYLE", "cat": "style", "why": "old 「기프트 말이야?」는 영문식 보탬이나 뜻 차이 작음"}
+{"id": "2100:879", "verdict": "KEEP", "cat": "meaning", "why": "old 「게스트의 기프트?」는 영문을 따름; 원음 ゲスト……取られた？(Whisper 撮られた는 동음)는 앞 대사 「먹혔어」를 되묻는 말"}
+{"id": "2100:885", "verdict": "KEEP", "cat": "meaning", "why": "old 「지난번에 그런 일이 있었는데도」는 원음 こないだのあれは偶然だろ(우연이었잖아)와 다름; new가 바로잡음"}
+{"id": "2100:888", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; 「솔솔」 정도의 말맛 차이"}
+{"id": "2100:891", "verdict": "STYLE", "cat": "style", "why": "ひどいことされる 「할 거야」/「당할 거야」 능동·수동 바꿔 말하기, 뜻 같음"}
+{"id": "2100:896", "verdict": "KEEP", "cat": "addition", "why": "원음은 呪い？ 한마디; old 「그게 내 저주야?」는 영문 보탬"}
+{"id": "2100:900", "verdict": "STYLE", "cat": "style", "why": "말더듬 な、를 살린 차이뿐"}
+{"id": "2100:906", "verdict": "STYLE", "cat": "style", "why": "줄표 유무만 다름"}
+{"id": "2100:909", "verdict": "REVERT", "cat": "korean", "why": "ねえ、切るわよ！의 짜증 섞인 부름을 「있지,」로 옮겨 외침과 안 맞음; old 「됐어, 끊을 거야!」가 자연스럽고 뜻도 지킴"}
+{"id": "2100:915", "verdict": "STYLE", "cat": "style", "why": "「끊을 거야!!」/「끊을 거라고!」 세기 표현 차이"}
+{"id": "2100:918", "verdict": "STYLE", "cat": "style", "why": "뜻 같음(Whisper セコハラ는 セクハラ 오청)"}
+{"id": "2100:921", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; 첫 문장 ですか에 맞춰 높였느냐 차이, 둘 다 괜찮음"}
+{"id": "2100:924", "verdict": "KEEP", "cat": "meaning", "why": "원음 何を知ってるの를 old는 영문 따라 「무슨 짓을 한 거야」로 틀림; 받아쓰기 갈림: Whisper 真由美さん은 이름 오청, 문맥상 마유즈미"}
+{"id": "2100:927", "verdict": "KEEP", "cat": "register", "why": "원음 言うんです의 높임을 old가 반말로; new가 살림, 뜻 같음"}
+{"id": "2100:930", "verdict": "KEEP", "cat": "meaning", "why": "old 「전에도 해 봤다는 거지?」는 ズバリ…済みですね의 단정을 물음으로 바꾸고 높임을 잃음; new가 원음대로"}
+{"id": "2100:932", "verdict": "FIX", "cat": "term", "why": "きみね를 살린 건 맞으나 마유즈미의 きみ는 앞 칸에서 「너」(있잖아 너); 「당신 말야」는 말씨가 튐", "fix": "^cy너 말이야, 고소할 거야!"}
+{"id": "2100:935", "verdict": "STYLE", "cat": "style", "why": "뜻 같음; 「이봐」/「있지」 부름 말맛 차이"}
+{"id": "2100:938", "verdict": "FIX", "cat": "korean", "why": "나가츠키의 ましょう 높임을 살린 건 맞으나 「소용없는지 어떤지」는 かどうか 번역투", "fix": "^cy소용이 있는지 없는지 확인해 보자고요!^n냐냐냐냐앙~!"}
+{"id": "2100:940", "verdict": "STYLE", "cat": "style", "why": "받아쓰기는 きゃあっ/ギャッ로 비명 모양만 다름, 뜻 차이 없음; 「꺄악」이 「갸」보다 자연스러움"}
+{"id": "2100:943", "verdict": "KEEP", "cat": "register", "why": "원음 ダメっすね의 っす 말투를 작품의 「~슴다」 표기로 살림; old는 말투를 잃음"}
+{"id": "2100:945", "verdict": "STYLE", "cat": "style", "why": "うっ 「으」/「읏」 차이뿐"}
+{"id": "2100:947", "verdict": "KEEP", "cat": "meaning", "why": "두 받아쓰기 모두 되묻는 말(？)인데 old는 평서로 바꿈; new가 맞음"}
+{"id": "2100:966", "verdict": "REVERT", "cat": "overcorrect", "why": "뜻 같음; 「어째서? 아직, 나……」는 일본어 어순을 옮긴 번역투, old 「왜? 난 아직……」가 자연스러움"}
+{"id": "2100:978", "verdict": "STYLE", "cat": "style", "why": "責任とってよね 「반드시 책임져」/「책임져야 해」 차이, 뜻 같음"}
+{"id": "2100:981", "verdict": "STYLE", "cat": "style", "why": "「이제」 하나 차이; new는 앞 물음 「기억났니?」에 메아리"}
+{"id": "2100:988", "verdict": "KEEP", "cat": "meaning", "why": "old 「아직 안 끝났지?」는 영문 따라 물음으로 바꿈; 원음 お話は続くのね, 뒤 「이야기는 계속된다」와 메아리도 new가 맞음"}
+{"id": "2200:2", "verdict": "STYLE", "cat": "style", "why": "続き 「다음에 무슨 일이 벌어지는지」/「뒷이야기」 차이, 뜻 같음"}
+{"id": "2200:4", "verdict": "STYLE", "cat": "style", "why": "문장 짜임만 다름, 뜻 같음"}
+{"id": "2200:23", "verdict": "STYLE", "cat": "style", "why": "えっ、でも 「하, 하지만」/「어? 하지만」 차이"}
+{"id": "2200:27", "verdict": "REVERT", "cat": "korean", "why": "「핫!?」은 일본어 감탄사 はっ을 소리대로 둔 것; old 「어?」(Whisper あ?)가 자연스러움"}
+{"id": "2200:74", "verdict": "KEEP", "cat": "meaning", "why": "원음 知らなかった(몰랐다)를 old는 영문 따라 「눈치채지 못했어」로 옮김; new가 원음대로 되묻는 말까지 살림"}
+{"id": "2200:105", "verdict": "KEEP", "cat": "addition", "why": "old는 영문 따라 「마법」을 보탬; new는 원음 ええ、持ってるわ。ギフトね와 같은 대목 본문 번역에 맞춤"}
+{"id": "2200:108", "verdict": "KEEP", "cat": "register", "why": "나가츠키 원음 持ってません・欲しいでーす의 높임을 old가 반말로; new가 살림"}
+{"id": "2200:111", "verdict": "STYLE", "cat": "style", "why": "「나한테도 있어」/「나도 갖고 있어」 차이, 뜻 같음"}
+{"id": "2200:148", "verdict": "KEEP", "cat": "register", "why": "원음 信用できませんな의 높임을 old가 반말로; new는 같은 대목 본문 「신용할 수 없겠네요!」와 맞춤"}
+{"id": "2200:191", "verdict": "KEEP", "cat": "meaning", "why": "old 「말도 안 돼/잘 있어」는 영문 따름; new는 같은 원음의 본문 번역 「어울려 줄 수 없어./안녕」과 맞춤"}
+{"id": "2200:194", "verdict": "KEEP", "cat": "register", "why": "원음 打たせろですー(나가츠키 존댓말 장난)를 old는 반말로; new가 그의 「~세염」 말투로 살림"}
+{"id": "2200:207", "verdict": "KEEP", "cat": "register", "why": "원음 失礼します를 old는 영문 따라 「잘 있어」 반말로; new가 높임을 살림"}
+{"id": "3021:6", "verdict": "STYLE", "cat": "style", "why": "「또 하나의 이야기」/「이것대로, 또 다른 이야기」 뜻 같음(「이건 이것대로」는 본문에도 쓰는 말)"}
+{"id": "3021:8", "verdict": "KEEP", "cat": "register", "why": "old 둘째 줄이 지문체 「일어났다」가 되고 みたい를 잃음; new가 원음 後の話だったみたい대로"}
+{"id": "3021:52", "verdict": "KEEP", "cat": "omission", "why": "old는 難しい顔를 빠뜨리고 つまんない를 「별로인가요」로; new는 같은 대사 본문 번역과 맞춤"}
+{"id": "3021:58", "verdict": "STYLE", "cat": "style", "why": "「나라였나요」/「나라군요」 차이; new는 본문 번역과 같음"}
+{"id": "3021:64", "verdict": "STYLE", "cat": "style", "why": "「또 하나의 이야기/얼마 전의 이야기」와 new 표현 차이, 뜻 같음(같은 줄 셋과 같은 처리)"}
+{"id": "3022:48", "verdict": "STYLE", "cat": "style", "why": "「또 하나의 이야기/얼마 전의 이야기」와 new 표현 차이, 뜻 같음(같은 줄 셋과 같은 처리)"}
+{"id": "3024:6", "verdict": "KEEP", "cat": "register", "why": "마유즈미의 높임(ですか・ませんよ)을 old가 반말로, 全然考えてません을 「한 번도 해 본 적 없어」로; new가 원음대로"}
+{"id": "3024:9", "verdict": "KEEP", "cat": "omission", "why": "old는 ヴォーカル(보컬)를 빼고 반말로 바꿈; new가 원음대로"}
+{"id": "3024:11", "verdict": "KEEP", "cat": "register", "why": "원음 キャラ？…でしょー의 높임을 old가 반말로; new가 살림, 뜻 같음"}
+{"id": "3024:14", "verdict": "KEEP", "cat": "register", "why": "원음 思いませんもん의 높임과 音楽でご飯食べよう(음악으로 먹고살기)를 new가 살림; old는 영문 따라 반말·「노래가 직업」"}
+{"id": "3024:16", "verdict": "KEEP", "cat": "meaning", "why": "old 「인턴십 중인 학생…보람」은 영문 오역; 받아쓰기 갈림: Whisper 現役大生·学業大事 / 제미나이 医大生·学業第一, 문맥(의대생)상 제미나이 쪽이고 뜻 차이 작음"}
+{"id": "3024:19", "verdict": "KEEP", "cat": "register", "why": "원음 ほんとですよ・笑ってるんですか의 높임을 old가 반말로; new가 살림"}
+{"id": "3024:21", "verdict": "KEEP", "cat": "meaning", "why": "old 「자유로운 음악 운동」은 영문 오역; 받아쓰기 갈림: Whisper 真泉香織는 이름 오청, 문맥상 黛薫, ノーベル医学賞은 둘 다 같음"}
+{"id": "3024:29", "verdict": "STYLE", "cat": "style", "why": "「또 하나의 이야기/얼마 전의 이야기」와 new 표현 차이, 뜻 같음(같은 줄 셋과 같은 처리)"}
+{"id": "3031:7", "verdict": "STYLE", "cat": "style", "why": "ちゃんと聞けっての 「내 말 좀 들어」/「제대로 들으라니까」 차이, 뜻 같음"}
+{"id": "3031:10", "verdict": "STYLE", "cat": "style", "why": "말더듬·늘임 살린 차이, 뜻 같음"}
+{"id": "3031:14", "verdict": "KEEP", "cat": "meaning", "why": "old 「초진/상피 붕괴」는 영문 따름; 받아쓰기 갈림: Whisper 司書権・体育・偏見・口クラガ는 전문어 오청, 나무로 변하는 문맥상 제미나이 視所見・体躯・変形・クチクラ化"}
+{"id": "3031:16", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 갈림: Whisper ブラシなし는 맥박·호흡 문맥상 ブレス 오청; 뜻 같고 차트체 말맛 차이뿐"}
+{"id": "3031:20", "verdict": "STYLE", "cat": "style", "why": "old 「설마……?」는 작은 보탬, new는 되풀이대로; 둘 다 괜찮음"}
+{"id": "3031:23", "verdict": "STYLE", "cat": "style", "why": "「어떻게 된 거지」/「이, 이런 건」 차이, 뜻 같음"}
+{"id": "3031:26", "verdict": "STYLE", "cat": "style", "why": "先入観を持つな 「단정하지 마」/「선입견을 갖지 마」 둘 다 맞음"}
+{"id": "3031:29", "verdict": "STYLE", "cat": "style", "why": "状態を確認するんだ를 old는 풀어 옮김, new는 그대로; 뜻 차이 작음"}
+{"id": "3031:32", "verdict": "STYLE", "cat": "style", "why": "말줄임표만 다름"}
+{"id": "3031:36", "verdict": "KEEP", "cat": "meaning", "why": "old 「저, 저기」는 원음 やあ、ハロー와 다름; new가 원음대로"}
+{"id": "3031:39", "verdict": "KEEP", "cat": "meaning", "why": "old 「나한테 말을 하잖아?」는 원음 言葉、通じるじゃん(말이 통하잖아)과 다름; new가 바로잡음"}
+{"id": "3031:42", "verdict": "STYLE", "cat": "style", "why": "あ…… 군말 살린 차이뿐"}
+{"id": "3031:46", "verdict": "STYLE", "cat": "style", "why": "「마법으로」/「마법에」 차이; new는 본문 「마법에 불려 온」과 맞춤"}
+{"id": "3031:54", "verdict": "STYLE", "cat": "style", "why": "魔法の 「의」 살린 차이뿐"}
+{"id": "3031:60", "verdict": "STYLE", "cat": "style", "why": "確かに 「맞아」/「확실히」 차이, 뜻 같음"}
+{"id": "3031:62", "verdict": "KEEP", "cat": "meaning", "why": "원음 魔法のしるし(마법의 징표)를 old는 영문 따라 「마법이라는 뜻」으로 바꿈; new가 맞음"}
+{"id": "3031:65", "verdict": "KEEP", "cat": "korean", "why": "old 「그러게 하는」 오자에 영문식 문장; new가 원음 これって魔法の効果かな대로"}
+{"id": "3031:68", "verdict": "KEEP", "cat": "term", "why": "같은 대목 본문 「プリンセス！」를 「프린세스」로 옮겼으니 되묻는 자막도 같은 말로 맞춤"}
+{"id": "3031:72", "verdict": "STYLE", "cat": "style", "why": "old 「나도」 보탬·물음표 차이, 뜻 같음"}
+{"id": "3031:77", "verdict": "STYLE", "cat": "style", "why": "「조오아」/「좋아~」 표기 차이"}
+{"id": "3031:84", "verdict": "STYLE", "cat": "style", "why": "군말 あ와 待ってよ 살린 차이, 뜻 같음"}
+{"id": "3031:87", "verdict": "STYLE", "cat": "style", "why": "받아쓰기 갈림: Whisper ベルカー는 誰かー 오청; old 「도와줘」는 영문 보탬이나 뜻 차이 작음"}
+{"id": "3031:98", "verdict": "STYLE", "cat": "style", "why": "군말 えっ 살린 차이뿐"}
+{"id": "3031:102", "verdict": "STYLE", "cat": "style", "why": "「도와줘」/「살려 줘」 차이; new는 본문 「살려줘어어어!」와 맞춤"}
+{"id": "3031:117", "verdict": "STYLE", "cat": "style", "why": "비명 표기 차이뿐"}
+{"id": "3031:120", "verdict": "STYLE", "cat": "style", "why": "뜻 같음(Whisper 話せ는 離せ 동음 오기); 군말·「나 좀」 차이"}

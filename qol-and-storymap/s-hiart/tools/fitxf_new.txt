@@ -1,0 +1,65 @@
+bool fitXf(const State& st, const uint32_t* F, int tol, std::vector<std::pair<int, Xf>>& out) {
+    // 표본: 층 j 가 맨 위이고 불투명한 화소(격자 2). 선택지·글자 같은 덮개는 직선 관계를 안 따르므로
+    // 1차 맞춤 → 잔차 12 넘는 표본 빼고 2차 맞춤 → 남은 표본의 95% 가 오차 안이고 남은 비율이 50% 이상이면 받아들인다.
+    struct Smp { uint32_t s, f; int j; };
+    std::vector<Smp> smp; smp.reserve(130000);
+    for (int y = 1; y < H1; y += 2) for (int x = 1; x < W1; x += 2) {
+        for (int j = (int)st.ls.size() - 1; j >= 0; --j) {
+            const LS& l = st.ls[j];
+            if (x < l.x || y < l.y || x >= l.x + l.w || y >= l.y + l.h) continue;
+            uint32_t p = l.one->px[(size_t)(y - l.y) * l.w + (x - l.x)];
+            if ((p >> 24) == 255) continue;
+            if ((p >> 24) == 0) smp.push_back({p & 0xffffff, F[(size_t)y * W1 + x] & 0xffffff, j});
+            break;
+        }
+    }
+    out.clear();
+    bool any = false;
+    for (size_t j = 0; j < st.ls.size(); ++j) {
+        Xf f; f.on = true;
+        std::vector<uint8_t> use;
+        int nAll = 0;
+        for (auto& s : smp) if (s.j == (int)j) ++nAll;
+        if (nAll < 3000) continue;
+        for (int round = 0; round < 2; ++round) {
+            double n = 0, sx[3] = {}, sy[3] = {}, sxx[3] = {}, sxy[3] = {};
+            for (auto& s : smp) {
+                if (s.j != (int)j) continue;
+                if (round == 1 && dmaxRaw(applyXf(f, s.s), s.f) > 12) continue;
+                n += 1;
+                for (int c = 0; c < 3; ++c) { double a = (s.s >> (8 * c)) & 255, b = (s.f >> (8 * c)) & 255; sx[c] += a; sy[c] += b; sxx[c] += a * a; sxy[c] += a * b; }
+            }
+            if (n < 1500) { f.on = false; break; }
+            for (int c = 0; c < 3; ++c) {
+                double den = n * sxx[c] - sx[c] * sx[c];
+                double k = den > 1e-6 ? (n * sxy[c] - sx[c] * sy[c]) / den : 1.0;
+                double b = (sy[c] - k * sx[c]) / n;
+                f.k[c] = (int)std::lround(k * 256); f.b[c] = (int)std::lround(b);
+            }
+        }
+        if (!f.on) continue;
+        int inl = 0, good = 0;
+        for (auto& s : smp) {
+            if (s.j != (int)j) continue;
+            int d = dmaxRaw(applyXf(f, s.s), s.f);
+            if (d <= 12) { ++inl; if (d <= tol + 1) ++good; }
+        }
+        bool ok = inl * 2 >= nAll && good * 100 >= inl * 95;
+        bool ident = true, dark = true;
+        for (int c = 0; c < 3; ++c) { if (abs(f.k[c] - 256) > 2 || abs(f.b[c]) > 1) ident = false; if (f.k[c] > 38) dark = false; }
+        hlog("hiart: fit layer %d %s k %d,%d,%d b %d,%d,%d inliers %d/%d good %d %s", st.ls[j].idx, st.ls[j].key.c_str(), f.k[0], f.k[1], f.k[2], f.b[0], f.b[1], f.b[2], inl, nAll, good, ok ? (ident ? "identity" : "set") : "rejected");
+        if (!ok || dark) continue;
+        if (ident) f.on = false;
+        out.push_back({st.ls[j].idx, f});
+        if (f.on) any = true;
+    }
+    return any;
+}
+bool sameXf(const std::vector<std::pair<int, Xf>>& a, const std::vector<std::pair<int, Xf>>& b) {
+    if (a.size() != b.size()) return false;
+    for (size_t i = 0; i < a.size(); ++i) {
+        if (a[i].first != b[i].first || a[i].second.on != b[i].second.on) return false;
+        for (int c = 0; c < 3; ++c) if (abs(a[i].second.k[c] - b[i].second.k[c]) > 3 || abs(a[i].second.b[c] - b[i].second.b[c]) > 2) return false;
+    }
+    return true;
+}

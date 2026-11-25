@@ -1,0 +1,36 @@
+{
+ "records": [
+  {
+   "layer": "msk_on",
+   "target_ko": "안 읽은 부분도",
+   "font_size": 17,
+   "style": "teal",
+   "edited_px": 2890,
+   "wcg_sha256": "AE13D97D6D6B5541358EF65D21DEC2361FC26F409BAACFCDC030591CABF15E22"
+  },
+  {
+   "layer": "msk_on_f",
+   "target_ko": "안 읽은 부분도",
+   "font_size": 17,
+   "style": "brown",
+   "edited_px": 2939,
+   "wcg_sha256": "3E6643C63B6DC852BE83C80A6EB09CE562F467CC240AA43537E2153131C70048"
+  },
+  {
+   "layer": "msk_off",
+   "target_ko": "읽은 부분만",
+   "font_size": 17,
+   "style": "teal",
+   "edited_px": 2920,
+   "wcg_sha256": "70302A98B2C3257BF5A7672A1B286EFBD00B63697BF68A2323B7495E307540B3"
+  },
+  {
+   "layer": "msk_off_f",
+   "target_ko": "읽은 부분만",
+   "font_size": 17,
+   "style": "brown",
+   "edited_px": 2939,
+   "wcg_sha256": "30101694DC36F097EE2FBAD8BABDEDCE2DBC807BB24A5E29AAE8D3E5316CA5CD"
+  }
+ ]
+}

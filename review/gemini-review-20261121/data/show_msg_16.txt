@@ -1,0 +1,259 @@
+꾸러미 msg_16: 전체 103칸, 60~102 보여 줌
+
+#60  id=5000:6  장=None  갈래=other  화자=
+   JA : 
+   EN : Myougaya Jinroku
+   OLD: Myougaya Jinroku
+   NEW: 묘가야 진로쿠
+
+#61  id=5000:7  장=None  갈래=other  화자=
+   JA : 
+   EN : Scenario
+   OLD: Scenario
+   NEW: 시나리오
+
+#62  id=5000:8  장=None  갈래=other  화자=
+   JA : 
+   EN : Takao Tozan
+   OLD: Takao Tozan
+   NEW: 타카오 토잔
+
+#63  id=5000:9  장=None  갈래=other  화자=
+   JA : 
+   EN : Digital Touchup
+   OLD: Digital Touchup
+   NEW: CG 워크
+
+#64  id=5000:10  장=None  갈래=other  화자=
+   JA : 
+   EN : Shimasara Yumeki
+   OLD: Shimasara Yumeki
+   NEW: 시마사라 유메키
+
+#65  id=5000:11  장=None  갈래=other  화자=
+   JA : 
+   EN : Taiboku Inutarou
+   OLD: Taiboku Inutarou
+   NEW: 오오키 켄타로
+
+#66  id=5000:13  장=None  갈래=other  화자=
+   JA : 
+   EN : Opening Movie
+   OLD: Opening Movie
+   NEW: 오프닝 무비
+
+#67  id=5000:14  장=None  갈래=other  화자=
+   JA : 
+   EN : Dosei
+   OLD: Dosei
+   NEW: 도세이
+
+#68  id=5000:15  장=None  갈래=other  화자=
+   JA : 
+   EN : Package Background Illustration
+   OLD: Package Background Illustration
+   NEW: 패키지 배경 원화
+
+#69  id=5000:16  장=None  갈래=other  화자=
+   JA : 
+   EN : Yonetani Kaname
+   OLD: Yonetani Kaname
+   NEW: 요네타니 카나메
+
+#70  id=5000:17  장=None  갈래=other  화자=
+   JA : 
+   EN : Music
+   OLD: Music
+   NEW: 음악
+
+#71  id=5000:18  장=None  갈래=other  화자=
+   JA : 
+   EN : -No Brand Sounds-
+   OLD: -No Brand Sounds-
+   NEW: ~노 브랜드 사운즈~
+
+#72  id=5000:19  장=None  갈래=other  화자=
+   JA : 
+   EN : Nagasaki Shigeru
+   OLD: Nagasaki Shigeru
+   NEW: 나가사키 시게루
+
+#73  id=5000:20  장=None  갈래=other  화자=
+   JA : 
+   EN : Yamanishi Toshiharu
+   OLD: Yamanishi Toshiharu
+   NEW: 야마니시 토시하루
+
+#74  id=5000:21  장=None  갈래=other  화자=
+   JA : 
+   EN : Shiina Harumi
+   OLD: Shiina Harumi
+   NEW: 시이나 하루미
+
+#75  id=5000:22  장=None  갈래=other  화자=
+   JA : 
+   EN : Music
+   OLD: Music
+   NEW: 음악
+
+#76  id=5000:23  장=None  갈래=other  화자=
+   JA : 
+   EN : -No Brand Sounds-
+   OLD: -No Brand Sounds-
+   NEW: ~노 브랜드 사운즈~
+
+#77  id=5000:24  장=None  갈래=other  화자=
+   JA : 
+   EN : Tsukumo Hyakutarou
+   OLD: Tsukumo Hyakutarou
+   NEW: 츠쿠모 햐쿠타로
+
+#78  id=5000:26  장=None  갈래=other  화자=
+   JA : 
+   EN : -Cast-
+   OLD: -Cast-
+   NEW: ~캐스트~
+
+#79  id=5000:27  장=None  갈래=other  화자=
+   JA : 
+   EN : Amenomori Nozomi　Kawashima Rino
+   OLD: Amenomori Nozomi�@Kawashima Rino
+   NEW: 아메노모리 노조미　　　카와시마 리노
+
+#80  id=5000:28  장=None  갈래=other  화자=
+   JA : 
+   EN : -Cast-
+   OLD: -Cast-
+   NEW: ~캐스트~
+
+#81  id=5000:29  장=None  갈래=other  화자=
+   JA : 
+   EN : Mayuzumi Kaoru　　Isshiki Hikaru
+   OLD: Mayuzumi Kaoru�@�@Isshiki Hikaru
+   NEW: 마유즈미 카오루　　　　잇시키 히카루
+
+#82  id=5000:30  장=None  갈래=other  화자=
+   JA : 
+   EN : -Cast-
+   OLD: -Cast-
+   NEW: ~캐스트~
+
+#83  id=5000:31  장=None  갈래=other  화자=
+   JA : 
+   EN : Kariya Maki　　　　Notsuki Mahiru
+   OLD: Kariya Maki�@�@�@�@Notsuki Mahiru
+   NEW: 카리야 마키　　　　　　노즈키 마히루
+
+#84  id=5000:32  장=None  갈래=other  화자=
+   JA : 
+   EN : -Cast-
+   OLD: -Cast-
+   NEW: ~캐스트~
+
+#85  id=5000:33  장=None  갈래=other  화자=
+   JA : 
+   EN : Nagatsuki Amane　　　　　　　Miru
+   OLD: Nagatsuki Amane�@�@�@�@�@�@�@Miru
+   NEW: 나가츠키 아마네　　　　　　미루
+
+#86  id=5000:34  장=None  갈래=other  화자=
+   JA : 
+   EN : -Cast-
+   OLD: -Cast-
+   NEW: ~캐스트~
+
+#87  id=5000:35  장=None  갈래=other  화자=
+   JA : 
+   EN : Black Alice/Miyano Kako
+   OLD: Black Alice/Miyano Kako
+   NEW: 검은 앨리스 / 미야노 카코　　　　
+
+#88  id=5000:36  장=None  갈래=other  화자=
+   JA : 
+   EN : 　　　　　　　　　　Hokuto Minami
+   OLD: �@�@�@�@�@�@�@�@�@�@Hokuto Minami
+   NEW: 　　　　　　　　　　호쿠토 미나미
+
+#89  id=5000:37  장=None  갈래=other  화자=
+   JA : 
+   EN : Voice Production
+   OLD: Voice Production
+   NEW: CV 음성 제작
+
+#90  id=5000:38  장=None  갈래=other  화자=
+   JA : 
+   EN : Rockin' Banana Co., Ltd.
+   OLD: Rockin' Banana Co., Ltd.
+   NEW: 유한회사 로큰바나나
+
+#91  id=5000:41  장=None  갈래=other  화자=
+   JA : 
+   EN : Editor: Blackie
+   OLD: Editor: Blackie
+   NEW: Editor: 브래키
+
+#92  id=5000:44  장=None  갈래=other  화자=
+   JA : 
+   EN : Publicity
+   OLD: Publicity
+   NEW: 선전 홍보 · 퍼블리시티 디자인
+
+#93  id=5000:45  장=None  갈래=other  화자=
+   JA : 
+   EN : Yanbaru Kuina
+   OLD: Yanbaru Kuina
+   NEW: 얀바루 쿠이나
+
+#94  id=5000:46  장=None  갈래=other  화자=
+   JA : 
+   EN : Engine Provided By
+   OLD: Engine Provided By
+   NEW: 프로그램 제공
+
+#95  id=5000:47  장=None  갈래=other  화자=
+   JA : 
+   EN : codeX Co., Ltd.
+   OLD: codeX Co., Ltd.
+   NEW: 유한회사 codeX
+
+#96  id=5000:48  장=None  갈래=other  화자=
+   JA : 
+   EN : Scripting Assistance
+   OLD: Scripting Assistance
+   NEW: 스크립트 협력
+
+#97  id=5000:49  장=None  갈래=other  화자=
+   JA : 
+   EN : -codeX Co., Ltd.-
+   OLD: -codeX Co., Ltd.-
+   NEW: ~유한회사 codeX~
+
+#98  id=5000:50  장=None  갈래=other  화자=
+   JA : 
+   EN : Nogi Fusanato
+   OLD: Nogi Fusanato
+   NEW: 카토 쿄
+
+#99  id=5000:51  장=None  갈래=other  화자=
+   JA : 
+   EN : Kusanagi Tohya
+   OLD: Kusanagi Tohya
+   NEW: 쿠사나기 토야
+
+#100  id=5000:52  장=None  갈래=other  화자=
+   JA : 
+   EN : Ryuu Ryuurei
+   OLD: Ryuu Ryuurei
+   NEW: 류 류레이
+
+#101  id=5000:53  장=None  갈래=other  화자=
+   JA : 
+   EN : Sales
+   OLD: Sales
+   NEW: 판매
+
+#102  id=5000:54  장=None  갈래=other  화자=
+   JA : 
+   EN : Business Partner, Inc.
+   OLD: Business Partner, Inc.
+   NEW: 주식회사 비즈니스 파트너

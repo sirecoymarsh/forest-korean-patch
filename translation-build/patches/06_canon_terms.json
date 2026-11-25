@@ -1,0 +1,74 @@
+[
+ {
+  "uid": "original_scr/2400.gsc::command/0x000368::MESSAGE.text",
+  "before": "^g999「어서 오라 아케루, 용사인가 우둔한 자인가.^n나는 글로리아나, 요정의 여왕.^n시련과, 힘을 내리노라!」",
+  "after": "^g999「어서 오라 아케루, 용자인가, 우자인가.^n나는 글로리아나, 요정의 여왕.^n시련과, 힘을 내리노라!」",
+  "reason": "勇者か愚者 각운 복원(용자/우자). 두 대구가 서로 다르게 번역돼 있었음"
+ },
+ {
+  "uid": "original_scr/2500.gsc::command/0x000F0A::MESSAGE.text",
+  "before": "^g016……이거 「더 게임」 아니야!?^n잠깐만, 너, 대단하잖아.^n나 젤리클 캣이 될 수 있으려나?",
+  "after": "^g016……이거 「더 게임」 아니야!?^n잠깐만, 너, 대단하잖아.^n나 젤리클 캣츠가 될 수 있으려나?",
+  "reason": "ジェリクルキャッツ → 젤리클 캣츠 (뮤지컬 캣츠 정본). 받침 소실에 맞춰 조사 조정"
+ },
+ {
+  "uid": "original_scr/2500.gsc::command/0x00357A::MESSAGE.text",
+  "before": "^g016나는 그냥 고양이가 아니야.^n젤리클 캣이다.^n소원은 하나, 천국으로 가는 티켓이야!",
+  "after": "^g016나는 그냥 고양이가 아니야.^n젤리클 캣츠다.^n소원은 하나, 천국으로 가는 티켓이야!",
+  "reason": "ジェリクルキャッツ → 젤리클 캣츠 (뮤지컬 캣츠 정본). 받침 소실에 맞춰 조사 조정"
+ },
+ {
+  "uid": "original_scr/2600.gsc::command/0x0028B6::MESSAGE.text",
+  "before": "^g017그 임무, 몸에 띤 자는,^n이름 없는 현자 아케루,^n용사인가 용렬인가！",
+  "after": "^g017그 임무, 몸에 띤 자는,^n이름 없는 현자 아케루,^n용자인가, 우자인가！",
+  "reason": "勇者か愚者 각운 복원(용자/우자). 두 대구가 서로 다르게 번역돼 있었음"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x009528::MESSAGE.text",
+  "before": "^g051네가 모를 리가 없겠지?^n이놈은 검은 점이다!^n해적 방식의, 죽음의 선고라는 녀석이다!",
+  "after": "^g051네가 모를 리가 없겠지?^n이놈은 흑점이다!^n해적 방식의, 죽음의 선고라는 녀석이다!",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x009564::MESSAGE.text",
+  "before": "^g051……태연한 거냐?^n통하지 않는 거냐, 검은 점이?",
+  "after": "^g051……태연한 거냐?^n통하지 않는 거냐, 흑점이?",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x009C62::MESSAGE.text",
+  "before": "^g003아니면, 당신이 냄새를 맡은 건,^n이 검은 점의 냄새일까?^n그렇다면, 자, 받으세요. 이건──",
+  "after": "^g003아니면, 당신이 냄새를 맡은 건,^n이 흑점의 냄새일까?^n그렇다면, 자, 받으세요. 이건──",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x009E0E::MESSAGE.text",
+  "before": "^g003자, 죽음이여! 검은 점은 여기 있어!^n따라잡아 보세요!",
+  "after": "^g003자, 죽음이여! 흑점은 여기 있어!^n따라잡아 보세요!",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x00BFBE::MESSAGE.text",
+  "before": "^g003……줄게, 보물을!^n검은 점을!",
+  "after": "^g003……줄게, 보물을!^n흑점을!",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/2700.gsc::command/0x00C20E::MESSAGE.text",
+  "before": "^g021우아～, 위험해, 검은 점 먹어버렸다.^n엄청, 맛없어!",
+  "after": "^g021우아～, 위험해, 흑점 먹어버렸다.^n엄청, 맛없어!",
+  "reason": "黒丸 → 흑점 (보물섬 국역 정본. Black Spot)"
+ },
+ {
+  "uid": "original_scr/3033.gsc::command/0x000718::MESSAGE.text",
+  "before": "^g019됐어, 상관없어.^n고양이는 혼자서도 살아갈 수 있거든.^n젤리클 캣이라면 말이지.",
+  "after": "^g019됐어, 상관없어.^n고양이는 혼자서도 살아갈 수 있거든.^n젤리클 캣츠라면 말이지.",
+  "reason": "ジェリクルキャッツ → 젤리클 캣츠 (뮤지컬 캣츠 정본). 받침 소실에 맞춰 조사 조정"
+ },
+ {
+  "uid": "original_scr/3111.gsc::command/0x000FF0::MESSAGE.text",
+  "before": "^g999너에게는 불가능해.^n너는 죽일 수 없어, 아마네.",
+  "after": "^g999너에게는 불가능해.^n너는 죽일 수 없어, 나가츠키.",
+  "reason": "JA가 가타카나 성(ナガツキ)으로 부르는데 이름(아마네)으로 옮김"
+ }
+]

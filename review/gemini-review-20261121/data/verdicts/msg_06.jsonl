@@ -1,0 +1,120 @@
+{"id": "2500:729", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐을 바로잡음"}
+{"id": "2500:749", "verdict": "KEEP", "cat": "meaning", "why": "ようやく·いっしょにいこう 를 드디어·같이 가자 꼴로 가려 옛 판의 여/됐 엉뚱한 글자를 고침, 다음 줄과 맞음"}
+{"id": "2500:751", "verdict": "KEEP", "cat": "meaning", "why": "가림 글자 사이로 드디어·같이가 통째 드러나던 것을 원문 가림 꼴대로 고르고 앞 줄과 통일"}
+{"id": "2500:752", "verdict": "KEEP", "cat": "korean", "why": "名乗った 를 「명했다」(어색) 대신 「자신을 ~라 밝혔다」로"}
+{"id": "2500:755", "verdict": "FIX", "cat": "pronoun", "why": "ように■る 를 「될 거야」로 고친 건 맞으나 대사에 「그에게는」(그 대명사)이 남음", "fix": "^g009그 애한테는 ■■■ 않아.^n아■ ■이지 않아.^n곧 ■이게 ■ 거야."}
+{"id": "2500:762", "verdict": "KEEP", "cat": "korean", "why": "「곧■에」 같은 이상한 조각을 없애고 가림 꼴을 고름"}
+{"id": "2500:764", "verdict": "KEEP", "cat": "korean", "why": "手、塞がってて 를 「손, 막혀있어서」 직역 대신 「손이 비질 않아서」로 자연스럽게"}
+{"id": "2500:771", "verdict": "KEEP", "cat": "korean", "why": "「무슨 머뭇거리냐」 비문을 「뭘 꾸물거리고 있는 거야」로"}
+{"id": "2500:773", "verdict": "KEEP", "cat": "meaning", "why": "飛ばしてる(빨리 달린다)를 「내뿜고 있다」로 잘못 옮긴 것을 바로잡음"}
+{"id": "2500:778", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐 수정"}
+{"id": "2500:784", "verdict": "KEEP", "cat": "meaning", "why": "飛ばして 오역(내뿜고) 바로잡음; 리피칩 다른 대사와 같은 습니다체로"}
+{"id": "2500:785", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔·쉼표 붙음 정리"}
+{"id": "2500:800", "verdict": "KEEP", "cat": "korean", "why": "「기다리십시오 이 놈아」 존대+욕 뒤섞임을 거친 외침으로 자연스럽게"}
+{"id": "2500:806", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐 수정"}
+{"id": "2500:813", "verdict": "KEEP", "cat": "meaning", "why": "江戸っ子 를 「에노코지」로 깨진 것을 「에도 토박이」로 바로잡음"}
+{"id": "2500:814", "verdict": "KEEP", "cat": "korean", "why": "줄 중간에 끊긴 「3대 전에^n는」과 붙은 띄어쓰기 정리"}
+{"id": "2500:817", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐 수정"}
+{"id": "2500:836", "verdict": "KEEP", "cat": "korean", "why": "「스타트 지점으로 붙습니다」 어색한 표현과 습니다요 말투를 리피칩 평소 말투로"}
+{"id": "2500:847", "verdict": "KEEP", "cat": "term", "why": "チクワ 를 다음 줄 「치쿠와 공격」과 같게 치쿠와로 통일"}
+{"id": "2500:849", "verdict": "KEEP", "cat": "meaning", "why": "逃げていきやす(놈이 도망간다)를 「도망치겠슴다」(내가 도망)로 옮긴 주어 오류 바로잡음"}
+{"id": "2500:852", "verdict": "KEEP", "cat": "korean", "why": "836 과 같은 원문, 같은 고침"}
+{"id": "2500:853", "verdict": "KEEP", "cat": "omission", "why": "「몇 나아가는」에 빠진 「칸」을 채우고 줄 나눔 정리"}
+{"id": "2500:858", "verdict": "KEEP", "cat": "korean", "why": "「모 아니면 도 승부한다」에 조사 「로」를 넣어 문법에 맞춤"}
+{"id": "2500:865", "verdict": "KEEP", "cat": "term", "why": "九月さん 을 카리야 말에서 쓰는 「나가츠키 씨」로 통일"}
+{"id": "2500:876", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔 정리"}
+{"id": "2500:878", "verdict": "KEEP", "cat": "korean", "why": "だったりして 를 「라 하기도 하고」 번역투 대신 「실은 ~거든」으로"}
+{"id": "2500:879", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔·쉼표 정리"}
+{"id": "2500:880", "verdict": "KEEP", "cat": "korean", "why": "「너의 로스트에도 쫓아잡히지」 비문을 「네가 로스트해도 따라잡히지」로"}
+{"id": "2500:881", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐 수정"}
+{"id": "2500:882", "verdict": "KEEP", "cat": "meaning", "why": "た～だ～し 를 「단─하─지─만」 엉뚱한 꼴 대신 「다─만」으로"}
+{"id": "2500:884", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔 정리, 「수라구」로 말투 자연스러움"}
+{"id": "2500:894", "verdict": "KEEP", "cat": "korean", "why": "858 과 같은 선택지, 같은 고침"}
+{"id": "2500:911", "verdict": "KEEP", "cat": "register", "why": "나가츠키 지문의 ~다 체에 맞춰 반말 「내리쳤어」를 바로잡음"}
+{"id": "2500:916", "verdict": "FIX", "cat": "register", "why": "です 를 살린 방향은 맞으나 같은 원문(1094) 「앞으로 나아가라는 뜻입니다」와 어긋남", "fix": "^g007앞으로 나아가라는 뜻입니다.^n그리자벨라, 다이스는……?"}
+{"id": "2500:937", "verdict": "KEEP", "cat": "direction", "why": "しがみつかれていた(그리자벨라가 내게 매달림) 방향을 바로잡고 飛ばずに 를 「뛰지 못하고」로"}
+{"id": "2500:938", "verdict": "KEEP", "cat": "meaning", "why": "泥 를 흙→진흙, めためた 를 얼룩덜룩(오역)→질척질척으로 바로잡음"}
+{"id": "2500:952", "verdict": "KEEP", "cat": "term", "why": "ネコのヒト 를 고양이 사람으로 통일, 名乗りを挙げなさい 는 268·745 의 「이름을 대」와 같게"}
+{"id": "2500:976", "verdict": "KEEP", "cat": "korean", "why": "「다이스는 잃어버리고」 주어 어긋남을 「소실되어」로"}
+{"id": "2500:983", "verdict": "KEEP", "cat": "meaning", "why": "「목소명」 깨진 글자를 「목숨」으로 바로잡음, 기수에게 하는 반말이라 「나의 공주님」도 맞음"}
+{"id": "2500:997", "verdict": "KEEP", "cat": "meaning", "why": "ここにいるのよ？ 를 진짜 질문처럼 읽히던 「있는 거야?」에서 「있는 거잖아」로"}
+{"id": "2500:1000", "verdict": "KEEP", "cat": "meaning", "why": "いじわる 를 「생떼쟁이」(오역)에서 「심술쟁이」로"}
+{"id": "2500:1003", "verdict": "KEEP", "cat": "korean", "why": "976 과 같은 원문, 같은 고침"}
+{"id": "2500:1017", "verdict": "KEEP", "cat": "korean", "why": "「검은 검은 검은」 혼동을 「검은 칼날」로 풀어 읽힘이 나아짐"}
+{"id": "2500:1044", "verdict": "KEEP", "cat": "korean", "why": "聞かされる 를 「듣게 되고」로 누가 듣는지 분명히"}
+{"id": "2500:1048", "verdict": "KEEP", "cat": "korean", "why": "「그거 없어요」「그야」 어색함을 고쳐 더 읽힘"}
+{"id": "2500:1052", "verdict": "KEEP", "cat": "korean", "why": "「이거 기뻐하네」 직역을 「이러면 참 좋아하거든」으로"}
+{"id": "2500:1055", "verdict": "KEEP", "cat": "korean", "why": "あたしだって 를 「나라도」(오용)에서 「나도」로"}
+{"id": "2500:1062", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄을 나누고 조사 정리"}
+{"id": "2500:1066", "verdict": "REVERT", "cat": "register", "why": "見て·歌舞伎町だ 반말을 「봐요·카부키쵸예요」 존대로 바꿔 나가츠키의 반말+です 섞임이 깨지고 「이것 좀 봐요, 이」 겹침"}
+{"id": "2500:1068", "verdict": "KEEP", "cat": "meaning", "why": "行ける 를 다음 줄(올 수 있었다)에 맞게 「갈 수 있지 않을까」로"}
+{"id": "2500:1071", "verdict": "KEEP", "cat": "direction", "why": "見られてた(우리가 보임)를 「보고 있었던」(우리가 봄)으로 뒤집은 오류 바로잡음"}
+{"id": "2500:1084", "verdict": "KEEP", "cat": "korean", "why": "ビッミョ～に 를 「비묘하게」(오기)에서 「미~묘하게」로"}
+{"id": "2500:1094", "verdict": "STYLE", "cat": "register", "why": "進める？ 반말을 「거죠?」 존대로 바꿈, 뜻 차이 없고 둘 다 무난"}
+{"id": "2500:1100", "verdict": "KEEP", "cat": "korean", "why": "グリたん 의 애칭 꼴을 살려 부사 「그리」로 오독될 여지 없앰"}
+{"id": "2500:1103", "verdict": "KEEP", "cat": "korean", "why": "「종료할 때까지, 무브하지 않아요?」가 질문으로 읽히던 것을 「않는답니다」로"}
+{"id": "2500:1116", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔, 「이라기보다」 조사 정리"}
+{"id": "2500:1120", "verdict": "KEEP", "cat": "korean", "why": "思うです 를 「생각해요」로 살리고 쉼표 정리"}
+{"id": "2500:1124", "verdict": "KEEP", "cat": "meaning", "why": "変じゃない 를 「변하지 않았어」(오역)에서 「이상하지 않아」로"}
+{"id": "2500:1147", "verdict": "KEEP", "cat": "korean", "why": "「너 주사위도」를 「네 주사위도」로"}
+{"id": "2500:1166", "verdict": "KEEP", "cat": "korean", "why": "말줄임표 꼴 통일"}
+{"id": "2500:1173", "verdict": "KEEP", "cat": "korean", "why": "ホントは 를 「정말은」 직역 대신 「사실은」으로"}
+{"id": "2500:1237", "verdict": "KEEP", "cat": "korean", "why": "「리얼인 사람/숲인 사람」 비문을 자연스럽게"}
+{"id": "2500:1245", "verdict": "KEEP", "cat": "korean", "why": "「이젠 와서」 오기를 「이제 와서」로"}
+{"id": "2500:1247", "verdict": "KEEP", "cat": "korean", "why": "「것도」 앞에 빠진 「그」를 채움"}
+{"id": "2500:1254", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄을 나누고 「제법」 위치를 자연스럽게"}
+{"id": "2500:1256", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1260", "verdict": "KEEP", "cat": "korean", "why": "「걸로 됐어」를 「그걸로 됐어」로"}
+{"id": "2500:1270", "verdict": "STYLE", "cat": "style", "why": "やれくそ 를 「에잇 빌어먹을」에서 「어이쿠야」로, 세 줄 통일되어 있고 둘 다 무난; 「베 짜는」 띄어쓰기는 맞음"}
+{"id": "2500:1272", "verdict": "STYLE", "cat": "style", "why": "やれくそ 말버릇 바꿈, 1270·1288 과 통일"}
+{"id": "2500:1280", "verdict": "STYLE", "cat": "style", "why": "日本語 현지화를 「한국어로는」→「우리말로는」, 뜻 같음"}
+{"id": "2500:1281", "verdict": "KEEP", "cat": "meaning", "why": "オサ(筬)를 「북실」(오역)에서 「바디」로 바로잡음"}
+{"id": "2500:1288", "verdict": "STYLE", "cat": "style", "why": "やれくそ 말버릇 바꿈과 「베 짜는」 띄어쓰기, 1270 과 통일"}
+{"id": "2500:1314", "verdict": "KEEP", "cat": "meaning", "why": "ちゃんと死んだ 를 「잘 죽었어」(다른 뜻으로 읽힘)에서 「분명히 죽었어」로"}
+{"id": "2500:1316", "verdict": "KEEP", "cat": "term", "why": "ネコのヒト 를 고양이 사람으로 통일"}
+{"id": "2500:1320", "verdict": "KEEP", "cat": "korean", "why": "「걸로」를 「그걸로」로"}
+{"id": "2500:1327", "verdict": "KEEP", "cat": "term", "why": "ネコのヒト 를 고양이 사람으로 통일"}
+{"id": "2500:1328", "verdict": "KEEP", "cat": "term", "why": "952 와 같은 원문, 같은 고침"}
+{"id": "2500:1335", "verdict": "KEEP", "cat": "term", "why": "1316 과 같은 원문, 같은 고침"}
+{"id": "2500:1338", "verdict": "KEEP", "cat": "meaning", "why": "あたしはロスト 를 「나도」(남도 로스트한 듯)에서 「나는」으로"}
+{"id": "2500:1345", "verdict": "KEEP", "cat": "korean", "why": "띄어쓰기 깨짐, 「검은 검은」을 「검은 칼날은」으로, 57폭 넘던 줄 나눔"}
+{"id": "2500:1352", "verdict": "KEEP", "cat": "meaning", "why": "1314 와 같은 원문, 같은 고침"}
+{"id": "2500:1408", "verdict": "KEEP", "cat": "korean", "why": "２の倍 를 876 「2의 두 배」와 통일"}
+{"id": "2500:1410", "verdict": "KEEP", "cat": "term", "why": "ウサギのヒト 를 토끼 사람으로 통일"}
+{"id": "2500:1420", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1425", "verdict": "KEEP", "cat": "korean", "why": "なのに 를 「인데도」에서 「그런데도」로"}
+{"id": "2500:1432", "verdict": "KEEP", "cat": "meaning", "why": "おいおいさー(신나게 받는 대답)를 「어이쿠야」(놀람)에서 「아이아이서」로"}
+{"id": "2500:1433", "verdict": "KEEP", "cat": "korean", "why": "1408 과 같은 원문, 같은 고침"}
+{"id": "2500:1448", "verdict": "KEEP", "cat": "korean", "why": "恋/鯉→フナ 말장난이 안 통하던 「붕어」를 「사랑이든 사탕이든」으로 읽히게"}
+{"id": "2500:1449", "verdict": "KEEP", "cat": "meaning", "why": "1432 와 같은 원문, 같은 고침"}
+{"id": "2500:1450", "verdict": "KEEP", "cat": "korean", "why": "1408 과 같은 원문, 같은 고침"}
+{"id": "2500:1462", "verdict": "KEEP", "cat": "korean", "why": "1408 과 같은 원문, 같은 고침"}
+{"id": "2500:1468", "verdict": "STYLE", "cat": "register", "why": "すごい！ 반말을 「대단해요」로, 뜻 차이 없음"}
+{"id": "2500:1469", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1474", "verdict": "KEEP", "cat": "korean", "why": "1408 과 같은 원문, 같은 고침"}
+{"id": "2500:1482", "verdict": "KEEP", "cat": "term", "why": "1327 과 같은 원문, 같은 고침"}
+{"id": "2500:1483", "verdict": "KEEP", "cat": "term", "why": "952 와 같은 원문, 같은 고침"}
+{"id": "2500:1490", "verdict": "KEEP", "cat": "term", "why": "1316 과 같은 원문, 같은 고침"}
+{"id": "2500:1493", "verdict": "KEEP", "cat": "meaning", "why": "あたしはロスト 를 「나도」에서 「나는」으로(뒤 「다이나도」와 맞음)"}
+{"id": "2500:1497", "verdict": "KEEP", "cat": "korean", "why": "1345 와 같은 원문, 같은 고침"}
+{"id": "2500:1504", "verdict": "KEEP", "cat": "meaning", "why": "1314 와 같은 원문, 같은 고침"}
+{"id": "2500:1527", "verdict": "STYLE", "cat": "style", "why": "あたし「たち」 강조를 「우리'들'」에서 「'우리'가」로, 뜻 같음"}
+{"id": "2500:1532", "verdict": "KEEP", "cat": "korean", "why": "1408 과 같은 원문, 같은 고침"}
+{"id": "2500:1547", "verdict": "STYLE", "cat": "register", "why": "したいものだが 반말 끝을 「싶습니다만」 존대로, 뜻 같음"}
+{"id": "2500:1553", "verdict": "KEEP", "cat": "korean", "why": "줄 나눔·쉼표 정리"}
+{"id": "2500:1561", "verdict": "KEEP", "cat": "term", "why": "ウサギのヒト 를 「토끼 씨」에서 토끼 사람으로 통일"}
+{"id": "2500:1578", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1580", "verdict": "KEEP", "cat": "term", "why": "いちかばちか 를 선택지 「모 아니면 도」와 통일(밑져야 본전은 뜻도 조금 다름)"}
+{"id": "2500:1606", "verdict": "KEEP", "cat": "register", "why": "리피칩에게 쓰는 반말에 맞춰 「네, ~네요」 섞임을 「응, ~네」로"}
+{"id": "2500:1613", "verdict": "KEEP", "cat": "korean", "why": "「있어서탈인」 띄어쓰기 수정"}
+{"id": "2500:1615", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔, 「'알고' 있지만」 정리"}
+{"id": "2500:1622", "verdict": "KEEP", "cat": "korean", "why": "「7개가 있다」 군더더기를 덜고 57폭 넘던 줄 나눔"}
+{"id": "2500:1628", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔, 娘さん 을 아가씨로"}
+{"id": "2500:1652", "verdict": "KEEP", "cat": "korean", "why": "줄 머리 「과 동시에」를 「그와 동시에」로"}
+{"id": "2500:1658", "verdict": "KEEP", "cat": "register", "why": "검은 기수에게 존대로 묻는 대사 속 「말한다」 평서를 앞뒤 존대에 맞춤"}
+{"id": "2500:1661", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1663", "verdict": "KEEP", "cat": "korean", "why": "「떨운다」 오기를 「떤다」로, 줄 나눔"}
+{"id": "2500:1675", "verdict": "STYLE", "cat": "register", "why": "やむなし 를 「어쩔 수 없지」에서 「어쩔 수 없지요」로, 뜻 같음"}
+{"id": "2500:1688", "verdict": "KEEP", "cat": "korean", "why": "「이야」 오기를 「그야」로"}
+{"id": "2500:1702", "verdict": "KEEP", "cat": "korean", "why": "57폭 넘던 줄 나눔"}
+{"id": "2500:1712", "verdict": "KEEP", "cat": "meaning", "why": "生きてる 를 「살고 있을까」에서 「살아 있을까」로"}

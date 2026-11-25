@@ -1,0 +1,110 @@
+{"id": "3031:124", "verdict": "KEEP", "cat": "ok", "why": "받아쓰기 갈림: Whisper 는 무음·신음에 흔한 환각 문구(ご視聴…) — 말 아닌 신음이라 몸부림 장면에 「으으윽」이 맞음(old 는 줄표뿐)"}
+{"id": "3031:128", "verdict": "REVERT", "cat": "korean", "why": "はぁ!? 를 「하아아!?」로 소리만 옮김 — 일본어 감탄사 잔재·한숨으로 읽힘; old 「뭐어어!?」가 자연스러움"}
+{"id": "3031:133", "verdict": "KEEP", "cat": "ok", "why": "なっ……! 놀람을 「뭣……!」으로 살림(old 는 줄표뿐; Whisper なお 는 같은 숨소리)"}
+{"id": "3031:145", "verdict": "FIX", "cat": "korean", "why": "old 「허에? 후에?」보다 낫지만 「헤엣」은 へぇっ 소리 옮김(일본어 감탄사)", "fix": "^cy헛……? 어엇!?"}
+{"id": "3031:148", "verdict": "LISTEN", "cat": "meaning", "why": "받아쓰기 갈림: 제미나이 「これって、まさか……」 / Whisper 「これって嘘か?」(영문 this isn't real 도 嘘 쪽)"}
+{"id": "3031:158", "verdict": "STYLE", "cat": "style", "why": "뜻 같음, ボク 살림"}
+{"id": "3031:161", "verdict": "STYLE", "cat": "style", "why": "늘임 길이만 다름"}
+{"id": "3031:195", "verdict": "KEEP", "cat": "ok", "why": "これはこれで 살림(본문 それはそれで=「그건 그것대로」와 같은 꼴), 후렴 전부 같은 꼴로 통일"}
+{"id": "3031:197", "verdict": "STYLE", "cat": "style", "why": "어순만 바꿈(つぶやいた=중얼거린), 뜻 같음"}
+{"id": "3031:200", "verdict": "KEEP", "cat": "meaning", "why": "さあ、それはどうかしら 를 old 「아니, 정말 그런가?」가 비틂 — 「글쎄, 과연 그럴까?」가 맞음, それはそれで 후렴도 살림"}
+{"id": "3032:5", "verdict": "KEEP", "cat": "addition", "why": "old 「누가 …중인가」는 영문 가필; 撮影……? 그대로"}
+{"id": "3032:26", "verdict": "KEEP", "cat": "ok", "why": "후렴 これはこれで 살림, 다른 후렴 칸과 같은 꼴"}
+{"id": "3033:10", "verdict": "KEEP", "cat": "ok", "why": "후렴 통일, わりと最近あったこと = 비교적 최근에 있었던 일 맞음"}
+{"id": "3033:12", "verdict": "KEEP", "cat": "ok", "why": "받아쓰기 갈림: Whisper 는 무음 환각 문구, 영문·제미나이 모두 웅얼거림 — 뜻 없는 「뉴뮤뉴뮤」보다 「우물쭈물」이 읽힘"}
+{"id": "3033:23", "verdict": "KEEP", "cat": "meaning", "why": "くれるの? = 주는 거야?(old 「이거 써도 돼?」는 영문 따라 어긋남)"}
+{"id": "3033:27", "verdict": "STYLE", "cat": "style", "why": "あらまあ~! 감탄 세기만 다름(Whisper あらもう 같은 감탄)"}
+{"id": "3033:77", "verdict": "KEEP", "cat": "ok", "why": "후렴 これはこれで 살림, 다른 후렴 칸과 같은 꼴"}
+{"id": "2300:4", "verdict": "STYLE", "cat": "style", "why": "お話を聞かせて, 뜻 같음"}
+{"id": "2300:6", "verdict": "KEEP", "cat": "meaning", "why": "わかってるわ = 알고 있어(old 「알겠어」는 수긍으로 읽힘)"}
+{"id": "2300:16", "verdict": "KEEP", "cat": "register", "why": "old 「저렇게·지껄여」는 영문 he 가필·말투 거침; new 원문대로"}
+{"id": "2300:19", "verdict": "STYLE", "cat": "style", "why": "そんなの知らない。変なの。 뜻 같음"}
+{"id": "2300:22", "verdict": "STYLE", "cat": "style", "why": "앞 지문 「고양이에게」 메아리, 뜻 같음"}
+{"id": "2300:25", "verdict": "KEEP", "cat": "ok", "why": "暇 = 한가(뒤 지문 「아케루 쪽도 꽤 한가했어」와 맞음), old 「꽤」 가필"}
+{"id": "2300:45", "verdict": "KEEP", "cat": "addition", "why": "old 「사회가 아니라 세계라고?」는 영문 가필; 社会と世界、どう違うの 맞음"}
+{"id": "2300:51", "verdict": "STYLE", "cat": "style", "why": "ちょっと覚えてるかも, 뜻 같음"}
+{"id": "2300:54", "verdict": "STYLE", "cat": "style", "why": "물음표를 쉼표로 이음, 뜻 같음"}
+{"id": "2300:57", "verdict": "KEEP", "cat": "korean", "why": "盗むどころか触れることもできない 를 자연스럽게; old 는 순서가 꼬여 읽힘이 나쁨"}
+{"id": "2300:60", "verdict": "KEEP", "cat": "ok", "why": "뒤 지문 「스스로는 가질 수 없어」와 맞음, もらえばいい 맞음"}
+{"id": "2300:63", "verdict": "STYLE", "cat": "style", "why": "old 「아주」 가필 걷음, 뜻 같음"}
+{"id": "2300:66", "verdict": "STYLE", "cat": "style", "why": "old 「도」는 영문 too, 뜻 차이 미미"}
+{"id": "2300:69", "verdict": "KEEP", "cat": "meaning", "why": "言ってた = 말했다(old 「등장했지」는 영문 came out 오역), 뒤 지문 「말했습니다」와 맞음"}
+{"id": "2300:74", "verdict": "KEEP", "cat": "meaning", "why": "old 「충격과 경탄」 영문 직역·フレッシュ生ゴミ 빠짐; new 원문대로(Whisper パンガツ 는 あんがと 오청)"}
+{"id": "2300:77", "verdict": "STYLE", "cat": "style", "why": "私 살림, 뜻 같음"}
+{"id": "2300:95", "verdict": "STYLE", "cat": "style", "why": "そうだわ = 맞아, 뜻 같음"}
+{"id": "2300:106", "verdict": "KEEP", "cat": "ok", "why": "あっ/くっ 짧은 소리 차이, 「앗!」 무난(old 는 줄표뿐)"}
+{"id": "2300:125", "verdict": "STYLE", "cat": "style", "why": "えっ? 감탄만 다름"}
+{"id": "2300:136", "verdict": "STYLE", "cat": "style", "why": "知らない = 몰라, 뜻 같음"}
+{"id": "2300:139", "verdict": "KEEP", "cat": "meaning", "why": "どうしちゃったの = 왜 그래?(old 「무슨 일이 있었지?」 어긋남); あなた=당신은 본문 g002·카리야 관례와 맞음"}
+{"id": "2300:142", "verdict": "KEEP", "cat": "pronoun", "why": "あなたは 살림, 본문 2301:35 「당신은 믿을 거야?」와 같은 꼴"}
+{"id": "2300:149", "verdict": "KEEP", "cat": "addition", "why": "old 「아케루는 아마모리를」은 영문 가필; 뒤 지문 「그래, 보이지 않아」와 맞음"}
+{"id": "2300:152", "verdict": "STYLE", "cat": "style", "why": "어순만 바꿈, 뜻 같음(들린 쪽 アマモリ = 아마모리 유지)"}
+{"id": "2300:160", "verdict": "STYLE", "cat": "style", "why": "어순 도치, 뜻 같음"}
+{"id": "2300:172", "verdict": "FIX", "cat": "term", "why": "old 「집」은 영문 오청(お顔=얼굴) — new 가 바로잡음; 다만 ちゃん 「쨩」은 본문 관례 「양」(2700:830 카코 양)", "fix": "^cy사랑하는 카코 양의 얼굴을 보고 난 뒤에는^n어디로든 도망치면 되잖아?"}
+{"id": "2300:175", "verdict": "FIX", "cat": "korean", "why": "覚えてるかな 방향은 맞으나 「나 기억하고 있으려나」는 「(누가) 나를 기억할까」로 읽힘 — 주어 「내가」로", "fix": "^cy기억나. 내가 기억하고 있으려나…….^n선명하지 않아. 모르겠어."}
+{"id": "2300:178", "verdict": "FIX", "cat": "term", "why": "받아쓰기 갈림: Whisper 「相手逃げる気」 — 뒤 「森の底に…伽子ちゃんを」로 置いて 가 맞음; old 「카코에게서도」 뜻 틀림, new 맞음; 쨩→본문 관례 「양」", "fix": "^cy두고 도망칠 셈이야?^n이 숲 밑바닥에, 귀여운 카코 양을?"}
+{"id": "2300:181", "verdict": "STYLE", "cat": "style", "why": "なんだか 살림, 뜻 같음"}
+{"id": "2300:184", "verdict": "KEEP", "cat": "pronoun", "why": "あなた=당신(본문 2302:20 g002 「당신이란…위선자네」와 맞음), 悪党のふり = 악당 흉내 맞음"}
+{"id": "2300:186", "verdict": "KEEP", "cat": "meaning", "why": "まさか = 설마(old 「어째서인지」는 영문 somehow)"}
+{"id": "2300:189", "verdict": "KEEP", "cat": "meaning", "why": "変になりそう = 이상해질 것 같아(old 「기분이 이상해」 어긋남)"}
+{"id": "2300:200", "verdict": "KEEP", "cat": "meaning", "why": "知ってるの 되풀이 주문꼴 살림; old 는 영문 따라 「바라보는 사람이 너라는 것」 등으로 뜻 비틂"}
+{"id": "2300:203", "verdict": "KEEP", "cat": "meaning", "why": "透けている = 비쳐 보여(old 「선명해」 어긋남), ひんやり 맞음"}
+{"id": "2300:206", "verdict": "KEEP", "cat": "meaning", "why": "おどろ(덤불)·儚い·惹かれて 살림, old 는 영문 따라 빠짐(Whisper 「お泥」는 같은 소리)"}
+{"id": "2300:209", "verdict": "FIX", "cat": "korean", "why": "old 는 영문 오역(열정적·황홀) — new 뜻은 맞으나 「참고 죽이며」는 목적어 없는 비문(潜めて)", "fix": "^cy울컥 솟구치는 홍련의 불꽃,^n타오르고 녹아내려 끈적이는 불꽃.^n참고 억누르며 숨겨 왔어도^n다 숨기지 못하고 흘러넘쳐."}
+{"id": "2300:212", "verdict": "KEEP", "cat": "meaning", "why": "潔さ = 의연함(old 「영웅성」 영문 오역), 시구 꼴 살림"}
+{"id": "2300:215", "verdict": "LISTEN", "cat": "meaning", "why": "받아쓰기 갈림: 제미나이 「たわわに孕んだ」 / Whisper 「川場にはらんだ」(영문도 river)"}
+{"id": "2300:230", "verdict": "KEEP", "cat": "meaning", "why": "두 받아쓰기 모두 /utte/(射って/打って 한자만 다름); old 「풀어 줘」는 영문 release 오역, 「나를── 꿰뚫어 줘」가 문맥에 맞음"}
+{"id": "2300:232", "verdict": "KEEP", "cat": "register", "why": "産んで 부탁꼴 「낳아 줘」, 앞 줄 「꿰뚫어 줘」와 짝(old 「낳아.」는 명령)"}
+{"id": "2300:234", "verdict": "STYLE", "cat": "style", "why": "思い出したわ, 뜻 같음"}
+{"id": "2300:240", "verdict": "STYLE", "cat": "style", "why": "聞かせてあげるわ, 뜻 같음"}
+{"id": "2300:265", "verdict": "STYLE", "cat": "style", "why": "目を覚まして·私たち 살림, 뜻 같음(Whisper 前澄 은 마유즈미 오기)"}
+{"id": "2300:268", "verdict": "KEEP", "cat": "meaning", "why": "抜け穴探検 = 비밀 통로 탐험(old 「구멍을 찾았다고」 영문 오역)"}
+{"id": "2300:270", "verdict": "KEEP", "cat": "meaning", "why": "禁断症状出てきた = 금단증상(old 「버리게 하더라고」 영문 오역)"}
+{"id": "2300:278", "verdict": "STYLE", "cat": "style", "why": "문장부호만 다름"}
+{"id": "2300:282", "verdict": "KEEP", "cat": "register", "why": "ですね 높임·반말 섞인 나가츠키 말투 살림"}
+{"id": "2300:287", "verdict": "KEEP", "cat": "meaning", "why": "ばっちり全然わかんない 역설 살림(old 「정말이지 완전히」는 역설 잃음), 犬さん 귀염 말투"}
+{"id": "2300:290", "verdict": "STYLE", "cat": "style", "why": "この子 살림, 뜻 같음"}
+{"id": "2300:293", "verdict": "STYLE", "cat": "style", "why": "アニメとかに出てきそう 원문 꼴, 뜻 같음"}
+{"id": "2300:297", "verdict": "STYLE", "cat": "style", "why": "その子·能力, 뜻 같음"}
+{"id": "2300:300", "verdict": "KEEP", "cat": "meaning", "why": "覚えてる? 覚えてない? 둘 다 물음(old 「기억나.」 평서 어긋남)"}
+{"id": "2300:303", "verdict": "STYLE", "cat": "style", "why": "어순만 다름"}
+{"id": "2300:306", "verdict": "STYLE", "cat": "style", "why": "その犬 = 그 개, 뜻 같음"}
+{"id": "2300:309", "verdict": "KEEP", "cat": "meaning", "why": "なれなれしい = 친한 척(old 「나를 주인으로 아는 건가」 영문 의역)"}
+{"id": "2300:316", "verdict": "KEEP", "cat": "addition", "why": "old 「내 후디니」 가필 걷음, なになに 살림"}
+{"id": "2300:319", "verdict": "KEEP", "cat": "omission", "why": "old 에 빠진 「うまくいったら、おひねりだかんね」 살림"}
+{"id": "2300:322", "verdict": "FIX", "cat": "korean", "why": "「쯘짜카」는 つんちゃか 소리 그대로 옮김 — 한국어 입나팔 소리로", "fix": "^cy짠짜카 쿵짜카 짜~안!"}
+{"id": "2300:326", "verdict": "STYLE", "cat": "style", "why": "아메노모리 씨 유지(들리는 쪽·영문도 Amenomori), 뜻 같음"}
+{"id": "2300:330", "verdict": "STYLE", "cat": "style", "why": "アドベンチャー 말투 외래어 살림, 뜻 같음"}
+{"id": "2300:342", "verdict": "KEEP", "cat": "meaning", "why": "뒤 지문 인용 「아케루는 참, 쑥스러워하기는…」과 같음; old 「다들…알아」 영문 가필"}
+{"id": "2300:345", "verdict": "STYLE", "cat": "style", "why": "バッカじゃないの = 바보 아니야?, 뜻 같음"}
+{"id": "2300:349", "verdict": "STYLE", "cat": "style", "why": "知ってる知ってる 되풀이 꼴, 뜻 같음"}
+{"id": "2300:353", "verdict": "STYLE", "cat": "style", "why": "ちっこい人 = 조그만 사람, 뜻 같음"}
+{"id": "2300:356", "verdict": "STYLE", "cat": "style", "why": "どういうこと 살림, 뜻 같음"}
+{"id": "2300:359", "verdict": "KEEP", "cat": "meaning", "why": "あんまりいない = 별로 없네(old 「한 명도 안 보여」 과장)"}
+{"id": "2300:365", "verdict": "STYLE", "cat": "style", "why": "おっちゃん = 아저씨, 뜻 같음"}
+{"id": "2300:370", "verdict": "FIX", "cat": "meaning", "why": "old 「만나서 잘 먹겠습니다」는 영문 말장난 — new 가 바로잡았으나 こんちゃっす 는 바로 뒤 지문 「안녕하심까」와 같게", "fix": "^cy시리우스는 저 사람 개야?^n하이~ 안녕하심까!"}
+{"id": "2300:374", "verdict": "STYLE", "cat": "style", "why": "見て 되풀이 꼴, 뜻 같음"}
+{"id": "2300:379", "verdict": "KEEP", "cat": "meaning", "why": "お邪魔するね = 실례할게(old 「안녕하세요…안녕히 계세요」 영문 오역)"}
+{"id": "2300:382", "verdict": "STYLE", "cat": "style", "why": "뒤 지문 「정말 가는 거야?」와 같은 꼴, 뜻 같음"}
+{"id": "2300:386", "verdict": "STYLE", "cat": "style", "why": "뒤 지문 인용 「죽으면 어떻게 될까?」와 같음, 뜻 같음"}
+{"id": "2300:389", "verdict": "REVERT", "cat": "overcorrect", "why": "old 「누가 알아채기나 할까?」가 뜻(気づかれないまま)을 지킴; new 「알아채지 못한 채 그대로인 걸까」는 번역투"}
+{"id": "2300:392", "verdict": "STYLE", "cat": "style", "why": "뒤 지문 인용 「뭐야 그 이상한 개…」와 같게, 뜻 같음"}
+{"id": "2300:394", "verdict": "KEEP", "cat": "meaning", "why": "騙されてると思わない = 속고 있다는 생각(old 는 영문 따라 바뀜·「너희는」 가필)"}
+{"id": "2300:397", "verdict": "STYLE", "cat": "style", "why": "だって…よー 말끝만 다름"}
+{"id": "2300:400", "verdict": "KEEP", "cat": "omission", "why": "old 에 빠진 皮下脂肪女 욕·キミね 살림(Whisper 「彦志望」은 같은 소리)"}
+{"id": "2300:402", "verdict": "KEEP", "cat": "meaning", "why": "無知っていうか非常識 맞음(old 「머리가 조금이라도 있으면…」 영문 의역), 지문 인용과 같음"}
+{"id": "2300:405", "verdict": "FIX", "cat": "term", "why": "すっごーい!·化かされた 바로잡음(old 「설마!·속은 적」); 쨩→본문 관례 「양」(마유즈미 양)", "fix": "^cy굉장해~! 마유즈미 양,^n홀려 본 적 있어?"}
+{"id": "2300:407", "verdict": "KEEP", "cat": "meaning", "why": "どんなだった = 어땠어(old 「걔들이 무슨 짓을 했는데」 어긋남)"}
+{"id": "2300:410", "verdict": "STYLE", "cat": "style", "why": "뒤 지문 인용과 같은 꼴, 뜻 같음"}
+{"id": "2300:414", "verdict": "STYLE", "cat": "style", "why": "元ネタはイギリス縛り, 뜻 같음; あなた=당신은 카리야 본문 관례"}
+{"id": "2300:416", "verdict": "KEEP", "cat": "meaning", "why": "old 「영국 동화책은 기억나지 않아」 영문 의역; 지문 인용 「그런 캐릭터 난 들어본 적 없는데?」와 같음"}
+{"id": "2300:420", "verdict": "KEEP", "cat": "register", "why": "ですよ 높임 살림, 지문 인용과 같음(old 반말)"}
+{"id": "2300:424", "verdict": "STYLE", "cat": "style", "why": "지문 인용 「숲은 분명 거짓말쟁이일 거야」와 같게"}
+{"id": "2300:426", "verdict": "STYLE", "cat": "style", "why": "지문 인용과 같게, あなた=당신은 카리야 본문 관례"}
+{"id": "2300:437", "verdict": "STYLE", "cat": "style", "why": "キャラ違う 직역, 뜻 같음"}
+{"id": "2300:440", "verdict": "STYLE", "cat": "style", "why": "지문 인용과 같은 꼴, 뜻 같음"}
+{"id": "2300:444", "verdict": "STYLE", "cat": "style", "why": "見てたね = 보고 있었지, 뜻 같음"}
+{"id": "2300:447", "verdict": "STYLE", "cat": "style", "why": "こいつ·こんなやつ 살림, 뜻 같음"}
+{"id": "2300:450", "verdict": "KEEP", "cat": "meaning", "why": "받아쓰기 갈림: Whisper 「お茶持ってない」 — 뒤 지문(대男에게 담배를 물음)으로 「おっちゃん、持ってない」가 맞음; old 「다 떨어졌어」 가필"}
+{"id": "2300:454", "verdict": "FIX", "cat": "term", "why": "うっそ·アマモリちゃん 살림(old 「아마모리야?」); 쨩→본문 관례 「양」(3111:90 아마모리 양)", "fix": "^cy거짓말! 아마모리 양!?"}
+{"id": "2300:458", "verdict": "KEEP", "cat": "pronoun", "why": "바로 뒤 지문 인용 「당신, 어째서……」와 같음(old 「네가 왜……?」)"}
