@@ -65,6 +65,7 @@ const uintptr_t kEngineObj = 0x466398, kMsgWinPtr = 0x46630c;
 const uintptr_t kAuto = 0x466408, kCtrlKey = 0x4663f8, kCtrlSkip = 0x466400, kTabReq = 0x4663fc, kTabSkip = 0x466404;
 const uintptr_t kClickWait = 0x4663e8, kChoiceBox = 0x4663cc, kSelect = 0x466418;
 const uintptr_t kSettings = 0x46640c, kSaveScr = 0x466410, kLoadScr = 0x466414, kHidden = 0x466420;
+const uintptr_t kVmQuit = 0x4663c8;   // 엔진이 VM 스레드를 끝내려 할 때 1(0x420600: 깃발 → SetEvent → 스레드가 끝날 때까지 시간 제한 없이 Sleep(1)). VM 은 입력 대기 0x420680 에서만 읽는다
 const uintptr_t kSkipRange = 0x466460 /*u16: 0 = 읽은 부분만*/, kSaveOk = 0x4664cc, kCheckpointOk = 0x4664d0, kMenuLock = 0x466430 /*u16*/;
 const uintptr_t kDepth = 0x4664bc /*u16*/, kDepthScripts = 0x46647e /*u16[]*/;
 const uintptr_t kConfigPtr = 0x46e924;   // char*: +0x43 세이브 폴더, +0x25 이름 머리
@@ -93,7 +94,11 @@ const uint8_t kSleep1000[11] = {0x68, 0xe8, 0x03, 0x00, 0x00, 0xff, 0x15, 0x68, 
 const uint8_t kMovD8[6] = {0x89, 0x1d, 0xd8, 0x63, 0x46, 0x00};
 uintptr_t gPlayJmpVoice = 0x41c715, gPlayJmpEnd = 0x41c721, gPlayJmpClick = 0x41c72b, gPlayJmpRet = 0x41c727;
 
-void* msgWin() { return *(void* volatile*)kMsgWinPtr; }
+// 메시지 창 객체는 게임 화면이 닫힐 때 지워지지만 포인터 [0x46630c] 은 그대로 남는다(엔진 0x415234~). 엔진은 VM 스레드가
+// 끝난 뒤에 지우므로(0x4151f6 → 0x415234) VM 스레드가 살아 있는 동안([0x4663c0])만 포인터를 믿는다 — 타이틀에서 연 불러오기 화면처럼
+// 게임 화면이 닫힌 사이에 창 타이머(tick)가 지워진 객체를 읽지 않게. (2026-11-28, 타이머 번호를 가르며 tick 이 되살아나서 넣음)
+const uintptr_t kVmAlive = 0x4663c0;
+void* msgWin() { return EV(kVmAlive) ? *(void* volatile*)kMsgWinPtr : nullptr; }
 void* engineObj() { return *(void* volatile*)kEngineObj; }
 
 // ---------------------------------------------------------------- 설정·상태
@@ -106,7 +111,7 @@ struct Config {
 bool gTextWaitPatched = false;
 HWND gWnd = nullptr;
 UINT gMsgPlay = 0;
-const UINT_PTR kTimerId = 0xF0E60;
+const UINT_PTR kTimerId = 0xF0E61;   // 화면 모듈(qol_present.cpp kOverlayTimer = 0xF0E60)과 같은 번호를 쓰면 화면 모듈이 WM_TIMER 를 먼저 먹어 tick() 이 한 번도 안 돈다(2026-11-28 가름)
 
 volatile LONG gRate = 1;            // 자동 배율 1~5
 volatile DWORD gMsgStart = 0;       // 지금 대사가 찍히기 시작한 때(0x51 을 꺼낸 때)
@@ -124,7 +129,6 @@ volatile LONG gLastOp = 0;          // VM 이 마지막으로 꺼낸 명령(0x51
 volatile LONG gBarHideReq = 0;      // VM 스레드가 자동을 되살렸으니 창 스레드에서 줄을 숨겨 달라
 enum { PendNone = 0, PendMenu = 1, PendLoad = 2 };
 volatile LONG gPending = PendNone;  // 자동을 끈 뒤 클릭 대기에 들어가면 할 일
-DWORD gPendingAt = 0;
 bool gCtrlHintShown = false;
 DWORD gHintAt = 0;
 int gLastIndSig = -1;
@@ -136,6 +140,10 @@ bool skipping() { return EV(kCtrlKey) || EV(kCtrlSkip) || EV(kTabReq) || EV(kTab
 bool screensOpen() { return EV(kSettings) || EV(kSaveScr) || EV(kLoadScr); }
 bool barActive() { auto w = (uint8_t*)msgWin(); return w && *(volatile int*)(w + kWinBarActive) != 0; }
 bool countPaused() { return gGuideOpen || EV(kHidden) || screensOpen() || ChartIsOpen(); }
+// 엔진이 이 VM 스레드를 끝내려는 중인가(창 닫기 0x4151c0 → 0x420600). 아래 대기 루프는 이때 엔진의 입력 대기로 돌아가야 한다.
+// 돌아가지 않으면 창 스레드는 0x420600 에서 이 스레드를, 이 스레드는 숨김·안내가 풀리기를 기다려 서로 굳고,
+// 그 뒤에 오는 시스템 저장(0x418900: 읽음 기록·전역 변수·설정)도 빠진다. (2026-11-28, 해설판 v2 DLL 에 넣은 것과 같은 고침)
+bool vmQuitting() { return EV(kVmQuit) != 0; }
 
 // 대본 깊이별 번호(엔진 읽음 검사와 같은 식)
 int scriptAt(int d) { return ((volatile uint16_t*)kDepthScripts)[d]; }
@@ -146,6 +154,7 @@ bool stackHas(int lo, int hi) { for (int i = 0, d = depth(); i <= d; ++i) { int 
 struct Ctx { int d, s; uint32_t pc; };
 Ctx ctxNow() { int d = depth(); return Ctx{d, scriptAt(d), ((volatile uint32_t*)0x466494)[d]}; }
 bool ctxChanged(const Ctx& a) { Ctx b = ctxNow(); return a.d != b.d || a.s != b.s || a.pc != b.pc; }
+Ctx gPendingCtx{};   // 보류 요청(자동 중 오른쪽 클릭·L)을 받은 때의 VM 문맥 — 창 스레드만 쓴다. 그 명령을 벗어나면 요청을 버린다
 Ctx gWaitCtx = {0, 0, 0};   // 자동 글 대기에 들어갈 때의 VM 문맥(음성 대기 뒤에 다시 대 본다)
 std::string stackText() { std::string s; for (int i = 0, d = depth(); i <= d; ++i) { char b[8]; sprintf_s(b, "%04d", scriptAt(i)); if (i) s += '>'; s += b; } return s; }
 
@@ -193,6 +202,8 @@ int __cdecl PlayTextWait() {
     Ctx ctx = ctxNow();
     gWaitCtx = ctx;
     for (;;) {
+        // 창 닫기: 멈춤 조건(숨김·안내)이나 남은 읽을 시간과 무관하게 클릭 대기로 보낸다 → 0x41c772 의 0x420680 이 깃발을 보고 이 스레드를 끝낸다.
+        if (vmQuitting()) { InterlockedExchange(&gInWait, 0); Log("play: engine is ending the VM thread during auto wait (window close) -> engine input wait"); return 0; }
         if (skipping()) return 2;
         // 불러오기·되감기는 VM 문맥을 먼저 덮어쓰고, 다음 입력 대기에서 이 VM 스레드를 끝낸다(0x4151c0 → 0x420600).
         // 여기서 명령을 더 실행하면 안 되므로 엔진의 입력 대기(클릭 대기)로 바로 보낸다.
@@ -216,7 +227,11 @@ int __cdecl PlayTextWait() {
 }
 // 음성 대기 뒤: 1 = 클릭 대기로
 int __cdecl PlayAfterVoice() {
+    // 음성이 끝났어도 멈춤 상태(숨김·안내·화면·지도)면 여기서 기다린다 — 안 그러면 숨긴 채·안내를 읽는 채로 다음 줄로 넘어간다.
+    // (해설판 GPT 판의 같은 줄. 끝내기 깃발을 같이 봐야 창 닫기가 굳지 않는다. 2026-11-28)
+    while (autoOn() && !ctxChanged(gWaitCtx) && !vmQuitting() && countPaused()) Sleep(15);
     InterlockedExchange(&gInWait, 0);
+    if (vmQuitting()) { Log("play: engine is ending the VM thread during voice wait (window close) -> engine input wait"); return 1; }
     if (ctxChanged(gWaitCtx)) { Log("play: VM context changed during voice wait -> engine input wait"); return 1; }
     if (C.debugLog && gVoiceFrom) { Log("play: voice wait " + std::to_string(GetTickCount() - gVoiceFrom) + "ms, auto " + std::to_string(EV(kAuto))); gVoiceFrom = 0; }
     return autoOn() || skipping() ? 0 : 1;
@@ -226,7 +241,7 @@ int __cdecl PlayPauseWait() {
     DWORD enter = GetTickCount(), last = enter, paused = 0;
     Ctx ctx = ctxNow();
     for (;;) {
-        if (ctxChanged(ctx)) return 0;   // 불러오기·되감기 → 입력 대기에서 엔진이 이 스레드를 끝낸다
+        if (ctxChanged(ctx) || vmQuitting()) return 0;   // 불러오기·되감기·창 닫기 → 입력 대기에서 엔진이 이 스레드를 끝낸다
         if (skipping()) return 1;
         if (!autoOn()) return 0;
         DWORD now = GetTickCount(), dt = now - last; last = now;
@@ -659,7 +674,7 @@ void keyLoad() {
     if (EV(kClickWait) && barActive() && !EV(kChoiceBox) && !EV(kSelect)) { openLoadScreen(); return; }
     if (autoOn() && !EV(kChoiceBox) && !EV(kSelect)) {
         engineAutoOff();
-        InterlockedExchange(&gPending, PendLoad); gPendingAt = GetTickCount();
+        InterlockedExchange(&gPending, PendLoad); gPendingCtx = ctxNow();
         Log("play: L during auto -> auto off, load screen at next click wait");
         return;
     }
@@ -681,10 +696,17 @@ void guideClose() {
     Present_InvalidateLogical(RECT{0, 0, 800, 600});
 }
 
-// 한글 입력기가 켜져 있으면 글자 키가 VK_PROCESSKEY 로 온다
-UINT realKey(HWND h, WPARAM w) {
+// 한글 입력기가 켜져 있으면 글자 키가 VK_PROCESSKEY 로 온다. 엔진의 메시지 루프(0x43def0)는 TranslateMessage 를 먼저
+// 부르는데, 그 뒤에는 ImmGetVirtualKey 도 VK_PROCESSKEY 를 돌려준다(원래 키를 못 찾는다) → 그때는 스캔 코드로 되찾는다.
+// 해설판(GPT) qol_core.cpp 의 ShortcutKey 와 같은 꼴. (2026-11-28)
+UINT realKey(HWND h, WPARAM w, LPARAM l) {
     if (w != VK_PROCESSKEY) return (UINT)w;
-    return ImmGetVirtualKey(h);
+    UINT original = ImmGetVirtualKey(h);
+    if (original && original != VK_PROCESSKEY) return original;
+    UINT scan = ((UINT)l >> 16) & 0xff;
+    if (!scan) return VK_PROCESSKEY;
+    if (l & (1u << 24)) scan |= 0xe000;
+    return MapVirtualKeyExW(scan, MAPVK_VSC_TO_VK_EX, GetKeyboardLayout(0));
 }
 void cancelComposition(HWND h) {
     HIMC c = ImmGetContext(h);
@@ -694,7 +716,7 @@ void cancelComposition(HWND h) {
 bool guideWndProc(HWND h, UINT m, WPARAM w, LPARAM l, LRESULT& r) {
     switch (m) {
     case WM_KEYDOWN: {
-        UINT vk = realKey(h, w);
+        UINT vk = realKey(h, w, l);
         if (w == VK_PROCESSKEY) cancelComposition(h);
         if (!(l & 0x40000000) && (vk == VK_HOME || vk == VK_ESCAPE)) guideClose();
         r = 0; return true;
@@ -731,7 +753,8 @@ void tick() {
     if (InterlockedExchange(&gBarHideReq, 0) && autoOn()) barHideForAuto();
     LONG p = gPending;
     if (p != PendNone) {
-        if (now - gPendingAt > 3000 || autoOn()) InterlockedExchange(&gPending, PendNone);
+        // 3초 만료 대신 「요청한 명령 안에서만」(음성이 3초보다 길어도 그 줄의 클릭 대기에서 열린다. 줄이 넘어갔거나 다른 화면이 떴으면 버린다)
+        if (ctxChanged(gPendingCtx) || autoOn() || screensOpen() || EV(kChoiceBox) || EV(kSelect) || ChartIsOpen() || gGuideOpen) InterlockedExchange(&gPending, PendNone);
         else if (EV(kClickWait) && barActive() && !screensOpen() && !EV(kChoiceBox) && !EV(kSelect) && !ChartIsOpen() && !gGuideOpen) {
             InterlockedExchange(&gPending, PendNone);
             if (p == PendMenu) {
@@ -805,7 +828,7 @@ bool Play_WndProc(HWND h, UINT m, WPARAM w, LPARAM l, LRESULT& r) {
         // 자동 대기 중엔 단추 줄이 꺼져 있어 오른쪽 클릭이 아무 일도 안 한다 → 자동을 끄고 클릭 대기에서 설정 화면
         if (C.autoKey && autoOn() && !barActive() && !EV(kHidden) && !screensOpen() && !EV(kChoiceBox) && !EV(kSelect)) {
             engineAutoOff();
-            InterlockedExchange(&gPending, PendMenu); gPendingAt = GetTickCount();
+            InterlockedExchange(&gPending, PendMenu); gPendingCtx = ctxNow();
             Log("play: right-click during auto -> auto off");
             r = 0; return true;
         }
@@ -813,7 +836,7 @@ bool Play_WndProc(HWND h, UINT m, WPARAM w, LPARAM l, LRESULT& r) {
     case WM_KEYDOWN: {
         bool repeat = (l & 0x40000000) != 0;
         if (w == VK_CONTROL && gCtrlBlocked) { r = 0; return true; }   // 반복마다 한 줄씩 넘기지 않게
-        UINT vk = realKey(h, w);
+        UINT vk = realKey(h, w, l);
         bool ime = w == VK_PROCESSKEY;
         switch (vk) {
         case 'A':

@@ -1,0 +1,33 @@
+import json
+readme = """Forest(라이어소프트, 2004) 한국어 패치 — 2026-11-28 해설판
+
+설치
+1. 게임을 끕니다.
+2. 이 ZIP 을 게임 폴더(Forest.exe 가 있는 곳)에 통째로 풀고 「한국어패치_설치.bat」을 실행합니다.
+   Forest.exe 와 오프닝 영상은 xdelta 차분으로 그 자리에서 고칩니다(이 꾸러미에는 원본 게임 파일이 들어 있지 않습니다).
+3. Forest.exe 로 켭니다. 되돌리려면 「한국어패치_제거.bat」.
+   11-25 판을 깔아 두었다면 먼저 그 판의 「한국어패치_제거.bat」으로 지운 뒤 설치하세요.
+
+들어 있는 것
+- 한국어 대본(scr) — 제미나이 재번역 6차 + 깊은 검수 반영판(5장 메뉴 흐름은 원작 그대로)
+- 한국어 그림(grpe·grpo·grps): 메뉴·설정·선택지·이름표(「토룬가」로 통일)·특전 화면
+- 한국어 오프닝(mov\0001.mpg, R28). 특전 메뉴의 「오프닝」으로 다시 볼 수 있습니다.
+- 해설 모드(cm 폴더): 대사마다 원전 모티브·작품 해설 카드, 「해설 · 평론」 메뉴, F7 도감.
+  게임 안 설정 화면에서 켜고 끕니다(처음에는 꺼져 있음).
+- 이야기의 지도·편의 기능(ForestChart.dll, fc 폴더, forest-qol.ini)
+  · Backspace = 이전 대사로 되감기(그림·소리·노란 자막까지, 누르고 있으면 계속)
+  · A = 자동 진행(누를 때마다 ×1~×5), S = 바로 저장, L = 불러오기, Home = 조작 안내, F8 = 이야기의 지도
+  · 큰 창·전체 화면, 큰 창에서 대사 글자를 화면 해상도로
+  켜고 끄기는 forest-qol.ini 에서 합니다.
+
+고화질(4배) 그림은 이 패치에 없습니다. 따로 내는 고화질 추가 설치본(hiart 폴더)을 넣으면 쓰입니다.
+해설 카드 글은 아직 검수 중이라 다음 판에서 바뀔 수 있습니다.
+
+대상: 일본어판 원본 Forest.exe(영문 패치를 깔기 전). 판이 다르면 실행 파일 차분이 적용되지 않을 수 있습니다.
+"""
+spec = {"title": "Forest 한국어 패치 2026-11-28 해설판", "exe": "Forest.exe", "orig": "P:/GAME/Forest",
+ "patched": "Y:/AI/claude-work/forest-release-cm/stage",
+ "deltas": [["Forest.exe","Forest.exe"],["mov/0001.mpg","mov/0001.mpg"]],
+ "copy": ["ForestChart.dll","forest-qol.ini","scr","grpe","grpo","grps","fc","cm"],
+ "out": "Y:/AI/claude-work/forest-release-cm/out", "zip": "Forest_KoreanPatch_20261128_commentary_xdelta.zip", "readme": readme}
+json.dump(spec, open(r'Y:\AI\claude-work\forest-release-cm\spec.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)
